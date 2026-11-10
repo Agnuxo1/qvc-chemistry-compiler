@@ -1,0 +1,15 @@
+name: Scientific artifact integrity
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python tools/check_repository.py
+      - name: Scope
+        run: echo "Integrity checks do not replace native full circuit verification; see evidence and I01 source gate."

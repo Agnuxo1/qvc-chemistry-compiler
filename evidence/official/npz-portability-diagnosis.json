@@ -1,0 +1,72 @@
+[
+  {
+    "name": "U.npy",
+    "payload_equal": true,
+    "metadata_differences": {
+      "create_system": [
+        "0",
+        "3"
+      ]
+    }
+  },
+  {
+    "name": "W.npy",
+    "payload_equal": true,
+    "metadata_differences": {
+      "create_system": [
+        "0",
+        "3"
+      ]
+    }
+  },
+  {
+    "name": "H2_I.npy",
+    "payload_equal": true,
+    "metadata_differences": {
+      "create_system": [
+        "0",
+        "3"
+      ]
+    }
+  },
+  {
+    "name": "H1_I.npy",
+    "payload_equal": true,
+    "metadata_differences": {
+      "create_system": [
+        "0",
+        "3"
+      ]
+    }
+  },
+  {
+    "name": "Hsym_lower.npy",
+    "payload_equal": true,
+    "metadata_differences": {
+      "create_system": [
+        "0",
+        "3"
+      ]
+    }
+  },
+  {
+    "name": "tree_edges.npy",
+    "payload_equal": true,
+    "metadata_differences": {
+      "create_system": [
+        "0",
+        "3"
+      ]
+    }
+  },
+  {
+    "name": "angle_words.npy",
+    "payload_equal": true,
+    "metadata_differences": {
+      "create_system": [
+        "0",
+        "3"
+      ]
+    }
+  }
+]

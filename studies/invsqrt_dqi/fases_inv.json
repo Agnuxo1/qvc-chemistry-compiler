@@ -1,0 +1,167 @@
+[
+ {
+  "fase": "normalizar x",
+  "lineas": [
+   0,
+   262
+  ],
+  "estaticos": 72,
+  "media": 72.0,
+  "T": 0.0,
+  "rot": 0.0
+ },
+ {
+  "fase": "tabla K0,K1,C2 (decodificacion)",
+  "lineas": [
+   262,
+   14950
+  ],
+  "estaticos": 168,
+  "media": 168.0,
+  "T": 0.0,
+  "rot": 0.0
+ },
+ {
+  "fase": "pasada alta: seleccion+15 rot",
+  "lineas": [
+   14950,
+   15640
+  ],
+  "estaticos": 69,
+  "media": 69.0,
+  "T": 1.0,
+  "rot": 15.0
+ },
+ {
+  "fase": "tras pasada alta, reparaciones",
+  "lineas": [
+   15640,
+   20400
+  ],
+  "estaticos": 52,
+  "media": 39.98,
+  "T": 0.0,
+  "rot": 0.0
+ },
+ {
+  "fase": "filas C2·delta y K1",
+  "lineas": [
+   20400,
+   22480
+  ],
+  "estaticos": 91,
+  "media": 91.0,
+  "T": 0.0,
+  "rot": 0.0
+ },
+ {
+  "fase": "segunda decodificacion",
+  "lineas": [
+   22480,
+   23000
+  ],
+  "estaticos": 13,
+  "media": 13.0,
+  "T": 0.0,
+  "rot": 0.0
+ },
+ {
+  "fase": "filas R·delta",
+  "lineas": [
+   23000,
+   25400
+  ],
+  "estaticos": 220,
+  "media": 220.0,
+  "T": 0.0,
+  "rot": 0.0
+ },
+ {
+  "fase": "pasada baja: seleccion+26 rot",
+  "lineas": [
+   25400,
+   25720
+  ],
+  "estaticos": 106,
+  "media": 106.0,
+  "T": 0.0,
+  "rot": 26.0
+ },
+ {
+  "fase": "reparaciones de medida",
+  "lineas": [
+   25720,
+   27978
+  ],
+  "estaticos": 59,
+  "media": 5.0,
+  "T": 0.0,
+  "rot": 0.0
+ },
+ {
+  "fase": "deshacer filas (condicionado)",
+  "lineas": [
+   27978,
+   32047
+  ],
+  "estaticos": 317,
+  "media": 244.98,
+  "T": 0.0,
+  "rot": 0.0
+ },
+ {
+  "fase": "deshacer filas (fijo)",
+  "lineas": [
+   32047,
+   34547
+  ],
+  "estaticos": 57,
+  "media": 57.0,
+  "T": 0.0,
+  "rot": 0.0
+ },
+ {
+  "fase": "deshacer decodificacion",
+  "lineas": [
+   34547,
+   36500
+  ],
+  "estaticos": 127,
+  "media": 123.0,
+  "T": 0.0,
+  "rot": 0.0
+ },
+ {
+  "fase": "fases de tabla (Clifford)",
+  "lineas": [
+   36500,
+   43000
+  ],
+  "estaticos": 0,
+  "media": 0.0,
+  "T": 0.0,
+  "rot": 0.0
+ },
+ {
+  "fase": "limpieza",
+  "lineas": [
+   43000,
+   46360
+  ],
+  "estaticos": 54,
+  "media": 6.99,
+  "T": 0.0,
+  "rot": 0.0
+ },
+ {
+  "fase": "desnormalizar x",
+  "lineas": [
+   46360,
+   47042
+  ],
+  "estaticos": 70,
+  "media": 65.5,
+  "T": 0.0,
+  "rot": 0.0
+ }
+]

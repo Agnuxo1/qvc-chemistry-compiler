@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "table": "D:\\PROJECTS\\.cognition\\qvc-proyecto\\generador\\corrida_m844Uc\\refit.npz",
+      "W_shape": [
+        8,
+        143,
+        44
+      ],
+      "D": 6.142172040008646,
+      "D_over_2": 3.071086020004323,
+      "cross_H_minPN": 1.0184365894941232,
+      "hypothetical_raw_Lambda_reduction": 4.089522609498446,
+      "identity_residual": 0.0,
+      "scope": "Algebraic identity on current weights. The hypothetical values do not demonstrate feasible preservation of energies, error_1/error_2 or E_gap."
+    },
+    {
+      "table": "D:\\PROJECTS\\.cognition\\qvc-proyecto\\auditoria-codex-20261110\\receta-s37\\table.npz",
+      "W_shape": [
+        8,
+        143,
+        44
+      ],
+      "D": 3.7192859652597274,
+      "D_over_2": 1.8596429826298637,
+      "cross_H_minPN": 0.6024451803703605,
+      "hypothetical_raw_Lambda_reduction": 2.4620881630002196,
+      "identity_residual": -4.6629367034256575e-15,
+      "scope": "Algebraic identity on current weights. The hypothetical values do not demonstrate feasible preservation of energies, error_1/error_2 or E_gap.",
+      "conditional_fixed_gap": {
+        "actual_Lambda": 285.46203589049856,
+        "actual_lambda_eff": 47.11755871305699,
+        "hypothetical_lambda_eff": 46.912516788810265,
+        "hypothetical_improvement": 11.281986239828601,
+        "not_a_prediction": true
+      }
+    }
+  ]
+}

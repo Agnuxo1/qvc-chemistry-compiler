@@ -1,0 +1,160 @@
+{
+  "task": "chem",
+  "scope": "local official verifier; no external submission",
+  "command": [
+    "D:\\PROJECTS\\.cognition\\qvc-proyecto\\auditoria-codex-20261110\\laboratorio.py",
+    "chem",
+    "D:\\PROJECTS\\.cognition\\qvc-proyecto\\auditoria-codex-20261110\\fuentes\\gengsr\\gengsr_25_2268_submission\\dfthcsos",
+    "D:\\PROJECTS\\.cognition\\qvc-proyecto\\auditoria-codex-20261110\\resultados\\quimica-gengsr-64-a.json",
+    "--shots",
+    "64"
+  ],
+  "salt": "codex-independent-20261110-a",
+  "shots_argument": 64,
+  "seconds": 43.9450366999954,
+  "python": "3.13.7",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "versions": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "jax": "0.11.2",
+    "kaggle": "2.2.4",
+    "kickmix": "unpackaged or unavailable"
+  },
+  "inputs": {
+    "D:\\PROJECTS\\.cognition\\qvc-proyecto\\auditoria-codex-20261110\\fuentes\\gengsr\\gengsr_25_2268_submission\\dfthcsos\\submission.npz": {
+      "sha256": "9c358a8e9a4bba180f7455df777f3a456e68a39b6f7d4de3c485f2bb4554dc13",
+      "bytes": 1847692
+    },
+    "D:\\PROJECTS\\.cognition\\qvc-proyecto\\auditoria-codex-20261110\\fuentes\\gengsr\\gengsr_25_2268_submission\\dfthcsos\\angle_k_0.kmb": {
+      "sha256": "69170545949760e8f97a498b66a5f99b0db05a2f22decf872cbe530cfeea361e",
+      "bytes": 400247
+    },
+    "D:\\PROJECTS\\.cognition\\qvc-proyecto\\auditoria-codex-20261110\\fuentes\\gengsr\\gengsr_25_2268_submission\\dfthcsos\\angle_k_1.kmb": {
+      "sha256": "4a5bb72691b15692897aabb60e5d282bd66676e30574d06d20ca3712053bc0e6",
+      "bytes": 384539
+    },
+    "D:\\PROJECTS\\.cognition\\qvc-proyecto\\auditoria-codex-20261110\\fuentes\\gengsr\\gengsr_25_2268_submission\\dfthcsos\\angle_k_10.kmb": {
+      "sha256": "7e89ac38e86f9b957fc6d3417efef7e865f9b5c22c2bf334cfdd78ac801f033c",
+      "bytes": 341442
+    },
+    "D:\\PROJECTS\\.cognition\\qvc-proyecto\\auditoria-codex-20261110\\fuentes\\gengsr\\gengsr_25_2268_submission\\dfthcsos\\angle_k_11.kmb": {
+      "sha256": "e1f317e8b479ebca3eceae43f0ce723fb98ec21b55a4746a864a445f7c8b8cc9",
+      "bytes": 343705
+    },
+    "D:\\PROJECTS\\.cognition\\qvc-proyecto\\auditoria-codex-20261110\\fuentes\\gengsr\\gengsr_25_2268_submission\\dfthcsos\\angle_k_12.kmb": {
+      "sha256": "283159ca33baecf70b906641de8eded4f6efa68d66dc4a72828737cc444bd09d",
+      "bytes": 343121
+    },
+    "D:\\PROJECTS\\.cognition\\qvc-proyecto\\auditoria-codex-20261110\\fuentes\\gengsr\\gengsr_25_2268_submission\\dfthcsos\\angle_k_13.kmb": {
+      "sha256": "51bb1d9dc8a8fc93045f3d1bfeea7e26ff8b290515d4be9f41fe1629ec51ff7c",
+      "bytes": 339771
+    },
+    "D:\\PROJECTS\\.cognition\\qvc-proyecto\\auditoria-codex-20261110\\fuentes\\gengsr\\gengsr_25_2268_submission\\dfthcsos\\angle_k_14.kmb": {
+      "sha256": "52e8e80fb14f8d835b37ddca3d334b0d682eb5a1dd45041acf3ea0cd3df9cc07",
+      "bytes": 337896
+    },
+    "D:\\PROJECTS\\.cognition\\qvc-proyecto\\auditoria-codex-20261110\\fuentes\\gengsr\\gengsr_25_2268_submission\\dfthcsos\\angle_k_2.kmb": {
+      "sha256": "1a2002e74d3926b8da88255737fa522b815b59f8ab07ecc73fe9d658d9096eb3",
+      "bytes": 384954
+    },
+    "D:\\PROJECTS\\.cognition\\qvc-proyecto\\auditoria-codex-20261110\\fuentes\\gengsr\\gengsr_25_2268_submission\\dfthcsos\\angle_k_3.kmb": {
+      "sha256": "3aa518529a86d90016980391c369859b3300b520cedf6c3b11fbb7d7383f10ed",
+      "bytes": 386675
+    },
+    "D:\\PROJECTS\\.cognition\\qvc-proyecto\\auditoria-codex-20261110\\fuentes\\gengsr\\gengsr_25_2268_submission\\dfthcsos\\angle_k_4.kmb": {
+      "sha256": "3197a6d8a014f1b0fbb3df7f6be78236f31afc1d4fe664fd6e57ad37ca2c6c5f",
+      "bytes": 343245
+    },
+    "D:\\PROJECTS\\.cognition\\qvc-proyecto\\auditoria-codex-20261110\\fuentes\\gengsr\\gengsr_25_2268_submission\\dfthcsos\\angle_k_5.kmb": {
+      "sha256": "75789e61cc108534f1d04e759f4ace9b6ed326dc8bf02c15631f624eca74d356",
+      "bytes": 340849
+    },
+    "D:\\PROJECTS\\.cognition\\qvc-proyecto\\auditoria-codex-20261110\\fuentes\\gengsr\\gengsr_25_2268_submission\\dfthcsos\\angle_k_6.kmb": {
+      "sha256": "1c7a7a662216fa8b7def6f1c29df9ccc6b1807d76d0821b6a48d66c8e2c013d9",
+      "bytes": 345713
+    },
+    "D:\\PROJECTS\\.cognition\\qvc-proyecto\\auditoria-codex-20261110\\fuentes\\gengsr\\gengsr_25_2268_submission\\dfthcsos\\angle_k_7.kmb": {
+      "sha256": "769c28401b6934613bbb192a43d1ff35b05d033525d670a542aa94398d0d90bd",
+      "bytes": 340289
+    },
+    "D:\\PROJECTS\\.cognition\\qvc-proyecto\\auditoria-codex-20261110\\fuentes\\gengsr\\gengsr_25_2268_submission\\dfthcsos\\angle_k_8.kmb": {
+      "sha256": "b785dc8eb4a7f989d8d9db4f0462ab167f5ca4fc5bac7cb6cccf39ed7002bb91",
+      "bytes": 342621
+    },
+    "D:\\PROJECTS\\.cognition\\qvc-proyecto\\auditoria-codex-20261110\\fuentes\\gengsr\\gengsr_25_2268_submission\\dfthcsos\\angle_k_9.kmb": {
+      "sha256": "3362ef085f8f4874889117a5e70138bfa70c38b18c90ff1713cfd492aa8607cc",
+      "bytes": 342678
+    }
+  },
+  "official_source_sha256": {
+    "dfthcsos\\__init__.py": "81915e324cc0cade67f52a54b7a51991fd96abaea94d1f8a4d423dae20e57348",
+    "dfthcsos\\example_submission\\angle_k_reference_circuit.py": "8daccdca69f2d718b0176cd9281803df84a988ea5ac6c167fbb02e461ac2b371",
+    "dfthcsos\\scoreinfra\\__init__.py": "be90e0d503d5c20dcac0102af638b9a4ccad0341daa5baa5d49216a259e4516f",
+    "dfthcsos\\scoreinfra\\circuits.py": "fc027b52fdcebe14404f403a089122485d097ed65d03e6d989623d620b1ab68c",
+    "dfthcsos\\scoreinfra\\costs_prepare.py": "7f1e190c42fc5325f3e6689fbbef51f95b0cb12f1c828cda92b6c088e72206da",
+    "dfthcsos\\scoreinfra\\dfthc_math.py": "ae82898d47a7a86b96378fb906e0f8a9f46003065cf19c7c09952a123b5b5af8",
+    "dfthcsos\\scoreinfra\\reference.py": "a2d5a63191d655729e29f0fde1e85fe4630bf896a91a63bb894d8d7daf71ed39",
+    "dfthcsos\\verify.py": "0775be7a528922367caebe9e4d051d6199811f1aefeaa4b793eaaa4621b8ec9d",
+    "dqi\\__init__.py": "01c870aa9763f4e4357fc6654bff1d3296cec995bd0943f87b4a48946ada5b40",
+    "dqi\\dqi_reference_circuit.py": "2b8e1b80a806157c333a7e308eaf2499ee09de499efbc05875202c327959959e",
+    "dqi\\verify_submission_dqi.py": "f14274bc0943fb9769ddb01131be6063191a15009fe1caf1d4bdd9fd25194e65",
+    "invsqrt\\__init__.py": "e9a6ecf253c343528578be5fa92eb820ccade63333aebb784552fb4ae75dbc0b",
+    "invsqrt\\nr_reference_circuit.py": "bb90330dcf774f7b502de471293facba67f27952cc8808fe4a9970a9b1322e23",
+    "invsqrt\\verify_submission_invsqrt.py": "ddef520dec6b68d1cf0a6f328ddd36d79eb84570b9192cf3f7acaf073f06733a"
+  },
+  "wrapper_sha256": "7551bb884f017a7376a4a8f23ded2bc5736c03587740d001e5482e16857ff58f",
+  "official_result": {
+    "status": "PASS",
+    "score": 299497671.217324,
+    "lambda_eff": 46.89127546471636,
+    "toffoli_count": 14958.0,
+    "num_qubits": 427,
+    "brot": 8,
+    "batch_size": 5,
+    "num_circuits": 15,
+    "reaction_depth": 205,
+    "num_ops": 588004,
+    "verified_shots": 78080,
+    "submission_sha256": "634b84e5c5204c292105504ad39e5697533e2a5c578306ff632800aa6335c371",
+    "resources": {
+      "brot": 8,
+      "keep_bits": 10,
+      "angles_toffoli_per_pass": 4148.0,
+      "angles_toffoli": 8296.0,
+      "angles_qubits": 128,
+      "angles_selection_qubits": 11,
+      "angles_persistent_qubits": 40,
+      "angles_temporary_qubits": 77,
+      "outer_state_prep_toffoli": 317,
+      "inner_state_prep_toffoli": 4095,
+      "givens_rotations_toffoli": 2250,
+      "outer_state_prep_persistent_qubits": 40,
+      "outer_state_prep_temporary_qubits": 90,
+      "outer_state_prep_qubits": 130,
+      "inner_state_prep_persistent_qubits": 44,
+      "inner_state_prep_temporary_qubits": 303,
+      "inner_state_prep_qubits": 347,
+      "heuristic_persistent_qubits": 84,
+      "heuristic_temporary_qubits": 303,
+      "heuristic_toffoli": 6662,
+      "heuristic_qubits": 387,
+      "persistent_qubits": 124,
+      "temporary_qubits": 303,
+      "toffoli": 14958.0,
+      "qubits": 427,
+      "angles_within_cap": true
+    },
+    "metrics": {
+      "error_1": 0.019999999763870298,
+      "error_2": 0.019999999776141992,
+      "Lambda": 282.7810764067046,
+      "E_SOS": -22144.18824800024,
+      "E_gap": 3.914898000239191,
+      "lambda_eff": 46.89127546471636,
+      "gap_in_domain": true
+    }
+  },
+  "baseline": 3355599588.3155365,
+  "improvement": 11.204092421408573
+}

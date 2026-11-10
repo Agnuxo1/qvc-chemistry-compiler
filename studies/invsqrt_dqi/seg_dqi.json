@@ -1,0 +1,344 @@
+{
+"<inicio>": {
+"APPEND_TO_REGISTER": 49980,
+"REGISTER": 4165
+},
+"\"@enter:mask_projection\"": {
+"n": 1,
+"BIT_STORE0": 49152,
+"BIT_INVERT": 2338220,
+"Z": 840
+},
+"\"@exit:mask_projection\"": {
+"n": 1
+},
+"\"@enter:initial\"": {
+"n": 1,
+"CX": 255216,
+"SWAP": 541
+},
+"\"@exit:initial\"": {
+"n": 1
+},
+"\"@enter:extract\"": {
+"n": 1,
+"CX": 500,
+"SWAP": 18
+},
+"\"@enter:inverse24 norm\"": {
+"n": 23,
+"CX": 44666,
+"tof": 966,
+"CCX": 966
+},
+"\"@exit:inverse24 norm\"": {
+"n": 23,
+"CX": 3496
+},
+"\"@enter:inverse24 scalar\"": {
+"n": 23,
+"CX": 1242,
+"SWAP": 138
+},
+"\"@enter:inverse12 norm\"": {
+"n": 163,
+"CX": 32926,
+"tof": 2445,
+"CCX": 2445
+},
+"\"@exit:inverse12 norm\"": {
+"n": 163,
+"CX": 3912
+},
+"\"@enter:inverse12 scalar\"": {
+"n": 163,
+"CX": 71283,
+"SWAP": 2608,
+"R": 978,
+"tof": 2934,
+"CCX": 2934,
+"HMR": 978,
+"CZ": 13203,
+"Z": 3423,
+"X": 163
+},
+"\"@exit:inverse12 scalar\"": {
+"n": 163,
+"CX": 50647,
+"SWAP": 2119,
+"HMR": 652,
+"CZ": 4564
+},
+"\"@enter:inverse12 products\"": {
+"n": 163,
+"CX": 136105,
+"tof": 4075,
+"CCX": 4075
+},
+"\"@exit:inverse12 products\"": {
+"n": 163,
+"HMR": 14983,
+"Z": 15376,
+"CZ": 406852,
+"CX": 18159267,
+"SWAP": 41133,
+"NEG": 153,
+"tof": 158364,
+"CCX": 155160,
+"CSWAP": 2892,
+"X": 1372,
+"R": 2877,
+"BIT_STORE0": 6322,
+"BIT_INVERT": 22096,
+"CCZ": 312,
+"PUSH_CONDITION": 1,
+"tof_cond": 10,
+"POP_CONDITION": 1
+},
+"\"@exit:inverse24 scalar\"": {
+"n": 23,
+"CX": 8280,
+"SWAP": 368
+},
+"\"@enter:inverse24 products\"": {
+"n": 23,
+"CX": 265880,
+"tof": 1610,
+"CCX": 1610
+},
+"\"@exit:inverse24 products\"": {
+"n": 23,
+"HMR": 3719,
+"Z": 7273,
+"CZ": 106100,
+"CX": 3261152,
+"SWAP": 21490,
+"NEG": 101,
+"tof": 54453,
+"CCX": 54273,
+"X": 459,
+"R": 368,
+"BIT_STORE0": 588,
+"BIT_INVERT": 2366,
+"CSWAP": 180
+},
+"\"@enter:multiply v\"": {
+"n": 6,
+"CX": 37764,
+"tof": 594,
+"CCX": 594
+},
+"\"@exit:multiply v\"": {
+"n": 6,
+"CX": 8886,
+"SWAP": 784,
+"HMR": 150
+},
+"\"@exit:extract\"": {
+"n": 1
+},
+"\"@enter:synthesis\"": {
+"n": 1,
+"CX": 90906,
+"X": 1,
+"tof": 2856,
+"CCX": 2856,
+"SWAP": 380
+},
+"\"@exit:synthesis\"": {
+"n": 1
+},
+"\"@enter:convert\"": {
+"n": 1,
+"CX": 47573,
+"SWAP": 146,
+"tof": 1451,
+"CCX": 1451,
+"X": 24,
+"R": 23,
+"HMR": 11,
+"CZ": 11
+},
+"\"@enter:aligned_route\"": {
+"n": 52,
+"tof": 6240,
+"CSWAP": 6240
+},
+"\"@exit:aligned_route\"": {
+"n": 52,
+"HMR": 1507,
+"X": 1306,
+"R": 1258,
+"tof": 18899,
+"CCX": 18327,
+"CX": 2384660,
+"CZ": 47923,
+"CSWAP": 572,
+"SWAP": 5214,
+"Z": 374,
+"BIT_STORE0": 415,
+"BIT_INVERT": 1673,
+"NEG": 3,
+"PUSH_CONDITION": 1,
+"tof_cond": 10,
+"POP_CONDITION": 1
+},
+"\"@enter:full_head_product\"": {
+"n": 6,
+"CX": 41504,
+"tof": 1008,
+"CCX": 1008,
+"SWAP": 134
+},
+"\"@exit:full_head_product\"": {
+"n": 6,
+"HMR": 150,
+"SWAP": 174,
+"CX": 318,
+"tof": 264,
+"CSWAP": 243,
+"R": 21,
+"CCX": 21
+},
+"\"@exit:convert\"": {
+"n": 1
+},
+"\"@enter:scan\"": {
+"n": 1,
+"CX": 250996,
+"SWAP": 25060
+},
+"\"@enter:gf_iadd\"": {
+"n": 8190,
+"X": 50486
+},
+"\"@exit:gf_iadd\"": {
+"n": 8190,
+"BIT_STORE0": 56777,
+"BIT_INVERT": 351654,
+"BIT_STORE1": 48300,
+"PUSH_CONDITION": 4074,
+"X": 195586,
+"R": 46122,
+"tof": 131006,
+"tof_cond": 44653,
+"CCX": 128511,
+"CZ": 199119,
+"HMR": 51656,
+"POP_CONDITION": 4074,
+"CX": 25906680,
+"SWAP": 1479187,
+"CSWAP": 1452,
+"CCZ": 1043,
+"NEG": 382,
+"Z": 16531
+},
+"\"@exit:scan\"": {
+"n": 1
+},
+"\"@enter:unconvert\"": {
+"n": 1,
+"CX": 685332,
+"SWAP": 2636,
+"HMR": 4469,
+"tof": 6151,
+"CCX": 6150,
+"R": 4253,
+"CZ": 21999,
+"Z": 238,
+"CSWAP": 1
+},
+"\"@enter:head_phase\"": {
+"n": 3,
+"CZ": 4356,
+"CX": 4089,
+"tof": 126,
+"CCX": 126,
+"SWAP": 33,
+"HMR": 36
+},
+"\"@exit:head_phase\"": {
+"n": 3,
+"CX": 26098,
+"tof": 1039,
+"CCX": 823,
+"HMR": 211,
+"CZ": 2566,
+"SWAP": 144,
+"BIT_STORE0": 3,
+"R": 58,
+"Z": 213,
+"CCZ": 24,
+"NEG": 3,
+"CSWAP": 192,
+"PUSH_CONDITION": 3,
+"X": 120,
+"tof_cond": 30,
+"POP_CONDITION": 3
+},
+"\"@enter:head_pivot\"": {
+"n": 24,
+"tof": 288,
+"CSWAP": 288
+},
+"\"@exit:head_pivot\"": {
+"n": 24,
+"CX": 21967,
+"tof": 745,
+"CCX": 745,
+"HMR": 397,
+"SWAP": 216,
+"PUSH_CONDITION": 12,
+"X": 552,
+"R": 241,
+"tof_cond": 120,
+"CZ": 253,
+"POP_CONDITION": 12,
+"Z": 11
+},
+"\"@exit:unconvert\"": {
+"n": 1
+},
+"\"@enter:unsynthesis\"": {
+"n": 1,
+"CX": 16719,
+"SWAP": 39,
+"X": 13,
+"tof": 141,
+"CCX": 141,
+"HMR": 24
+},
+"\"@exit:unsynthesis\"": {
+"n": 1
+},
+"\"@enter:unextract\"": {
+"n": 1,
+"X": 48,
+"R": 24,
+"tof": 24,
+"CCX": 24,
+"HMR": 23,
+"CZ": 23,
+"Z": 1,
+"CX": 54,
+"SWAP": 6
+},
+"\"@exit:unextract\"": {
+"n": 1
+},
+"\"@enter:uninitial\"": {
+"n": 1,
+"SWAP": 515,
+"CX": 255152
+},
+"\"@exit:uninitial\"": {
+"n": 1
+},
+"\"@enter:restore_masks\"": {
+"n": 1,
+"BIT_INVERT": 94185
+},
+"\"@exit:restore_masks\"": {
+"n": 1
+}
+}

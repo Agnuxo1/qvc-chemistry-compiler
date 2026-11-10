@@ -1,0 +1,20 @@
+{
+  "research_date": "2026-11-10",
+  "performance_I01": "OPEN",
+  "optimized_source_reproduction": false,
+  "scope": "Read-only source recovery; no claim of global absence outside searched locations",
+  "server_qvc_roots": 179,
+  "server_source_files": 122,
+  "server_matching_source_files": 3,
+  "server_inventory_sha256": "0facfec65406a72b2d04cd9d163dfaa727ab2eb7a8664ae8e65bbca60469a905",
+  "local_scan": {
+    "source_matches": 9,
+    "sha256": "a8ab34b84c6d05ed62b1ca3616a79e3ba574251a5aadf398392da2ea3c0b8eef",
+    "scope": "QVC local project and repository sources; project-wide D-drive scan exceeded 120-second bound and is not claimed complete"
+  },
+  "generator_ancestors": [
+    "mrmeows/qcc-1375-open-circuits",
+    "dmitriigluzdov/vqcc-femoco-public-factorization"
+  ],
+  "official_followup_no_reply": true
+}

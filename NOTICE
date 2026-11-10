@@ -1,0 +1,16 @@
+QVC Chemistry Compiler
+Copyright 2026 Francisco Angulo de Lafuente
+ORCID https://orcid.org/0009-0001-1634-7063
+Research dates: 2026-10-29 to 2026-11-10.
+
+New, separately identified project code and documents are offered under
+MIT OR Apache-2.0. Apache-derived modules remain Apache-2.0. See docs/LICENSE_POLICY.md.
+This project incorporates the Apache-2.0 DF-THC pipeline of marculera/Lera;
+preserve vendor/dfthc_refit/LICENSE and NOTICE and recipes/s37/UPSTREAM_*.
+The performance portfolio reuses public invsqrt and DQI circuits: gengsr,
+maoxin123, Syed Asad Ali, Atakan Aldemir and the upstream authors credited
+in vendor/notices/gengsr/NOTICE.txt. Those circuits are not project inventions.
+
+Please cite CITATION.cff and credit Francisco Angulo de Lafuente for this
+project's original contributions. Preserve upstream credit as well.
+This request does not add restrictions to either open-source license.

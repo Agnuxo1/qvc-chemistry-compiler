@@ -1,0 +1,37 @@
+{
+  "task": "invsqrt",
+  "scope": "Unmodified official full Linux verifier, CPU only. Not a Kaggle submission.",
+  "salt": "codex-independent-20261110-a",
+  "shots_argument": 64,
+  "seconds": 272.2374081930029,
+  "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+  "numpy": "2.5.2",
+  "verifier_sha256": "ddef520dec6b68d1cf0a6f328ddd36d79eb84570b9192cf3f7acaf073f06733a",
+  "kickmix_sha256": "c66b3216c4029e0cdfd09054306aa0feadf53ab2f50c1164e37f752874e5005e",
+  "wrapper_sha256": "d43834f3a5e237a8bbf2fa061e48870531dfc09ece07abe9ae36846ea938f7b9",
+  "inputs": {
+    "invsqrt.kmb": {
+      "sha256": "26ebf39df3b13e5fd2d923d1b9988043b107b64f6e21efc5cc9bc76f5d56adec",
+      "bytes": 377427
+    }
+  },
+  "baseline": 2076774.233715282,
+  "official_result": {
+    "status": "PASS",
+    "score": 94537.58701591205,
+    "toffoli_equivalent": 1524.7997905792267,
+    "toffoli_count": 1229.7089666903307,
+    "max_toffoli_count": 1392,
+    "t_count": 1.0,
+    "rotation_count": 41.0,
+    "rotation_eps": 2.434041480874084e-13,
+    "num_qubits": 62,
+    "reaction_depth": 737,
+    "num_ops": 36686,
+    "verified_shots": 200540928,
+    "worst_error_over_tolerance": 0.9993237694056958,
+    "worst_x": 161,
+    "circuit_sha256": "26ebf39df3b13e5fd2d923d1b9988043b107b64f6e21efc5cc9bc76f5d56adec"
+  },
+  "improvement": 21.96770934470467
+}

@@ -1,0 +1,114 @@
+{
+  "status": "PASS",
+  "seconds": 0.7320642999839038,
+  "products_before": 2961,
+  "products_after": 2961,
+  "circuits": [
+    {
+      "k": 0,
+      "before": 198,
+      "after": 198,
+      "tensor_equal": true,
+      "changes": []
+    },
+    {
+      "k": 1,
+      "before": 198,
+      "after": 198,
+      "tensor_equal": true,
+      "changes": []
+    },
+    {
+      "k": 2,
+      "before": 198,
+      "after": 198,
+      "tensor_equal": true,
+      "changes": []
+    },
+    {
+      "k": 3,
+      "before": 197,
+      "after": 197,
+      "tensor_equal": true,
+      "changes": []
+    },
+    {
+      "k": 4,
+      "before": 198,
+      "after": 198,
+      "tensor_equal": true,
+      "changes": []
+    },
+    {
+      "k": 5,
+      "before": 197,
+      "after": 197,
+      "tensor_equal": true,
+      "changes": []
+    },
+    {
+      "k": 6,
+      "before": 198,
+      "after": 198,
+      "tensor_equal": true,
+      "changes": []
+    },
+    {
+      "k": 7,
+      "before": 197,
+      "after": 197,
+      "tensor_equal": true,
+      "changes": []
+    },
+    {
+      "k": 8,
+      "before": 197,
+      "after": 197,
+      "tensor_equal": true,
+      "changes": []
+    },
+    {
+      "k": 9,
+      "before": 197,
+      "after": 197,
+      "tensor_equal": true,
+      "changes": []
+    },
+    {
+      "k": 10,
+      "before": 197,
+      "after": 197,
+      "tensor_equal": true,
+      "changes": []
+    },
+    {
+      "k": 11,
+      "before": 197,
+      "after": 197,
+      "tensor_equal": true,
+      "changes": []
+    },
+    {
+      "k": 12,
+      "before": 198,
+      "after": 198,
+      "tensor_equal": true,
+      "changes": []
+    },
+    {
+      "k": 13,
+      "before": 197,
+      "after": 197,
+      "tensor_equal": true,
+      "changes": []
+    },
+    {
+      "k": 14,
+      "before": 197,
+      "after": 197,
+      "tensor_equal": true,
+      "changes": []
+    }
+  ],
+  "scope": "Exact algebraic comparison only; no claim of a new verified circuit"
+}

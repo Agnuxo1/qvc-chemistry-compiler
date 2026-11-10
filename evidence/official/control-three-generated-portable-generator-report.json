@@ -1,0 +1,22 @@
+{
+  "scope": "Source-complete control: organizer reference invsqrt/DQI plus the team's optimized chemistry",
+  "author": "Francisco Angulo de Lafuente",
+  "orcid": "https://orcid.org/0009-0001-1634-7063",
+  "reference_attribution": "Competition organizers, Apache-2.0",
+  "builds": {
+    "invsqrt": {
+      "sha256": "e2bf8eb64350a4460a271fc7f1d591ef125b1e276377e9a0f64b96ab3ca321e1",
+      "qubits": 260,
+      "static_toffoli": 7735,
+      "source_sha256": "bb90330dcf774f7b502de471293facba67f27952cc8808fe4a9970a9b1322e23",
+      "seconds": 0.007565088017145172
+    },
+    "dqi": {
+      "sha256": "959471d05a26373b4f14ca0cae2d8639ea25f18170d9f6532139aa51ccc04995",
+      "qubits": 1893,
+      "static_toffoli": 5725461,
+      "source_sha256": "2b8e1b80a806157c333a7e308eaf2499ee09de499efbc05875202c327959959e",
+      "seconds": 5.98192093797843
+    }
+  }
+}

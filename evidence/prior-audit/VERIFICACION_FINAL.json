@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "delivered_hashes": {
+    "candidato-rendimiento-s37/submission.zip": "9171759a2f5c46cdcf3eeade719d6b1b919a750c56b68915c3fcb1be6dde47c9",
+    "candidato-con-fuentes-s37/submission.zip": "1773dd637161793fa360052b526476daef0d353a9f5bef901b75c46f0446b506",
+    "FUENTES_REPRODUCIBLES-r2.zip": "9e18cf6abf44d546651c61a7943e1449e611840b6d8f18b4000abb4a98f8998b"
+  },
+  "python_sources_parsed": 72,
+  "internal_document_links": "PASS",
+  "author_metadata": "PASS",
+  "executed_generator_fingerprints": "PASS",
+  "scope": "Final integrity checks; not an additional native simulation or external submission"
+}

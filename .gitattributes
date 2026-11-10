@@ -1,0 +1,7 @@
+# Preserve exact evidence and recipe bytes across Windows and Linux checkouts.
+# Text is still readable/diffable; automatic end-of-line conversion is disabled.
+* -text
+*.gif binary
+*.png binary
+*.npy binary
+*.npz binary

@@ -1,0 +1,56 @@
+{
+  "overview": {
+    "sha256": "a6563f8b571c9edef5e03625426fc29d379d857856d2fc15804818e593d73290",
+    "bytes": 57398,
+    "encoded_frames": 4,
+    "source_frames": 30,
+    "source_frame_ms": 110,
+    "width": 1100,
+    "height": 500
+  },
+  "chemistry": {
+    "sha256": "58cd40667bd71ac944630d2f4ff602798456bbef69375d36183483afd1f3ec3f",
+    "bytes": 49117,
+    "encoded_frames": 4,
+    "source_frames": 30,
+    "source_frame_ms": 110,
+    "width": 1100,
+    "height": 500
+  },
+  "compiler": {
+    "sha256": "2c238802f4c101a31bcafaab272d904b8edc5725fa04437ca9226419e75c3d34",
+    "bytes": 39152,
+    "encoded_frames": 8,
+    "source_frames": 30,
+    "source_frame_ms": 110,
+    "width": 1100,
+    "height": 500
+  },
+  "reproducibility": {
+    "sha256": "7ec3348bc7bb10f5df258ff7d5aaccb9b363332c5839fd750f6c09716c0a7e40",
+    "bytes": 40613,
+    "encoded_frames": 4,
+    "source_frames": 30,
+    "source_frame_ms": 110,
+    "width": 1100,
+    "height": 500
+  },
+  "verification": {
+    "sha256": "757c41c404c830ca5ed064896df74ec6231f515bb6c0c7f906830f77fea62ccb",
+    "bytes": 75339,
+    "encoded_frames": 3,
+    "source_frames": 30,
+    "source_frame_ms": 110,
+    "width": 1100,
+    "height": 500
+  },
+  "ancillas": {
+    "sha256": "7e9267da15cd21e1efbf2751d0e0a9639b687a30060f5a38a97466cac26fccfb",
+    "bytes": 147378,
+    "encoded_frames": 23,
+    "source_frames": 30,
+    "source_frame_ms": 110,
+    "width": 1100,
+    "height": 500
+  }
+}

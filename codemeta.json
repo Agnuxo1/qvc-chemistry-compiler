@@ -1,0 +1,22 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "name": "QVC Chemistry Compiler",
+  "version": "0.1.0",
+  "dateCreated": "2026-10-29",
+  "dateModified": "2026-11-10",
+  "codeRepository": "https://github.com/Agnuxo1/qvc-chemistry-compiler",
+  "license": [
+    "https://spdx.org/licenses/MIT.html",
+    "https://spdx.org/licenses/Apache-2.0.html"
+  ],
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Francisco",
+      "familyName": "Angulo de Lafuente",
+      "@id": "https://orcid.org/0009-0001-1634-7063"
+    }
+  ],
+  "description": "Source-reproducible frozen chemistry recipe and independently checked circuit-compilation experiments."
+}

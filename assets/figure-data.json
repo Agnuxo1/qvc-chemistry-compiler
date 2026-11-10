@@ -1,0 +1,146 @@
+{
+  "scope": "Illustrations of saved local evidence; schematic panels are not simulations",
+  "source_sha256": {
+    "quimica-base2494-64-a.json": "e9f5ffd20b6cf9db7cc80f9dcda4024e258beab7451c63addffa4d4e86b011ba",
+    "quimica-gengsr-64-a.json": "873e0abbc2a89773c6b9595bc8e360f16c4d9cc71ead3bf8480e57fee46eec3b",
+    "quimica-s2-64-a.json": "4a802cf3701040167a623a56b9b81d0a98d313dbf05f3ef39dec4deae49a38a6",
+    "quimica-s37-64-a.json": "e52b264609538a4fd1d4f551bce2af6dd73fbbfbeef19c121ebe5672f0d96820",
+    "ancillas-fran.json": "db3b2e70b4f0d95555dfe7561a288932f3d3934dbc61384f3c59f8d67eae85c4",
+    "invsqrt-gengsr-64-linux-a.json": "d6fc58ada73fa336fb021e03c16b8b8e71fe1940ae03e5967d7d5bbc892df312",
+    "dqi-gengsr-102400-a.json": "f6219385b76331b5df980676899c5f69e3ae2cabd7ef5ee2c29c266cb33c3400",
+    "dqi-gengsr-102400-b.json": "ad375ac8b5639730f11c36183d6ae55d6b44e21ef749d36aad705649886e7786"
+  },
+  "chemistry_ratios": [
+    11.197610095145334,
+    11.204092421408573,
+    11.22986502708244,
+    11.23289031399706
+  ],
+  "invsqrt_verified_shots": 200540928,
+  "dqi_verified_shots": [
+    102400,
+    102400
+  ],
+  "ancilla_rows": [
+    {
+      "k": 2,
+      "cases_per_variant": 16,
+      "coverage": "all a,c basis pairs, one deterministic accumulator per pair",
+      "parallel": {
+        "Q": 38,
+        "C_toffoli_like": 56,
+        "reaction_depth": 44,
+        "instrucciones": 226,
+        "coste_Q_por_C": 2128,
+        "checked": 16,
+        "value_input_scratch_phase": "PASS"
+      },
+      "serial": {
+        "Q": 37,
+        "C_toffoli_like": 56,
+        "reaction_depth": 44,
+        "instrucciones": 226,
+        "coste_Q_por_C": 2072,
+        "checked": 16,
+        "value_input_scratch_phase": "PASS"
+      },
+      "synthetic_QC_improvement": 1.027027027027027
+    },
+    {
+      "k": 4,
+      "cases_per_variant": 256,
+      "coverage": "all a,c basis pairs, one deterministic accumulator per pair",
+      "parallel": {
+        "Q": 44,
+        "C_toffoli_like": 112,
+        "reaction_depth": 70,
+        "instrucciones": 452,
+        "coste_Q_por_C": 4928,
+        "checked": 256,
+        "value_input_scratch_phase": "PASS"
+      },
+      "serial": {
+        "Q": 41,
+        "C_toffoli_like": 112,
+        "reaction_depth": 70,
+        "instrucciones": 452,
+        "coste_Q_por_C": 4592,
+        "checked": 256,
+        "value_input_scratch_phase": "PASS"
+      },
+      "synthetic_QC_improvement": 1.0731707317073171
+    },
+    {
+      "k": 8,
+      "cases_per_variant": 1024,
+      "coverage": "1024 preregistered-seed cases, including extrema and overflow",
+      "parallel": {
+        "Q": 56,
+        "C_toffoli_like": 224,
+        "reaction_depth": 122,
+        "instrucciones": 904,
+        "coste_Q_por_C": 12544,
+        "checked": 1024,
+        "value_input_scratch_phase": "PASS"
+      },
+      "serial": {
+        "Q": 49,
+        "C_toffoli_like": 224,
+        "reaction_depth": 122,
+        "instrucciones": 904,
+        "coste_Q_por_C": 10976,
+        "checked": 1024,
+        "value_input_scratch_phase": "PASS"
+      },
+      "synthetic_QC_improvement": 1.1428571428571428
+    },
+    {
+      "k": 16,
+      "cases_per_variant": 1024,
+      "coverage": "1024 preregistered-seed cases, including extrema and overflow",
+      "parallel": {
+        "Q": 80,
+        "C_toffoli_like": 448,
+        "reaction_depth": 226,
+        "instrucciones": 1808,
+        "coste_Q_por_C": 35840,
+        "checked": 1024,
+        "value_input_scratch_phase": "PASS"
+      },
+      "serial": {
+        "Q": 65,
+        "C_toffoli_like": 448,
+        "reaction_depth": 226,
+        "instrucciones": 1808,
+        "coste_Q_por_C": 29120,
+        "checked": 1024,
+        "value_input_scratch_phase": "PASS"
+      },
+      "synthetic_QC_improvement": 1.2307692307692308
+    },
+    {
+      "k": 32,
+      "cases_per_variant": 1024,
+      "coverage": "1024 preregistered-seed cases, including extrema and overflow",
+      "parallel": {
+        "Q": 128,
+        "C_toffoli_like": 896,
+        "reaction_depth": 434,
+        "instrucciones": 3616,
+        "coste_Q_por_C": 114688,
+        "checked": 1024,
+        "value_input_scratch_phase": "PASS"
+      },
+      "serial": {
+        "Q": 97,
+        "C_toffoli_like": 896,
+        "reaction_depth": 434,
+        "instrucciones": 3616,
+        "coste_Q_por_C": 86912,
+        "checked": 1024,
+        "value_input_scratch_phase": "PASS"
+      },
+      "synthetic_QC_improvement": 1.3195876288659794
+    }
+  ]
+}

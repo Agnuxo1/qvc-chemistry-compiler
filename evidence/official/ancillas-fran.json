@@ -1,0 +1,131 @@
+{
+  "scope": "Synthetic 16-bit accumulator only; local Kickmix simulation, no QVC benchmark score and no physical hardware",
+  "source": "D:\\PROJECTS\\.cognition\\qvc-proyecto\\inventario\\clones\\reversible-ancilla-scheduling\\src\\measure_kickmix.py",
+  "source_sha256": "27d89fbdbbcabaff69da15b9d319d62372dc45fc15774d2fd0e4ecc8c0c4068a",
+  "author": "Francisco Angulo de Lafuente",
+  "seed": 20261110,
+  "rows": [
+    {
+      "k": 2,
+      "cases_per_variant": 16,
+      "coverage": "all a,c basis pairs, one deterministic accumulator per pair",
+      "parallel": {
+        "Q": 38,
+        "C_toffoli_like": 56,
+        "reaction_depth": 44,
+        "instrucciones": 226,
+        "coste_Q_por_C": 2128,
+        "checked": 16,
+        "value_input_scratch_phase": "PASS"
+      },
+      "serial": {
+        "Q": 37,
+        "C_toffoli_like": 56,
+        "reaction_depth": 44,
+        "instrucciones": 226,
+        "coste_Q_por_C": 2072,
+        "checked": 16,
+        "value_input_scratch_phase": "PASS"
+      },
+      "synthetic_QC_improvement": 1.027027027027027
+    },
+    {
+      "k": 4,
+      "cases_per_variant": 256,
+      "coverage": "all a,c basis pairs, one deterministic accumulator per pair",
+      "parallel": {
+        "Q": 44,
+        "C_toffoli_like": 112,
+        "reaction_depth": 70,
+        "instrucciones": 452,
+        "coste_Q_por_C": 4928,
+        "checked": 256,
+        "value_input_scratch_phase": "PASS"
+      },
+      "serial": {
+        "Q": 41,
+        "C_toffoli_like": 112,
+        "reaction_depth": 70,
+        "instrucciones": 452,
+        "coste_Q_por_C": 4592,
+        "checked": 256,
+        "value_input_scratch_phase": "PASS"
+      },
+      "synthetic_QC_improvement": 1.0731707317073171
+    },
+    {
+      "k": 8,
+      "cases_per_variant": 1024,
+      "coverage": "1024 preregistered-seed cases, including extrema and overflow",
+      "parallel": {
+        "Q": 56,
+        "C_toffoli_like": 224,
+        "reaction_depth": 122,
+        "instrucciones": 904,
+        "coste_Q_por_C": 12544,
+        "checked": 1024,
+        "value_input_scratch_phase": "PASS"
+      },
+      "serial": {
+        "Q": 49,
+        "C_toffoli_like": 224,
+        "reaction_depth": 122,
+        "instrucciones": 904,
+        "coste_Q_por_C": 10976,
+        "checked": 1024,
+        "value_input_scratch_phase": "PASS"
+      },
+      "synthetic_QC_improvement": 1.1428571428571428
+    },
+    {
+      "k": 16,
+      "cases_per_variant": 1024,
+      "coverage": "1024 preregistered-seed cases, including extrema and overflow",
+      "parallel": {
+        "Q": 80,
+        "C_toffoli_like": 448,
+        "reaction_depth": 226,
+        "instrucciones": 1808,
+        "coste_Q_por_C": 35840,
+        "checked": 1024,
+        "value_input_scratch_phase": "PASS"
+      },
+      "serial": {
+        "Q": 65,
+        "C_toffoli_like": 448,
+        "reaction_depth": 226,
+        "instrucciones": 1808,
+        "coste_Q_por_C": 29120,
+        "checked": 1024,
+        "value_input_scratch_phase": "PASS"
+      },
+      "synthetic_QC_improvement": 1.2307692307692308
+    },
+    {
+      "k": 32,
+      "cases_per_variant": 1024,
+      "coverage": "1024 preregistered-seed cases, including extrema and overflow",
+      "parallel": {
+        "Q": 128,
+        "C_toffoli_like": 896,
+        "reaction_depth": 434,
+        "instrucciones": 3616,
+        "coste_Q_por_C": 114688,
+        "checked": 1024,
+        "value_input_scratch_phase": "PASS"
+      },
+      "serial": {
+        "Q": 97,
+        "C_toffoli_like": 896,
+        "reaction_depth": 434,
+        "instrucciones": 3616,
+        "coste_Q_por_C": 86912,
+        "checked": 1024,
+        "value_input_scratch_phase": "PASS"
+      },
+      "synthetic_QC_improvement": 1.3195876288659794
+    }
+  ],
+  "seconds": 4.7501752999960445,
+  "status": "PASS"
+}

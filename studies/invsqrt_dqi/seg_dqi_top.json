@@ -1,0 +1,111 @@
+{
+"<pre>": {},
+"mask_projection": {
+"linea0": 54146,
+"tags": 1
+},
+"<tras mask_projection>": {
+"linea0": 2442359,
+"tags": 1
+},
+"initial": {
+"linea0": 2442360,
+"tags": 1,
+"CX": 255216
+},
+"<tras initial>": {
+"linea0": 2698118,
+"tags": 1
+},
+"extract": {
+"linea0": 2698119,
+"tags": 301,
+"CX": 3682571,
+"tof": 59169,
+"R": 518,
+"HMR": 4331
+},
+"<tras extract>": {
+"linea0": 6591539,
+"tags": 1
+},
+"synthesis": {
+"linea0": 6591540,
+"tags": 13,
+"CX": 5371985,
+"tof": 31635,
+"R": 429,
+"HMR": 1324
+},
+"<tras synthesis>": {
+"linea0": 12006935,
+"tags": 1
+},
+"convert": {
+"linea0": 12006936,
+"tags": 353,
+"CX": 5405524,
+"tof": 60687,
+"R": 2140,
+"HMR": 6377
+},
+"<tras convert>": {
+"linea0": 17698662,
+"tags": 1
+},
+"scan": {
+"linea0": 17698663,
+"tags": 16101,
+"CX": 21204330,
+"push": 4025,
+"R": 44275,
+"tof": 44275,
+"tof_cond": 44275,
+"HMR": 44275
+},
+"<tras scan>": {
+"linea0": 41252602,
+"tags": 1
+},
+"unconvert": {
+"linea0": 41252603,
+"tags": 407,
+"CX": 4926765,
+"HMR": 11141,
+"tof": 62558,
+"R": 6228,
+"push": 16,
+"tof_cond": 160
+},
+"<tras unconvert>": {
+"linea0": 46497681,
+"tags": 1
+},
+"unsynthesis": {
+"linea0": 46497682,
+"tags": 217,
+"CX": 5522950,
+"tof": 40452,
+"HMR": 3860,
+"R": 713
+},
+"<tras unsynthesis>": {
+"linea0": 52196367,
+"tags": 1
+},
+"unextract": {
+"linea0": 52196368,
+"tags": 293,
+"R": 1920,
+"tof": 96903,
+"HMR": 7658,
+"CX": 5448777,
+"push": 50,
+"tof_cond": 388
+},
+"<tras unextract>": {
+"linea0": 57991164,
+"tags": 5,
+"CX": 255152
+}
+}

@@ -1,0 +1,30 @@
+invsqrt base: C 1576.5 score 97746 razon 21.247; rotaciones 294.8 eq (18.7%); DQI base 3.7477e+11 razon 65.212; media 24.941
+--- invsqrt
+-1 qubit                                             C  1576.5 razon  21.59 (+1.6%) media 25.077
+-2 qubits                                            C  1576.5 razon  21.95 (+3.3%) media 25.215
+-4 qubits                                            C  1576.5 razon  22.71 (+6.9%) media 25.502
+-25 Toffolis (equivale a 1 qubit)                    C  1551.1 razon  21.59 (+1.6%) media 25.076
+-1 rotacion y 3 Toffolis de seleccion                C  1566.2 razon  21.39 (+0.7%) media 24.996
+-8 rotaciones y 30 Toffolis (fusion de pasadas)      C  1487.6 razon  22.52 (+6.0%) media 25.429
+margen x2                                            C  1570.8 razon  21.32 (+0.4%) media 24.971
+-5 % filas ida y vuelta (-31)                        C  1545.5 razon  21.67 (+2.0%) media 25.107
+-15 % tabla (-44)                                    C  1532.5 razon  21.86 (+2.9%) media 25.177
+paquete prudente: 61 q, -40 Toffolis                 C  1536.5 razon  22.16 (+4.3%) media 25.292
+paquete ambicioso: 60 q, -100 Toffolis, -4 rot       C  1447.0 razon  23.92 (+12.6%) media 25.946
+--- DQI
+-1 qubit                                             razon  65.36 (+0.2%) media 24.960
+-4 qubits                                            razon  65.80 (+0.9%) media 25.016
+-12 qubits                                           razon  67.00 (+2.7%) media 25.167
+suelo absoluto 840 qubits                            razon  73.54 (+12.8%) media 25.960
+-1.000 Toffolis                                      razon  65.38 (+0.3%) media 24.962
+vuelta de extract en coste de ida (-37,7k)           razon  72.09 (+10.6%) media 25.789
+vuelta de synthesis en coste de ida (-8,8k)          razon  66.70 (+2.3%) media 25.129
+ida = vuelta en las tres fases (-48,4k)              razon  74.31 (+14.0%) media 26.051
+mitad de esa asimetria (-24k)                        razon  69.46 (+6.5%) media 25.472
+1 fallo por tirada (k=1)                             razon  64.92 (-0.5%) media 24.903
+paquete prudente: 890 q, -24k                        razon  69.78 (+7.0%) media 25.510
+paquete ambicioso: 884 q, -48k                       razon  75.66 (+16.0%) media 26.208
+--- conjunto y lideres
+producto lideres 1.621487158659686
+prudente invsqrt 22.16 dqi 69.78 factor conjunto 1.116 media con quimica 11,20 25.87 con quimica 12,5 26.84 parte de 1,62 explicada 0.227 quimica necesaria para 29,30 16.27
+ambicioso invsqrt 23.92 dqi 75.66 factor conjunto 1.306 media con quimica 11,20 27.26 con quimica 12,5 28.28 parte de 1,62 explicada 0.553 quimica necesaria para 29,30 13.9

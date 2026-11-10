@@ -1,0 +1,310 @@
+{
+"unextract": {
+"tof": 96399,
+"tof_cond": 388,
+"occ": 1,
+"hmr": 7646,
+"ops": 5790685
+},
+"extract": {
+"tof": 54549,
+"tof_cond": 0,
+"occ": 1,
+"hmr": 3951,
+"ops": 3485459
+},
+"unconvert/full_head_product": {
+"tof": 504,
+"tof_cond": 0,
+"occ": 3,
+"hmr": 0,
+"ops": 21323
+},
+"unconvert": {
+"tof": 55518,
+"tof_cond": 160,
+"occ": 1,
+"hmr": 10811,
+"ops": 5129735
+},
+"synthesis/inverse12 scalar": {
+"tof": 36,
+"tof_cond": 0,
+"occ": 2,
+"hmr": 12,
+"ops": 1172
+},
+"restore_masks": {
+"tof": 0,
+"tof_cond": 0,
+"occ": 1,
+"hmr": 0,
+"ops": 94185
+},
+"extract/multiply v": {
+"tof": 594,
+"tof_cond": 0,
+"occ": 6,
+"hmr": 0,
+"ops": 38358
+},
+"unextract/inverse12 scalar": {
+"tof": 36,
+"tof_cond": 0,
+"occ": 2,
+"hmr": 12,
+"ops": 1172
+},
+"extract/inverse12 norm": {
+"tof": 30,
+"tof_cond": 0,
+"occ": 2,
+"hmr": 0,
+"ops": 434
+},
+"extract/inverse24 scalar/inverse12 norm": {
+"tof": 345,
+"tof_cond": 0,
+"occ": 23,
+"hmr": 0,
+"ops": 4991
+},
+"unconvert/inverse12 norm": {
+"tof": 735,
+"tof_cond": 0,
+"occ": 49,
+"hmr": 0,
+"ops": 10633
+},
+"mask_projection": {
+"tof": 0,
+"tof_cond": 0,
+"occ": 1,
+"hmr": 0,
+"ops": 2388212
+},
+"unextract/inverse12 norm": {
+"tof": 30,
+"tof_cond": 0,
+"occ": 2,
+"hmr": 0,
+"ops": 434
+},
+"scan/gf_iadd": {
+"tof": 0,
+"tof_cond": 0,
+"occ": 8050,
+"hmr": 0,
+"ops": 50094
+},
+"synthesis": {
+"tof": 31519,
+"tof_cond": 0,
+"occ": 1,
+"hmr": 1312,
+"ops": 5412056
+},
+"convert": {
+"tof": 54221,
+"tof_cond": 0,
+"occ": 1,
+"hmr": 6083,
+"ops": 5585443
+},
+"extract/inverse12 products": {
+"tof": 50,
+"tof_cond": 0,
+"occ": 2,
+"hmr": 0,
+"ops": 1720
+},
+"convert/aligned_route": {
+"tof": 3120,
+"tof_cond": 0,
+"occ": 26,
+"hmr": 0,
+"ops": 3120
+},
+"scan": {
+"tof": 0,
+"tof_cond": 44275,
+"occ": 1,
+"hmr": 44275,
+"ops": 23479694
+},
+"unconvert/inverse12 scalar": {
+"tof": 882,
+"tof_cond": 0,
+"occ": 49,
+"hmr": 294,
+"ops": 28760
+},
+"extract/inverse12 scalar": {
+"tof": 36,
+"tof_cond": 0,
+"occ": 2,
+"hmr": 12,
+"ops": 1172
+},
+"unconvert/head_phase": {
+"tof": 126,
+"tof_cond": 0,
+"occ": 3,
+"hmr": 36,
+"ops": 8640
+},
+"extract/inverse24 scalar/inverse12 scalar": {
+"tof": 414,
+"tof_cond": 0,
+"occ": 23,
+"hmr": 138,
+"ops": 13478
+},
+"convert/inverse12 products": {
+"tof": 1225,
+"tof_cond": 0,
+"occ": 49,
+"hmr": 0,
+"ops": 42140
+},
+"unextract/inverse12 products": {
+"tof": 50,
+"tof_cond": 0,
+"occ": 2,
+"hmr": 0,
+"ops": 1720
+},
+"unextract/gf_iadd": {
+"tof": 0,
+"tof_cond": 0,
+"occ": 140,
+"hmr": 0,
+"ops": 392
+},
+"unsynthesis/inverse12 scalar": {
+"tof": 648,
+"tof_cond": 0,
+"occ": 36,
+"hmr": 216,
+"ops": 21102
+},
+"unconvert/inverse12 products": {
+"tof": 1225,
+"tof_cond": 0,
+"occ": 49,
+"hmr": 0,
+"ops": 42140
+},
+"convert/inverse12 norm": {
+"tof": 735,
+"tof_cond": 0,
+"occ": 49,
+"hmr": 0,
+"ops": 10633
+},
+"unsynthesis/inverse12 norm": {
+"tof": 540,
+"tof_cond": 0,
+"occ": 36,
+"hmr": 0,
+"ops": 7812
+},
+"unconvert/head_pivot": {
+"tof": 288,
+"tof_cond": 0,
+"occ": 24,
+"hmr": 0,
+"ops": 288
+},
+"uninitial": {
+"tof": 0,
+"tof_cond": 0,
+"occ": 1,
+"hmr": 0,
+"ops": 255667
+},
+"synthesis/inverse12 norm": {
+"tof": 30,
+"tof_cond": 0,
+"occ": 2,
+"hmr": 0,
+"ops": 434
+},
+"unconvert/aligned_route": {
+"tof": 3120,
+"tof_cond": 0,
+"occ": 26,
+"hmr": 0,
+"ops": 3120
+},
+"initial": {
+"tof": 0,
+"tof_cond": 0,
+"occ": 1,
+"hmr": 0,
+"ops": 255757
+},
+"extract/inverse24 norm": {
+"tof": 966,
+"tof_cond": 0,
+"occ": 23,
+"hmr": 0,
+"ops": 45632
+},
+"synthesis/inverse12 products": {
+"tof": 50,
+"tof_cond": 0,
+"occ": 2,
+"hmr": 0,
+"ops": 1720
+},
+"unsynthesis/inverse12 products": {
+"tof": 900,
+"tof_cond": 0,
+"occ": 36,
+"hmr": 0,
+"ops": 30960
+},
+"extract/inverse24 scalar/inverse12 products": {
+"tof": 575,
+"tof_cond": 0,
+"occ": 23,
+"hmr": 0,
+"ops": 19780
+},
+"convert/inverse12 scalar": {
+"tof": 882,
+"tof_cond": 0,
+"occ": 49,
+"hmr": 294,
+"ops": 28714
+},
+"extract/inverse24 products": {
+"tof": 1610,
+"tof_cond": 0,
+"occ": 23,
+"hmr": 0,
+"ops": 267490
+},
+"convert/full_head_product": {
+"tof": 504,
+"tof_cond": 0,
+"occ": 3,
+"hmr": 0,
+"ops": 21323
+},
+"extract/inverse24 scalar": {
+"tof": 0,
+"tof_cond": 0,
+"occ": 23,
+"hmr": 230,
+"ops": 14605
+},
+"unsynthesis": {
+"tof": 38364,
+"tof_cond": 0,
+"occ": 1,
+"hmr": 3644,
+"ops": 5638594
+}
+}

@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+build/
+.cache/
+work/
+data/
+*.kmb
+*.pyd
+*.so

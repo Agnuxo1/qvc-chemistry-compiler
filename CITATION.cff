@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Please cite this research and preserve the component notices."
+title: "QVC Chemistry Compiler: Reproducible GF(2) Angle Loaders"
+type: software
+authors:
+  - family-names: Angulo de Lafuente
+    given-names: Francisco
+    orcid: "https://orcid.org/0009-0001-1634-7063"
+date-released: 2026-11-10
+version: 0.1.0
+url: "https://github.com/Agnuxo1/qvc-chemistry-compiler"
+license:
+  - MIT
+  - Apache-2.0
+keywords:
+  - quantum-circuit-compilation
+  - reproducibility
+  - density-fitting
+  - chemistry

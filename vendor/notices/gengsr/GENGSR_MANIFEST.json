@@ -1,0 +1,40 @@
+{
+  "portfolio": "gengsr_20261110b",
+  "kaggle_public_score": 25.22676,
+  "kaggle_submission_ref": 58170742,
+  "archive": {
+    "file": "gengsr_25_2268_submission.zip",
+    "bytes": 28086422,
+    "sha256": "28d0b8c15a1ab36d632668ee6f882eca9f6f9a7ccb5d920df0ba94fbfeb04f69"
+  },
+  "reference_costs": {
+    "invsqrt": 2076774.233715,
+    "dqi": 24439463583672.93,
+    "dfthcsos": 3355599588.3155375
+  },
+  "receipt_costs": {
+    "invsqrt": 94537.58955971198,
+    "dqi": 374686873086.9414,
+    "dfthcsos": 299497671.217324
+  },
+  "files": {
+    "invsqrt.kmb": "26ebf39df3b13e5fd2d923d1b9988043b107b64f6e21efc5cc9bc76f5d56adec",
+    "dqi.kmb": "e9f54be304cbdcda7306729c335b1a2314a45d0ca818e05cf60e45ddee969bc4",
+    "dfthcsos/angle_k_0.kmb": "69170545949760e8f97a498b66a5f99b0db05a2f22decf872cbe530cfeea361e",
+    "dfthcsos/angle_k_1.kmb": "4a5bb72691b15692897aabb60e5d282bd66676e30574d06d20ca3712053bc0e6",
+    "dfthcsos/angle_k_2.kmb": "1a2002e74d3926b8da88255737fa522b815b59f8ab07ecc73fe9d658d9096eb3",
+    "dfthcsos/angle_k_3.kmb": "3aa518529a86d90016980391c369859b3300b520cedf6c3b11fbb7d7383f10ed",
+    "dfthcsos/angle_k_4.kmb": "3197a6d8a014f1b0fbb3df7f6be78236f31afc1d4fe664fd6e57ad37ca2c6c5f",
+    "dfthcsos/angle_k_5.kmb": "75789e61cc108534f1d04e759f4ace9b6ed326dc8bf02c15631f624eca74d356",
+    "dfthcsos/angle_k_6.kmb": "1c7a7a662216fa8b7def6f1c29df9ccc6b1807d76d0821b6a48d66c8e2c013d9",
+    "dfthcsos/angle_k_7.kmb": "769c28401b6934613bbb192a43d1ff35b05d033525d670a542aa94398d0d90bd",
+    "dfthcsos/angle_k_8.kmb": "b785dc8eb4a7f989d8d9db4f0462ab167f5ca4fc5bac7cb6cccf39ed7002bb91",
+    "dfthcsos/angle_k_9.kmb": "3362ef085f8f4874889117a5e70138bfa70c38b18c90ff1713cfd492aa8607cc",
+    "dfthcsos/angle_k_10.kmb": "7e89ac38e86f9b957fc6d3417efef7e865f9b5c22c2bf334cfdd78ac801f033c",
+    "dfthcsos/angle_k_11.kmb": "e1f317e8b479ebca3eceae43f0ce723fb98ec21b55a4746a864a445f7c8b8cc9",
+    "dfthcsos/angle_k_12.kmb": "283159ca33baecf70b906641de8eded4f6efa68d66dc4a72828737cc444bd09d",
+    "dfthcsos/angle_k_13.kmb": "51bb1d9dc8a8fc93045f3d1bfeea7e26ff8b290515d4be9f41fe1629ec51ff7c",
+    "dfthcsos/angle_k_14.kmb": "52e8e80fb14f8d835b37ddca3d334b0d682eb5a1dd45041acf3ea0cd3df9cc07",
+    "dfthcsos/submission.npz": "9c358a8e9a4bba180f7455df777f3a456e68a39b6f7d4de3c485f2bb4554dc13"
+  }
+}

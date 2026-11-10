@@ -1,0 +1,7 @@
+{
+  "scope": "Text encoding normalization only; JSON values unchanged",
+  "path": "studies/invsqrt_dqi/fases_inv.json",
+  "original_encoding": "Windows-1252",
+  "original_sha256": "d0ca0b6487d4008bb168d95670f4e6f65c77497b92e4f12f19d99c4da1e74c41",
+  "utf8_sha256": "674c08747019aa426aa95ff36c361c5db0bf5241594e1aef92fd4c13f4ae4ea0"
+}

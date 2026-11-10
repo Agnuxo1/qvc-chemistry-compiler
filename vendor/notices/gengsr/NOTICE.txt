@@ -1,0 +1,37 @@
+VQCC portfolio gengsr_20261110b (Kaggle public score 25.22676)
+Copyright 2026 gengsr (Kaggle)
+
+Licensed under the Apache License, Version 2.0 (LICENSE.txt). Each upstream circuit keeps the
+terms of its authors; every upstream source below is published under Apache-2.0 as stated there.
+
+What this portfolio changes (our own work)
+- invsqrt (invsqrt.kmb, sha 26ebf39d...): maoxin123's 62-qubit file c6519219 with its input
+  shifter (shift_in) replaced by our own 46-CSWAP network (the public line uses 47). The
+  network was found with our own search on the shifter model; two diagonal gates of
+  c6519219 that sit inside the shifter window and act only on qubits the window never writes
+  (Z_POW q47 0.5, Z q41) are moved in front of it. The basis state at the end of the window
+  matches c6519219 bit for bit. Official verifier, default salt, 64 shots per x: PASS,
+  cost 94,537.590 (c6519219: 94,599.606).
+- chemistry (dfthcsos/): the 15 angle loaders are compiled by our own loader compiler
+  (4148 Toffolis per pass; the public loaders use 4152). The words are an exact monomial
+  pi-gauge of the public table c1321df2: angles, lambda_eff and the error metrics are unchanged.
+  For k = 12..14 the compiler reuses the public loaders' rank-1 terms through an exact change
+  of output basis. Official verifier: PASS, cost 299,497,671.22 (lambda_eff 46.8913, T 14958, Q 427).
+- DQI (dqi.kmb): unchanged public file e9f54be3, picked by mean cost over 16 salts.
+
+Upstream sources and credits
+- invsqrt c6519219: maoxin123, "LB 25.218 | Combined invsqrt + refit chem",
+  https://www.kaggle.com/code/maoxin123/lb-25-218-combined-invsqrt-refit-chem (version 2):
+  CSWAP re-synthesis of 034c7c2a. The core design is by Syed Asad Ali (syed3000), on the
+  mrmeows -> busyaprime -> yoyobar line, with Md. Hamid Hosen's (Hosen42) measure-first rewrites,
+  Atakan Aldemir's swap deletion and Kirill Tymchishin's audit work, as credited there.
+- DQI e9f54be3: Atakan Aldemir, "QCC: Terminal Readout and Phase Folds",
+  https://www.kaggle.com/code/atakanaldemir/qcc-terminal-readout-and-phase-folds (version 1),
+  on Syed Asad Ali's 892-qubit decoder with Ahmed Berat Ozer's readout windows; the decoder
+  lineage (SomeJoint, Ali Haydar Ozdag, James Day / jday96314 and others) is credited there.
+- chemistry table and weights c1321df2: Syed Asad Ali's (8, 143, 44) DF-THC table and words
+  (https://www.kaggle.com/code/syed3000/vqcc-own-circuit-portfolio-notebook) with Hosen42's
+  version-7 weights (https://www.kaggle.com/code/hosen42/vqcc-our-submission), on Lera's
+  (marculera) DF-THC pipeline; the pi-gauge idea is Atakan Aldemir's. Lineages as credited there
+  and in heliosli's public circuits dataset.
+- Official verifiers and kickmix: the competition hosts (Apache-2.0).
