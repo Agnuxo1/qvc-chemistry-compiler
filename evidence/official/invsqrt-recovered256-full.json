@@ -1,0 +1,31 @@
+{
+  "task": "invsqrt",
+  "scope": "Full local native check; not a Kaggle submission",
+  "status": "PASS",
+  "salt": "source-recovered256-independent-20261110-a",
+  "input_sha256": {
+    "invsqrt.kmb": "29480dd3285825e2718bca69843803d57337e7ac7626a1adf043be5801a8a7ca"
+  },
+  "verifier_sha256": "ddef520dec6b68d1cf0a6f328ddd36d79eb84570b9192cf3f7acaf073f06733a",
+  "wrapper_sha256": "0238644f5469512c6d4af5069462649bb2e44b351cc94d2fd0aaf0a725d3a272",
+  "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+  "platform": "Linux-6.12.115+deb13.1-amd64-x86_64-with-glibc2.41",
+  "seconds": 362.42912014300236,
+  "official_result": {
+    "status": "PASS",
+    "score": 141336.53747428907,
+    "toffoli_equivalent": 1606.097016753285,
+    "toffoli_count": 1288.0002869339469,
+    "max_toffoli_count": 1299,
+    "t_count": 4.0,
+    "rotation_count": 44.0,
+    "rotation_eps": 2.2541899566640452e-13,
+    "num_qubits": 88,
+    "reaction_depth": 200,
+    "num_ops": 39876,
+    "verified_shots": 200540928,
+    "worst_error_over_tolerance": 0.9999250919950656,
+    "worst_x": 2,
+    "circuit_sha256": "29480dd3285825e2718bca69843803d57337e7ac7626a1adf043be5801a8a7ca"
+  }
+}

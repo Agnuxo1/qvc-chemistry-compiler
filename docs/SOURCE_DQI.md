@@ -1,4 +1,28 @@
-# A source-built DQI alternative
+# Source-built DQI alternatives
+
+The selected **883-qubit** policy achieves **59.6973029x /59.6973071x** on two full native checks, each with 102,400 shots and zero value or phase errors. It is emitted directly by `tools/build_dqi_policy.py` from the same 92-file authenticated SomeJoint/Atakan source bank. No compiled circuit input is required.
+
+| Selected policy result | Value |
+|---|---:|
+| Homogeneous node groups |14,15,16 |
+| Qubits |883 |
+| Static Toffoli-like operations |455,502 |
+| Total operations |61,975,433 |
+| Native cost, salt a |409,389,744,251.1798 |
+| Native cost, salt b |409,389,715,470.68536 |
+| Value / phase errors |0 /0 in each full check |
+
+Exact output SHA256: `0b634cca809c90493b67ac8104c9a307c99556d9edae74e26b460f4283aececd`. The portable public constructor was executed and reproduced these bytes; its current source hash and loaded source-module hashes are in `evidence/replication/dqi883-portable-build.json`. Both native receipts are retained under `evidence/official/dqi883-source-a.json` and `-b.json`.
+
+```bash
+python tools/build_dqi_policy.py build/dqi883 --runtime /path/to/native/runtime
+python tools/verify_local.py dqi build/dqi883/dqi.kmb build/dqi883-a.json --data /path/to/official/data --runtime /path/to/native/runtime --salt independent-a
+python tools/verify_local.py dqi build/dqi883/dqi.kmb build/dqi883-b.json --data /path/to/official/data --runtime /path/to/native/runtime --salt independent-b
+```
+
+The policy was selected after profiling ordinary and homogeneous node constructions in forward and reverse directions. The measured full decoder confirms the declared883Q/455,502T resource prediction. This changes a public configuration and does not claim authorship of the decoder architecture. The original e9f54be3 performance file remains a faster, separately labelled source-recovery target.
+
+## Earlier 888-qubit source control
 
 The recovered public source bank contains a complete 888-qubit decoder construction. This is a tested alternative to the selected, source-incomplete e9f54be3 public circuit. It is not a reconstruction of that selected file.
 
@@ -16,7 +40,7 @@ The unmodified Atakan Aldemir wrapper authenticates 92 text-source files, builds
 | Full check, independent salt b | PASS; 59.2655314845x; 0 value / 0 phase errors |
 | Shots per check | 102,400 |
 
-The two local ratios use the archived DQI reference cost. Both salts are retained; they are not confidence bounds. The current selected e9f54be3 file has higher measured performance (64.9282–65.2264x on its recorded salts), so the source bank is not presented as a performance improvement over it.
+The two local ratios use the archived DQI reference cost. Both salts are retained; they are not confidence bounds. The original binary performance portfolio's e9f54be3 file has higher measured performance (64.9282–65.2264x on its recorded salts), so the source bank is not presented as a performance improvement over it.
 
 ## Reproduce
 

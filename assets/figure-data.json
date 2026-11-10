@@ -6,17 +6,19 @@
     "quimica-s2-64-a.json": "4a802cf3701040167a623a56b9b81d0a98d313dbf05f3ef39dec4deae49a38a6",
     "quimica-s37-64-a.json": "e52b264609538a4fd1d4f551bce2af6dd73fbbfbeef19c121ebe5672f0d96820",
     "chemistry-h14-main-a.json": "8791e4846be50eaaffd923f4412864442cfc1175c6199ab700139f55dc4b7826",
+    "chemistry-h14-deep512-a.json": "f3b4c3cfbc781598394355b180da41918ad4399c5de38282da3f80d8128fe8a0",
     "ancillas-fran.json": "db3b2e70b4f0d95555dfe7561a288932f3d3934dbc61384f3c59f8d67eae85c4",
     "invsqrt-source-c3.json": "b44d3e0c1c823e0467fba4586c4111b1bf8e0014e483328b7dca9a7237586a3a",
-    "dqi888-source-a.json": "12195dcf8fd080fc3905311414f6946eff7d56f88c51a5a113cc35878dbf3ced",
-    "dqi888-source-b.json": "69dea4a898738fbdce1bcc1404ec37cbf7c1e8ecb9972019da9f3837487b7335"
+    "dqi883-source-a.json": "f0d7a4a3d49e2b015e0d6fb20c374f87ff13daa2ffbd7bd0440afcc3542a3dbc",
+    "dqi883-source-b.json": "a54b7cd1d21453d65d9cbcda41d1a1effadf9f9f524e2f5b735e12e4d6e878d6"
   },
   "chemistry_ratios": [
     11.197610095145334,
     11.204092421408573,
     11.22986502708244,
     11.23289031399706,
-    11.234397537207899
+    11.234397537207899,
+    11.234660865544338
   ],
   "invsqrt_verified_shots": 200540928,
   "dqi_verified_shots": [
@@ -146,9 +148,9 @@
     }
   ],
   "source_portfolio_local_indices": {
-    "a": 21.413624574014104,
-    "b": 21.446360835325564
+    "a": 21.498484409138246,
+    "b": 21.49848491292634
   },
-  "h14_progress_sha256": "89a599b275a2d88b4739dc9dd48b715a29e0223f6eeb0fd43ab11bd617db6a9b",
-  "package_manifest_sha256": "4dfd8198a65b421113a53bc98a46502e5dfb433a77c86b359580a516fb837f96"
+  "h14_progress_sha256": "59175ec55b9db322caddb50a75fc529e77e99a4eda074b5f20257d7d2754dfbd",
+  "package_manifest_sha256": "88bf6dda02d0b576e375ee30949d9b7df868573a1463d69188cde53fb3ec514f"
 }

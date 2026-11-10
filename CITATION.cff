@@ -7,7 +7,7 @@ authors:
     given-names: Francisco
     orcid: "https://orcid.org/0009-0001-1634-7063"
 date-released: 2026-11-10
-version: 0.2.0
+version: 0.3.0
 url: "https://github.com/Agnuxo1/qvc-chemistry-compiler"
 license:
   - MIT

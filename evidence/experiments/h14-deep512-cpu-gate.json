@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "scope": "CPU-only convergence and physical-invariant gate; source recovery remains primary",
+  "lambda_h2": 272.3643451745173,
+  "gram_drift": 7.105427357601002e-15,
+  "offset_contraction_drift": 1.3322676295501878e-15,
+  "finite_difference_grid": [
+    {
+      "step": 0.0001,
+      "finite": 18.967327859051863,
+      "analytic": 19.109439959426844,
+      "relative_error": 0.007436748574354492
+    },
+    {
+      "step": 1e-05,
+      "finite": 19.089677963179952,
+      "analytic": 19.109439959426844,
+      "relative_error": 0.0010341483732045876
+    },
+    {
+      "step": 1e-06,
+      "finite": 19.10920877890021,
+      "analytic": 19.109439959426844,
+      "relative_error": 1.2097713335603261e-05
+    },
+    {
+      "step": 1e-07,
+      "finite": 19.109437658926254,
+      "analytic": 19.109439959426844,
+      "relative_error": 1.203855578661088e-07
+    },
+    {
+      "step": 3e-08,
+      "finite": 19.109439719500187,
+      "analytic": 19.109439959426844,
+      "relative_error": 1.25553996783597e-08
+    },
+    {
+      "step": 1e-08,
+      "finite": 19.109440074771555,
+      "analytic": 19.109439959426844,
+      "relative_error": 6.036006905734974e-09
+    }
+  ],
+  "seed_sha256": "a367a5557d05eee97c0b359fbdd643e203f2d359b37c1442fef7993037ecbf33",
+  "search_sha256": "a8cd23c65bb4af6a02554903cab71d1dbc30246b20d7dc02d5cd17cfb97c2105",
+  "planned_states": 4096,
+  "planned_wall_s": 3600
+}

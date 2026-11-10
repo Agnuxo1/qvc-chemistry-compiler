@@ -48,21 +48,24 @@ def main():
     ASSETS.mkdir(exist_ok=True)
     names=['quimica-base2494-64-a.json','quimica-gengsr-64-a.json','quimica-s2-64-a.json','quimica-s37-64-a.json']
     chemistry=[json.loads((EVIDENCE/n).read_text()) for n in names]
-    best_name='chemistry-h14-main-a.json'
-    if (EVIDENCE/best_name).exists():
-        names.append(best_name);chemistry.append(json.loads((EVIDENCE/best_name).read_text()))
+    for best_name in ('chemistry-h14-main-a.json','chemistry-h14-deep512-a.json'):
+        if (EVIDENCE/best_name).exists():
+            names.append(best_name);chemistry.append(json.loads((EVIDENCE/best_name).read_text()))
     baseline=chemistry[0]['baseline']
     ratios=[baseline/x['official_result']['score'] for x in chemistry]
     best_ratio=ratios[-1];gain=100*(best_ratio/ratios[1]-1)
     inv=json.loads((EVIDENCE/'invsqrt-source-c3.json').read_text())['official_result']
-    dqi=[json.loads((EVIDENCE/f'dqi888-source-{s}.json').read_text()) for s in ('a','b')]
-    package_name='source-h14.json' if (ROOT/'evidence/packages/source-h14.json').exists() else 'source-v1.json'
+    selection=json.loads((ROOT/'SELECTED_CANDIDATE.json').read_text())
+    dqi_variant=selection.get('dqi_variant','888')
+    dqi=[json.loads((EVIDENCE/f'dqi{dqi_variant}-source-{s}.json').read_text()) for s in ('a','b')]
+    package_name=Path(selection['package_evidence']).name
     package=json.loads((ROOT/'evidence/packages'/package_name).read_text())
     indices=package['local_composite_indices']
-    trace_path=ROOT/'evidence/experiments/h14-main-progress.json'
+    trace_path=ROOT/'evidence/experiments/h14-deep512-progress.json'
+    if not trace_path.exists():trace_path=ROOT/'evidence/experiments/h14-main-progress.json'
     trace=json.loads(trace_path.read_text()) if trace_path.exists() else None
     anc=json.loads((EVIDENCE/'ancillas-fran.json').read_text())
-    sources=names+['ancillas-fran.json','invsqrt-source-c3.json','dqi888-source-a.json','dqi888-source-b.json']
+    sources=names+['ancillas-fran.json','invsqrt-source-c3.json',f'dqi{dqi_variant}-source-a.json',f'dqi{dqi_variant}-source-b.json']
     payload={'scope':'Illustrations of saved local evidence; schematic panels are not simulations','source_sha256':{n:hashlib.sha256((EVIDENCE/n).read_bytes()).hexdigest() for n in sources},'chemistry_ratios':ratios,'invsqrt_verified_shots':inv['verified_shots'],'dqi_verified_shots':[x['official_result']['verified_shots'] for x in dqi],'ancilla_rows':anc['rows']}
     (ASSETS/'figure-data.json').write_text(json.dumps(payload,indent=2),encoding='utf-8')
     payload['source_portfolio_local_indices']=indices
@@ -88,7 +91,7 @@ def main():
             y=bottom-(value-lo)/(hi-lo)*(bottom-top)
             d.line((left,y,right,y),fill='#2c455d');d.text((17,y-10),f'{value:.2f}',font=F[17],fill=MUTED)
         pts=[]
-        for i,(name,value) in enumerate(zip(('Public base','Public gengsr','Project s2','Project s37','H14 GPU'),ratios)):
+        for i,(name,value) in enumerate(zip(('Public base','Public gengsr','Project s2','Project s37','H14 GPU','Deep GPU'),ratios)):
             x=left+35+i*(right-left-70)/(len(ratios)-1);y=bottom-(value-lo)/(hi-lo)*(bottom-top)
             d.text((x-55,bottom+12),name,font=F[15],fill=MUTED)
             if t>=i/len(ratios):
@@ -126,14 +129,16 @@ def main():
         im,d=canvas('Verification coverage','Unmodified official verifiers · local circuit checks','Data: evidence/official/*; binary PASS and source completeness are separate')
         focus=min(2,frame//10)
         box(d,(35,128,358,316),'Inverse square root',f"{inv['verified_shots']:,} shots\n3,133,452 inputs x 64\nPASS · source-generated",focus==0)
-        box(d,(385,128,709,316),'DQI decoder','102,400 shots per salt\nSalt a: 1 phase error\nSalt b: 0 phase errors',focus==1,BLUE)
+        dqi_errors=[x['official_result']['phase_errors'] for x in dqi]
+        box(d,(385,128,709,316),'DQI decoder',f'102,400 shots per salt\nSalt a: {dqi_errors[0]} phase errors\nSalt b: {dqi_errors[1]} phase errors',focus==1,BLUE)
         box(d,(735,128,1065,316),'Project chemistry','78,080 shots per salt\nTwo full salts PASS\n16-file exact reconstruction',focus==2)
         d.text((46,346),f"Source portfolio local indices: {indices['a']:.7f} / {indices['b']:.7f}",font=B[25],fill=CYAN)
         d.text((46,387),'Archived baselines; these are neither Kaggle scores nor confidence limits.',font=F[19],fill=MUTED)
         frames['verification'].append(im)
 
         im,d=canvas('Three tasks, complete source chain','Credited algorithms and numeric recipes → eighteen exact outputs','Recorded source builds and full checks; no compiled input circuit is required')
-        for i,(label,detail) in enumerate([('Invsqrt c3','87 qubits · 14.8152x\n16 loaded source modules\n200,540,928 native shots'),('DQI888','888 qubits · two salts\n92 authenticated source pins\n58.9946x / 59.2655x'),('Chemistry','15 circuits + numeric NPZ\n14,848 Toffolis · 427 qubits\nFrozen recipe + exact hashes')]):
+        dqi_ratios=[24439463583672.93/x['official_result']['score'] for x in dqi]
+        for i,(label,detail) in enumerate([('Invsqrt c3','87 qubits · 14.8152x\n16 loaded source modules\n200,540,928 native shots'),(f'DQI{dqi_variant}',f'{dqi_variant} qubits · two salts\n92 authenticated source pins\n{dqi_ratios[0]:.4f}x / {dqi_ratios[1]:.4f}x'),('Chemistry','15 circuits + numeric NPZ\n14,848 Toffolis · 427 qubits\nFrozen recipe + exact hashes')]):
             x=35+i*350;box(d,(x,128,x+329,302),label,detail,min(2,frame//10)==i)
         d.text((45,337),'18 files  ·  CRC and extracted hashes  ·  17 stock KMB readers PASS',font=B[22],fill=CYAN)
         d.text((45,382),'Original binary performance portfolio remains a separately labelled source-recovery target.',font=F[19],fill=MUTED)
@@ -142,18 +147,19 @@ def main():
         if trace:
             records=trace['records'];assert records[-1]['final_flush']
             shown=records[:max(2,int(len(records)*t))]
-            control=272.44041078498174
+            control=records[0]['baseline_lambda_h2']
             lower=min(x['best_projected_lambda_h2'] for x in records)-.005
             left,right,top,bottom=100,790,140,367
-            im,d=canvas('Batched GPU channel-gauge search','2,048 states · 256 starts per group · eight groups · measured optimization trace','Actual saved checkpoints; zoomed normalization axis; final native checks are separate')
+            batch=records[-1]['batch_per_group'];minutes=records[-1]['seconds']/60
+            im,d=canvas('Batched GPU channel-gauge search',f'{8*batch:,} states · {batch} starts per group · eight groups · measured optimization trace','Actual saved checkpoints; zoomed normalization axis; final native checks are separate')
             for value in (control,records[0]['baseline_lambda_h2'],records[-1]['best_projected_lambda_h2']):
                 y=bottom-(value-lower)/(control-lower)*(bottom-top)
                 d.line((left,y,right,y),fill='#35516b');d.text((16,y-9),f'{value:.3f}',font=F[15],fill=MUTED)
             pts=[(left+x['seconds']/records[-1]['seconds']*(right-left),bottom-(x['best_projected_lambda_h2']-lower)/(control-lower)*(bottom-top)) for x in shown]
             if len(pts)>1:d.line(pts,fill=CYAN,width=3)
-            for minute in (0,15,30,45):d.text((left+minute/45*(right-left)-10,385),str(minute),font=F[17],fill=MUTED)
+            for minute in (0,round(minutes/3),round(2*minutes/3),round(minutes)):d.text((left+minute/minutes*(right-left)-10,385),str(minute),font=F[17],fill=MUTED)
             d.text((355,410),'GPU search time (minutes)',font=F[15],fill=MUTED)
-            d.text((840,151),'45 minutes',font=B[25],fill=CYAN)
+            d.text((840,151),f'{minutes:.1f} minutes',font=B[25],fill=CYAN)
             d.text((840,206),f"{records[-1]['step']:,} steps",font=F[19],fill=INK)
             d.text((840,261),'Gram drift',font=F[19],fill=MUTED)
             d.text((840,296),f"{records[-1]['gram_max_drift']:.2e}",font=B[25],fill=INK)

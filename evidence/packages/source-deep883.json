@@ -1,0 +1,224 @@
+{
+  "status": "PASS",
+  "scope": "18 exact files, full receipt-bound native checks and stock metric input readers; no Kaggle submission or eligibility certification",
+  "author": "Francisco Angulo de Lafuente",
+  "orcid": "https://orcid.org/0009-0001-1634-7063",
+  "archive_sha256": "d4367b0962dc686f9dbb3588130ecc975faf092f80848134ab590c948e806b06",
+  "archive_bytes": 29978848,
+  "official_metric_sha256": "62005ff476af2b22a57747882e9e53895ee2166bda417ede0d24fbfc29646cbf",
+  "source_sha256": "03ce050cc27cd4c4587966231c8cfbec77102eebc886c221343da61c6f5b6dfd",
+  "members": {
+    "invsqrt.kmb": {
+      "sha256": "c3f3ac2575906e83de1ebfa91580ca4ad52655ac4ab34bcbde56c23b37d0d6de",
+      "bytes": 283045
+    },
+    "dqi.kmb": {
+      "sha256": "0b634cca809c90493b67ac8104c9a307c99556d9edae74e26b460f4283aececd",
+      "bytes": 562879997
+    },
+    "dfthcsos/angle_k_3.kmb": {
+      "sha256": "f7162495eaeb8d00cf37459fe141ddc3defa2413236496ef8d91c5f84ba48130",
+      "bytes": 342237
+    },
+    "dfthcsos/angle_k_4.kmb": {
+      "sha256": "43187d6838907f296ab163fdb4c23c0debb183c12c38d5d8d359d08de700a0b8",
+      "bytes": 344871
+    },
+    "dfthcsos/angle_k_11.kmb": {
+      "sha256": "92aecd4b5e823b855ee0770c39053c2fe8013088c781c99ccc19a306440696d2",
+      "bytes": 341843
+    },
+    "dfthcsos/angle_k_8.kmb": {
+      "sha256": "da0e651fe528b806526acad75442721e9787dd00ae7e828cb380862a6e0dbe84",
+      "bytes": 341234
+    },
+    "dfthcsos/angle_k_14.kmb": {
+      "sha256": "417e13887e940a9fd3a469adc26f3dac8dea7ddcbff6870d0bc6624d65a4886a",
+      "bytes": 344825
+    },
+    "dfthcsos/angle_k_5.kmb": {
+      "sha256": "d5d75346ec7b237287c2b0767e7f97d5f684aa79d07f9952b5c3970fea1fee0d",
+      "bytes": 345816
+    },
+    "dfthcsos/angle_k_1.kmb": {
+      "sha256": "b36929850f7997f20f33f45ace066b31f52940573a0df0d9ae92c68c5e5e8a11",
+      "bytes": 347554
+    },
+    "dfthcsos/angle_k_12.kmb": {
+      "sha256": "4ae8949cf42438844f6f704f94a098a0f644bc5d28422eb11c014e8e00cc66ea",
+      "bytes": 342943
+    },
+    "dfthcsos/angle_k_0.kmb": {
+      "sha256": "3db3e4038ee004742e957c92bacc90553f2e239f3ed72c1ab57cab40b3dc5b21",
+      "bytes": 351697
+    },
+    "dfthcsos/angle_k_9.kmb": {
+      "sha256": "535886c60394b812c53f2873bcbf051e870196824a4d419412b80f03d74369f1",
+      "bytes": 344662
+    },
+    "dfthcsos/angle_k_10.kmb": {
+      "sha256": "b9711454e6297b241ee463347b23dfb8292ca1245ea510444198e8dc2c666258",
+      "bytes": 345434
+    },
+    "dfthcsos/angle_k_13.kmb": {
+      "sha256": "a7f2dad65b8bdb220739d58a7f9169d32741d52a2ae016d177fb4f1b7ebf9238",
+      "bytes": 343960
+    },
+    "dfthcsos/angle_k_2.kmb": {
+      "sha256": "bf74609c2245bb624228995c59f4ea29e5af517b461371423e48247f5a027993",
+      "bytes": 345265
+    },
+    "dfthcsos/angle_k_7.kmb": {
+      "sha256": "2aaf4f3a89431e3d7b58a6b2d9bddfa9dd0b843e3665da88002dd9606989add2",
+      "bytes": 344161
+    },
+    "dfthcsos/angle_k_6.kmb": {
+      "sha256": "e482f484fe0d742e2efa5af1dfc58dfbf696295f1712e8ffc14c225aeb445d38",
+      "bytes": 343227
+    },
+    "dfthcsos/submission.npz": {
+      "sha256": "33393e0b34a1357ab3964954316f35560894d64492136d2475f0f279f276ebaa",
+      "bytes": 1847692
+    }
+  },
+  "official_readers": [
+    {
+      "file": "dfthcsos/angle_k_0.kmb",
+      "qubits": 128,
+      "registers": 6,
+      "status": "PASS"
+    },
+    {
+      "file": "dfthcsos/angle_k_1.kmb",
+      "qubits": 128,
+      "registers": 6,
+      "status": "PASS"
+    },
+    {
+      "file": "dfthcsos/angle_k_10.kmb",
+      "qubits": 126,
+      "registers": 6,
+      "status": "PASS"
+    },
+    {
+      "file": "dfthcsos/angle_k_11.kmb",
+      "qubits": 126,
+      "registers": 6,
+      "status": "PASS"
+    },
+    {
+      "file": "dfthcsos/angle_k_12.kmb",
+      "qubits": 126,
+      "registers": 6,
+      "status": "PASS"
+    },
+    {
+      "file": "dfthcsos/angle_k_13.kmb",
+      "qubits": 126,
+      "registers": 6,
+      "status": "PASS"
+    },
+    {
+      "file": "dfthcsos/angle_k_14.kmb",
+      "qubits": 126,
+      "registers": 6,
+      "status": "PASS"
+    },
+    {
+      "file": "dfthcsos/angle_k_2.kmb",
+      "qubits": 127,
+      "registers": 6,
+      "status": "PASS"
+    },
+    {
+      "file": "dfthcsos/angle_k_3.kmb",
+      "qubits": 126,
+      "registers": 6,
+      "status": "PASS"
+    },
+    {
+      "file": "dfthcsos/angle_k_4.kmb",
+      "qubits": 126,
+      "registers": 6,
+      "status": "PASS"
+    },
+    {
+      "file": "dfthcsos/angle_k_5.kmb",
+      "qubits": 126,
+      "registers": 6,
+      "status": "PASS"
+    },
+    {
+      "file": "dfthcsos/angle_k_6.kmb",
+      "qubits": 126,
+      "registers": 6,
+      "status": "PASS"
+    },
+    {
+      "file": "dfthcsos/angle_k_7.kmb",
+      "qubits": 126,
+      "registers": 6,
+      "status": "PASS"
+    },
+    {
+      "file": "dfthcsos/angle_k_8.kmb",
+      "qubits": 126,
+      "registers": 6,
+      "status": "PASS"
+    },
+    {
+      "file": "dfthcsos/angle_k_9.kmb",
+      "qubits": 126,
+      "registers": 6,
+      "status": "PASS"
+    },
+    {
+      "file": "dqi.kmb",
+      "qubits": 883,
+      "registers": 4165,
+      "status": "PASS"
+    },
+    {
+      "file": "invsqrt.kmb",
+      "qubits": 87,
+      "registers": 1,
+      "status": "PASS"
+    }
+  ],
+  "npz_shapes": {
+    "U": [
+      8,
+      143,
+      76
+    ],
+    "W": [
+      8,
+      143,
+      44
+    ],
+    "H2_I": [
+      8,
+      44
+    ],
+    "H1_I": [],
+    "Hsym_lower": [
+      2926
+    ],
+    "tree_edges": [
+      75,
+      2
+    ]
+  },
+  "receipt_sha256": {
+    "invsqrt": "b44d3e0c1c823e0467fba4586c4111b1bf8e0014e483328b7dca9a7237586a3a",
+    "dqi_a": "f0d7a4a3d49e2b015e0d6fb20c374f87ff13daa2ffbd7bd0440afcc3542a3dbc",
+    "dqi_b": "a54b7cd1d21453d65d9cbcda41d1a1effadf9f9f524e2f5b735e12e4d6e878d6",
+    "chem_a": "f3b4c3cfbc781598394355b180da41918ad4399c5de38282da3f80d8128fe8a0",
+    "chem_b": "74962ab54263fd2978e414327fdceb3ef091560128a797937f5cb8baad94b467"
+  },
+  "local_composite_indices": {
+    "a": 21.498484409138246,
+    "b": 21.49848491292634
+  },
+  "composite_scope": "Archived reference costs and recorded salts; not official scores or confidence bounds"
+}

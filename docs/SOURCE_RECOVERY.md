@@ -11,11 +11,18 @@ The fetched gengsr and Syed notebooks copy compiled files with hash checks. Atak
 
 The complete public mrmeows dataset was inventoried (2,704 files). Its inverse-square-root pipeline reported at 20.0565x starts from a frozen logical L6 circuit; the recovered L6 constructor in turn starts from frozen L5. A complete algorithmic origin for that chain was not established. Dmitrii Gluzdov's public factorization dataset was inventoried (833 files, including 117 Python modules). A dependency-closed sixteen-module inverse-square-root construction from that dataset has now been rebuilt and fully verified. A separate Atakan source bank provides the complete DQI888 construction, also rebuilt and fully verified. These are distinct source-generated artifacts, rather than reconstructions of the two target hashes above.
 
+## Original invsqrt numerical function recovered
+
+All 256 numeric coefficient triplets and the special low-L and high-H phase-readout rules have now been recovered. An independent mathematical implementation matches the original circuit's phase exactly on **all 3,133,452 legal inputs**, with one stochastic native measurement branch per input. Input restoration and clean scratch pass for every compared input. Its worst error/tolerance is 0.9993237694056958 at x=161, matching the archived official result.
+
+This is a full-input semantic comparison, not an exact 62-qubit circuit generator or a proof for every measurement branch. A separate 88Q circuit built from the recovered coefficients and newly fitted global phase weights passes all 200,540,928 official shots. It costs 141,336.53747428907 and remains a research study because the selected c3 source circuit is cheaper. Its portable source wrapper exactly reproduces its own 29480dd3 output. [Mathematical model, construction and evidence](../studies/recovered_invsqrt/README.md).
+
 ## A verified source-generated alternative
 
 | Task | Exact generated SHA256 | Full native evidence |
 |---|---|---|
 | Inverse square root | c3f3ac2575906e83de1ebfa91580ca4ad52655ac4ab34bcbde56c23b37d0d6de | 200,540,928 shots; PASS; 14.8152455897x |
+| DQI883, selected |0b634cca809c90493b67ac8104c9a307c99556d9edae74e26b460f4283aececd | Two 102,400-shot salts; PASS; 59.6973029414x /59.6973071382x |
 | DQI888 | 736f3055850794c6beaedf8de5f7dafa1c270e2b57edd403ffa96abf6d207741 | Two 102,400-shot salts; PASS; 58.9945523685x / 59.2655314845x |
 
 The new [source portfolio](SOURCE_PORTFOLIO.md) builds both algorithms and the project's chemistry into eighteen outputs. The invsqrt audit rejects external KMB/KMX inputs; its numeric recipe, sixteen imported source modules and explicitly selected native runtime are fingerprinted. DQI preserves its ninety-two-source authenticated manifest and upstream notices. The integrated package passed CRC/extraction and all seventeen stock KMB input readers. [Invsqrt construction](SOURCE_INV.md) · [DQI construction](SOURCE_DQI.md).

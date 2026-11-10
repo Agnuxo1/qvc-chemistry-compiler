@@ -1,7 +1,7 @@
 {
   "overview": {
-    "sha256": "9813252f08315df80cebe33caaeb8dd7244e06ca07dad09041e836f539764745",
-    "bytes": 58450,
+    "sha256": "80c693ae7ee21e7f7726fe53012397a12652de168740ce1af391350e6a244682",
+    "bytes": 57613,
     "encoded_frames": 4,
     "source_frames": 30,
     "source_frame_ms": 110,
@@ -9,9 +9,9 @@
     "height": 500
   },
   "chemistry": {
-    "sha256": "dfb59b22240ed24108a7bb3dbc4829629b4717775c4c4044004f1f30ea58d7c5",
-    "bytes": 52908,
-    "encoded_frames": 5,
+    "sha256": "ce645b1d3ac73bf0252ff0da0cb01b85dd168dfa691dafe9ad7f101c1d36c4c8",
+    "bytes": 65948,
+    "encoded_frames": 6,
     "source_frames": 30,
     "source_frame_ms": 110,
     "width": 1100,
@@ -36,8 +36,8 @@
     "height": 500
   },
   "verification": {
-    "sha256": "1c20c6c1704f65ae272cced17b1ea7ddedba45dfc801cc231a7ff236ee264942",
-    "bytes": 78116,
+    "sha256": "869d19aea3250c3d9c8d4331d6e89d7463084843e723b46cf83dfef329cb62ae",
+    "bytes": 76519,
     "encoded_frames": 3,
     "source_frames": 30,
     "source_frame_ms": 110,
@@ -54,8 +54,8 @@
     "height": 500
   },
   "source-portfolio": {
-    "sha256": "a2414dc2cb7e6bb8a5e898f8aab98e26a6dce14444d0391a97e685e874aa0355",
-    "bytes": 41731,
+    "sha256": "8def1cdef23f410990a6ade2ca5235d3c78724e77e858b3f926d8cf01335f9f1",
+    "bytes": 41799,
     "encoded_frames": 3,
     "source_frames": 30,
     "source_frame_ms": 110,
@@ -63,9 +63,9 @@
     "height": 500
   },
   "gauge-search": {
-    "sha256": "0a33e74f1c56a7cb38522dcc6636de32d6ab7552a9e18871d62e0848293b1bac",
-    "bytes": 94491,
-    "encoded_frames": 22,
+    "sha256": "99b6a3291f4d6653c44ca50a9b2a386bc2d495df3c48e99d1dc16aea6b0b9c2a",
+    "bytes": 90182,
+    "encoded_frames": 23,
     "source_frames": 30,
     "source_frame_ms": 110,
     "width": 1100,

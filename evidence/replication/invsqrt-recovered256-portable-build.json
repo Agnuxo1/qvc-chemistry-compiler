@@ -1,0 +1,60 @@
+{
+  "status": "EXACT_RECOVERED256_STUDY_SOURCE_REBUILT",
+  "sha256": "29480dd3285825e2718bca69843803d57337e7ac7626a1adf043be5801a8a7ca",
+  "qubits": 88,
+  "static_toffoli": 1299,
+  "ops": 39876,
+  "seconds": 65.2834445189801,
+  "numeric_recipe_sha256": "e9211419dfd91e4a740b6f624efb89ff4463336d7e368c29f71acf25e591a9c7",
+  "frozen_phase_fit_sha256": "6ad048bb81db81f0e7ab43458938f32685b213db28c77c1c1d15ba0c619329df",
+  "source_sha256": {
+    "round10_inv.py": "8450a5ccbc2730d59abea83d36688036dd614d3054757f623f9bdc35bea91cb9",
+    "round10_lookup.py": "6444cef6426ea9f3485792118e1ae714d4b765e20ae4d1a9fa0b57f6173a5bc7",
+    "round11_lookup.py": "aec079afd1370eaa7e9251dd18901c3755b265e3ee50b85e6d587b9ec23bc2f6",
+    "marsyas/model.py": "65bf89538e736f5d02add43c7f74bb57c02b4fa3f699df02b9e83cd984a58162",
+    "marsyas/fit.py": "0ab68492466fde0156cb54379a4e18d6673b183d83e4674101f55b58a43111d0",
+    "marsyas/build.py": "eef91d07c4c99d92545272d5d6e4daeb78a925e3d7307d27b093699d34f49e3e",
+    "marsyas/check.py": "2644d8d137efec140b3a5e95d47810fb9cec604752e50dff9f341f67880c48c1",
+    "marsyas/run.py": "34260ed900fbedc209664c54cb7b0421506548ccd9a50bf3e89085f7900da9cf",
+    "marsyas/calib.py": "9777a679e6ace7e8df67ed61df2a5d61e91a2f7d542161916d48ba1f33e9f209",
+    "marsyas/hsplit.py": "fc1fa942a08425bc580980d980b3cd34bfcda47f6db6b7ab137595ae2d4513ec",
+    "round5_virtual.py": "13c72596a67b8b60ffa73e06219c27dc969af91534fac82cb904c7de726e0c54",
+    "round10_virtual.py": "6b72cfb26841262d33a6fa27ab109310a93f1b066fd2afe206a1c308eb27d5bb",
+    "round9_marsyas_phase.py": "4df703e891f629a1288bf8680967a83ecc1e0f765c887ae82b9e8f37fc453a11",
+    "domain_compile.py": "c72bc15f9c1c1f2e5ef05346baec5786df06e3178479f2763544c30425356c76",
+    "round6_hmr.py": "1c8447a51850b9ea6d2c592b853e3c7d1c01378833f79a2641e673bd1d3478e8",
+    "port_pipeline.py": "561eb0a0aedef8ed83093ab5cf401ab1fba3fae425cafb5cd0fbc02a47fd440f"
+  },
+  "constructor_sha256": "3f4a1c43c86d8d53a00aa48d7e843cbca54e0feabdb92140ce90a43c87e4fafa",
+  "native_module_sha256": "c66b3216c4029e0cdfd09054306aa0feadf53ab2f50c1164e37f752874e5005e",
+  "probe": {
+    "Q": 88,
+    "toffoli": 1307.203125,
+    "t": 4.0,
+    "rot": 44.0,
+    "max_toffoli": 1318,
+    "C": 1625.2998548193382,
+    "cost": 143026.38722410175,
+    "ratio": 14.520217381015685,
+    "plan": "17:11,10;15:9,8;13:7,6;11:5,4;9:3,2;7:1,0",
+    "cbits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "ladder": true,
+    "exact_reads": true,
+    "prefix": 0,
+    "retire": 3,
+    "last": false,
+    "initial_lookup": true,
+    "peak": [
+      88,
+      "B add n=20 cached=0"
+    ]
+  },
+  "scope": "Source construction from recovered coefficients and newly fitted global phase weights; full native receipt separate; distinct from original26eb62Q and selectedc3 study"
+}

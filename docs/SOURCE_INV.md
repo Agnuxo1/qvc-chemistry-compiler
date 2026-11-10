@@ -29,6 +29,10 @@ python tools/build_source_portfolio.py build/source-portfolio --data /path/to/of
 
 The final command builds all 18 circuit/data outputs; it keeps build reports and intermediate circuits outside the submission directory. A full source build is not itself a verifier PASS: bind generated hashes to the retained full native receipts and run the official input readers before packaging. Architecture parameters exposed by build_inv_source.py require an explicit --experimental flag and new native verification; they do not inherit the ancestor's PASS.
 
+## Recovered-coefficient study
+
+The later [reconstruction study](../studies/recovered_invsqrt/README.md) recovers all 256 numerical coefficient triplets and the original 62Q phase function. It includes an exact all-input native phase comparison and a separately constructed 88Q circuit with a full 200,540,928-shot PASS. That circuit is retained as research; the c3 construction above remains the selected, cheaper source alternative. Exact reconstruction of the original 62Q circuit bytes remains open.
+
 ## Attribution and observations
 
 Dmitrii Gluzdov published the source integration and numeric recipe, which credit Marsyas arithmetic, Phuc Thai's normalization idea and the public QROM/measurement lineage. All source headers, Apache-2.0 scope and attribution are preserved in vendor/invsqrt_source. Francisco Angulo de Lafuente's project recovered, rebuilt, independently verified and integrated the construction.

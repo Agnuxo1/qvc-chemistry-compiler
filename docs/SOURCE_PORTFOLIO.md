@@ -3,12 +3,18 @@
 The public entry point builds inverse square root, DQI and chemistry from credited algorithm sources and frozen numeric recipes. It emits eighteen circuit/data files, keeping intermediates and reports outside the submission directory. The complete source-to-artifact chain is independently inspectable; compiled public performance inputs are not used by this constructor.
 
 ```bash
-python tools/build_source_portfolio.py build/source-candidate --recipe recipes/h14-main --data /path/to/official/data --runtime /path/to/native/runtime
+python tools/build_source_portfolio.py build/source-candidate --recipe recipes/h14-deep512 --dqi-variant 883 --data /path/to/official/data --runtime /path/to/native/runtime
 ```
 
-The command above selects the final H14 recipe. Omitting `--recipe` retains the historical s37 default for compatibility. Other retained recipes can be selected explicitly. Use a fresh output name: existing builds are preserved. See [environment and runtime requirements](REPRODUCIBILITY.md), [invsqrt sources](SOURCE_INV.md) and [DQI sources](SOURCE_DQI.md).
+The command above selects deep GPU chemistry and the checked883Q policy. Use `--dqi-variant 883` as two separate arguments. Omitting `--recipe` retains historical s37; omitting `--dqi-variant` retains historical DQI888. Use a fresh output name: existing builds are preserved. See [environment and runtime requirements](REPRODUCIBILITY.md), [invsqrt sources](SOURCE_INV.md) and [DQI sources](SOURCE_DQI.md).
 
-## Executed integration and package
+## Selected v0.3 construction and package
+
+All eighteen outputs were rebuilt from the current public source entry point and numeric recipes on Linux. The unchanged invsqrt file remains c3f3ac25; DQI is the new883Q policy and chemistry is the deep512 continuation. Exact hashes bind all five complete native receipts to the package. The package passes CRC/extraction, all seventeen stock KMB readers and the stock NPZ reader.
+
+Selected ZIP: **29,978,848 bytes**, SHA256 `d4367b0962dc686f9dbb3588130ecc975faf092f80848134ab590c948e806b06`. The local composite indices are **21.4984844091 /21.4984849129**. [v0.3.0 scientific release](https://github.com/Agnuxo1/qvc-chemistry-compiler/releases/tag/v0.3.0). Source and package evidence: `source-portfolio-deep883-linux.json` and `source-deep883.json` in the corresponding evidence directories. The binary performance portfolio's missing original generators remain a separate I01 gate.
+
+## Earlier v0.2 integration and package
 
 The selected H14 integration was subsequently executed from the current public entry points on Linux. All eighteen outputs match the already native-verified artifacts, including the numerical archive rebuilt on Windows. `evidence/replication/source-portfolio-h14-linux.json` records the exact hashes. The final package in `evidence/packages/source-h14.json` passes the same full receipt bindings, CRC/extraction, seventeen stock KMB readers and stock NPZ reader.
 
@@ -20,7 +26,8 @@ The first integrated package is recorded in `evidence/packages/source-v1.json`: 
 
 | Versioned portfolio | Local composite, salt a | Local composite, salt b |
 |---|---:|---:|
-| **Source-generated H14, selected** | **21.4136245740** | **21.4463608353** |
+| **Source-generated deep GPU / DQI883, selected** | **21.4984844091** | **21.4984849129** |
+| Source-generated H14 / DQI888, prior |21.4136245740 |21.4463608353 |
 | Source-generated s37, prior control | 21.4126669035 | 21.4454017007 |
 | Public binary performance portfolio with s37 | 25.2098282614 | 25.2483617580 |
 | Organizer-reference source control | approximately 2.239566 | approximately 2.239566 |

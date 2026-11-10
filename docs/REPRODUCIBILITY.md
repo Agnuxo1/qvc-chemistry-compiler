@@ -8,12 +8,12 @@ The two paths below must point to the unpacked data root (containing verifiers/)
 
 ```bash
 python -m pip install -r requirements.txt
-python tools/build_chemistry.py build/chemistry --recipe recipes/h14-main --data /path/to/official/data --runtime /path/to/native/runtime
+python tools/build_chemistry.py build/chemistry --recipe recipes/h14-deep512 --data /path/to/official/data --runtime /path/to/native/runtime
 python tools/verify_local.py chem build/chemistry build/chemistry-receipt.json --data /path/to/official/data --runtime /path/to/native/runtime --salt replication-a
 python tools/check_repository.py
 ```
 
-Expected build: 15 KMB circuits plus submission.npz, all 16 hashes equal recipes/h14-main/manifest.json; 14,848 total Toffolis, 427 total qubits and chemistry ratio approximately 11.2343975 in the stock full check. Use a new output directory for each run; tools preserve existing evidence.
+Expected build: 15 KMB circuits plus submission.npz, all 16 hashes equal recipes/h14-deep512/manifest.json; 14,848 total Toffolis, 427 total qubits and chemistry ratio approximately 11.2346609 in the stock full check. Use a new output directory for each run; tools preserve existing evidence.
 
 ## Three-task control
 
@@ -28,10 +28,10 @@ This builds the two organizer reference algorithms plus frozen s37 chemistry fro
 For the complete source-generated alternative, use:
 
 ```bash
-python tools/build_source_portfolio.py build/source-candidate --recipe recipes/h14-main --data /path/to/official/data --runtime /path/to/native/runtime
+python tools/build_source_portfolio.py build/source-candidate --recipe recipes/h14-deep512 --dqi-variant 883 --data /path/to/official/data --runtime /path/to/native/runtime
 ```
 
-This builds the source-generated invsqrt c3f3ac25 and DQI888 plus the selected chemistry recipe. The constructor was executed on Linux and its eighteen output hashes were bound to full native checks. The curated source modules, numeric coefficients, authenticated DQI manifest and upstream licenses are included. See [source portfolio and packaging](SOURCE_PORTFOLIO.md).
+This builds source-generated invsqrt c3f3ac25, the checked DQI883 policy and the selected chemistry recipe. Omitting --dqi-variant retains the historical DQI888 default. The constructor was executed on Linux and its eighteen output hashes were bound to full native checks. The curated source modules, numeric coefficients, authenticated DQI manifest and upstream licenses are included. See [source portfolio and packaging](SOURCE_PORTFOLIO.md).
 
 The higher-index binary performance components can separately be fetched with:
 

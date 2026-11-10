@@ -1,0 +1,18 @@
+{
+  "scope": "Full numerical tolerance check plus one stochastic native branch per legal input against recovered phase; not a generator or coherent-all-branches proof",
+  "numeric_formula_sha256": "f8987a96c492e4acb29512196ba5fc1d64a82a0500435ab810d4b24413f09e85",
+  "recipe_sha256": "6b82d8dee3073ce53c24699e8fffd0d58ce5d844811388472458429fca55382d",
+  "angles_sha256": "127bd2ec822d1180fb3a663d75a0975ee0e0b820ccee8861af93dfbbfe1422d5",
+  "circuit_sha256": "26ebf39df3b13e5fd2d923d1b9988043b107b64f6e21efc5cc9bc76f5d56adec",
+  "numeric_status": "PASS",
+  "worst_error_over_tolerance": 0.9993237694056958,
+  "worst_x": 161,
+  "numeric_seconds": 3.7484534420073032,
+  "status": "PASS",
+  "inputs_compared": 3133452,
+  "exact_phase_mismatches": 0,
+  "input_changes": 0,
+  "dirty_scratch_shots": 0,
+  "first_mismatches": [],
+  "native_seconds": 10.006742008990841
+}

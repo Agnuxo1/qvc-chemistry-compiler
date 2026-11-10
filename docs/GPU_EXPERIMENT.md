@@ -1,4 +1,33 @@
-# H14: a measured GPU chemistry improvement
+# Measured GPU chemistry improvements
+
+The latest continuation improves the verified chemistry ratio to **11.2346608655x**. Actual native cost falls from **298,689,767.493265** to **298,682,766.527190**, a further **0.0023439%** reduction. Both full salts pass with 78,080 shots each. All fifteen angle circuits remain unchanged and all sixteen outputs reconstruct identically on Windows and Linux.
+
+| Continuation quantity | Measured result |
+|---|---:|
+| GPU | NVIDIA GeForce RTX 3090 through the local FIFO after the managed server job remained queued |
+| Search states |512 per group x8 groups =4,096 |
+| Optimization steps |42,001 |
+| Elapsed search including final projection |3,630.10s; requested wall budget3,600s |
+| Seed two-body normalization |272.364345174517 |
+| Final two-body normalization |272.351058824095 |
+| Final augmented-Gram drift |1.0658e-14 |
+| Rotation orthogonality error |1.7764e-15 |
+| Final effective normalization |47.110133115838 |
+| One-body / two-body error |11.1973581068 /19.9784971080 mHa |
+| Toffolis / total qubits |14,848 /427 |
+| Exact source reconstruction |16/16 hashes on each operating system |
+
+The normalization objective and actual native cost are distinct quantities. Promotion uses the latter after full verification. The source is the unchanged reviewed `gauge_search_v2.py`; the seed, final rotation, numeric table, CPU gradient check and trace are frozen. See `evidence/experiments/h14-deep512-progress.json`, the two deep512 native receipts and the reconstruction proofs.
+
+```bash
+python tools/build_chemistry.py build/deep-chemistry --recipe recipes/h14-deep512 --data /path/to/official/data --runtime /path/to/native/runtime
+python tools/verify_local.py chem build/deep-chemistry build/deep-a.json --data /path/to/official/data --runtime /path/to/native/runtime --salt independent-a
+python tools/verify_local.py chem build/deep-chemistry build/deep-b.json --data /path/to/official/data --runtime /path/to/native/runtime --salt independent-b
+```
+
+Expected raw NPZ SHA256: `33393e0b34a1357ab3964954316f35560894d64492136d2475f0f279f276ebaa`. To repeat the optimization with a new output, use `recipes/h14-deep512/gauge-initial.npz` as the seed, `--batch 512` and `--wall-s 3600` with the same reviewed search tool. Repeated GPU optimization is not promised to be bitwise deterministic.
+
+## Earlier 45-minute H14 experiment
 
 The 45-minute channel-gauge experiment improved the verified chemistry ratio from **11.2328903140x to 11.2343975372x**. Actual official cost decreased from **298,729,845.5264 to 298,689,767.4933**, a **0.0134161%** reduction. Both final salts passed the complete unchanged native check, with 78,080 shots each. Total resources remain 14,848 Toffolis and 427 qubits.
 
@@ -22,7 +51,7 @@ The 45-minute channel-gauge experiment improved the verified chemistry ratio fro
 
 The transformation preserves the physical fitted tensors while reducing the one-norm-based normalization. It leaves all fifteen angle circuits unchanged. The mathematical model, finite-difference convergence check and pre-execution protocol are retained in [methods](METHODS.md) and `experiments/gauge`. The actual checkpoint trace, immutable source hash, seeds, environment and native receipt hashes are recorded under `evidence/experiments`. This scales the credited public orthogonal-gauge refinement idea; it does not claim invention of that idea.
 
-## Reproduce the selected artifacts
+## Reproduce the earlier H14 artifacts
 
 ```bash
 python tools/build_chemistry.py build/h14-chemistry --recipe recipes/h14-main --data /path/to/official/data --runtime /path/to/native/runtime
