@@ -1,0 +1,26 @@
+{
+  "status": "18_SOURCE_BUILT_OUTPUTS",
+  "scope": "Credited source-backed alternative, not the 26ebf39/e9f54be3 binary performance portfolio",
+  "constructor_sha256": "8b7ab623acb9c126271025d5c558baa1a012e7209a763aefde538d5d6ca10169",
+  "outputs": {
+    "dqi.kmb": "736f3055850794c6beaedf8de5f7dafa1c270e2b57edd403ffa96abf6d207741",
+    "invsqrt.kmb": "c3f3ac2575906e83de1ebfa91580ca4ad52655ac4ab34bcbde56c23b37d0d6de",
+    "dfthcsos/angle_k_3.kmb": "f7162495eaeb8d00cf37459fe141ddc3defa2413236496ef8d91c5f84ba48130",
+    "dfthcsos/angle_k_4.kmb": "43187d6838907f296ab163fdb4c23c0debb183c12c38d5d8d359d08de700a0b8",
+    "dfthcsos/angle_k_11.kmb": "92aecd4b5e823b855ee0770c39053c2fe8013088c781c99ccc19a306440696d2",
+    "dfthcsos/angle_k_8.kmb": "da0e651fe528b806526acad75442721e9787dd00ae7e828cb380862a6e0dbe84",
+    "dfthcsos/angle_k_14.kmb": "417e13887e940a9fd3a469adc26f3dac8dea7ddcbff6870d0bc6624d65a4886a",
+    "dfthcsos/angle_k_5.kmb": "d5d75346ec7b237287c2b0767e7f97d5f684aa79d07f9952b5c3970fea1fee0d",
+    "dfthcsos/angle_k_1.kmb": "b36929850f7997f20f33f45ace066b31f52940573a0df0d9ae92c68c5e5e8a11",
+    "dfthcsos/angle_k_12.kmb": "4ae8949cf42438844f6f704f94a098a0f644bc5d28422eb11c014e8e00cc66ea",
+    "dfthcsos/angle_k_0.kmb": "3db3e4038ee004742e957c92bacc90553f2e239f3ed72c1ab57cab40b3dc5b21",
+    "dfthcsos/angle_k_9.kmb": "535886c60394b812c53f2873bcbf051e870196824a4d419412b80f03d74369f1",
+    "dfthcsos/angle_k_10.kmb": "b9711454e6297b241ee463347b23dfb8292ca1245ea510444198e8dc2c666258",
+    "dfthcsos/angle_k_13.kmb": "a7f2dad65b8bdb220739d58a7f9169d32741d52a2ae016d177fb4f1b7ebf9238",
+    "dfthcsos/angle_k_2.kmb": "bf74609c2245bb624228995c59f4ea29e5af517b461371423e48247f5a027993",
+    "dfthcsos/submission.npz": "923960c974d1b301c7f189287316eb77c008843b019ff883918d8e751f0dc786",
+    "dfthcsos/angle_k_7.kmb": "2aaf4f3a89431e3d7b58a6b2d9bddfa9dd0b843e3665da88002dd9606989add2",
+    "dfthcsos/angle_k_6.kmb": "e482f484fe0d742e2efa5af1dfc58dfbf696295f1712e8ffc14c225aeb445d38"
+  },
+  "native_full_checks": "See bound evidence; generation alone is not a verifier PASS"
+}

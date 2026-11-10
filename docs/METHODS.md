@@ -38,6 +38,14 @@ flowchart LR
 
 Keep the control, inputs, seeds, verifier version and acceptance rule fixed before comparing variants. Preserve failed or neutral trials. The rank-C1 experiment did not reduce the selected product count. The ancilla experiment exhaustively checks the stated small domains and samples larger words; it is a synthetic primitive result, not a measured full-QVC improvement.
 
+## Orthogonal channel-gauge experiment
+
+For each fitted group, stack the weights and identity channel as `A = [W; H2_I]`. An orthogonal channel rotation gives `A_new = A @ Q`, so `A_new @ A_new.T = A @ A.T` in exact arithmetic. This preserves the two-body tensor and offset contractions while leaving the fitted angle data unchanged. The official normalization being optimized is `lambda_h2 = (1/4) * sum_c ||A_new[:, c]||_1**2`.
+
+The batched float64 GPU experiment in `experiments/gauge/gauge_search_v2.py` uses smoothed Riemannian descent, near and global starts, annealed smoothing and independent final SVD projection. It scales an existing public refinement idea. It does not invent this gauge transformation. CPU checks compare the official formula and directional derivatives and bound the augmented-Gram drift. `tools/apply_channel_gauge.py` preserves the validated base's encoded angle words and all fifteen compiled circuits; these words differ from the pre-encoding words stored in the fitted table.
+
+The orthogonal invariant is a model-level check. Promotion also requires two full unmodified native checks, a lower actual official cost, exact reconstruction from the retained table/rotation and unchanged circuit hashes. The GPU search is an optimization experiment, not a claim that repeated training is bitwise deterministic.
+
 ## Observations
 
 Verification is classical simulation of reversible/phase circuits, not quantum hardware or a measured physical speedup. Error margin, stochastic sampling, source completeness and competition eligibility are separate questions. The evidence table and source-recovery record state each scope explicitly.

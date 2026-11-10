@@ -1,0 +1,26 @@
+{
+  "task": "invsqrt",
+  "scope": "Full independent check of source-generated ancestor; not selected 26ebf39 circuit",
+  "circuit_sha256": "c3f3ac2575906e83de1ebfa91580ca4ad52655ac4ab34bcbde56c23b37d0d6de",
+  "source_report_sha256": "295925c73c010cf974fc8c7f8cf769af0deaad9f85d408371b815e97c4deaf1f",
+  "official_source_sha256": "ddef520dec6b68d1cf0a6f328ddd36d79eb84570b9192cf3f7acaf073f06733a",
+  "official_result": {
+    "status": "PASS",
+    "score": 140178.1847720425,
+    "toffoli_equivalent": 1611.2435031269251,
+    "toffoli_count": 1291.999829122163,
+    "max_toffoli_count": 1303,
+    "t_count": 4.0,
+    "rotation_count": 44.0,
+    "rotation_eps": 1.9812581311583967e-13,
+    "num_qubits": 87,
+    "reaction_depth": 204,
+    "num_ops": 39757,
+    "verified_shots": 200540928,
+    "worst_error_over_tolerance": 0.9999341616745385,
+    "worst_x": 2,
+    "circuit_sha256": "c3f3ac2575906e83de1ebfa91580ca4ad52655ac4ab34bcbde56c23b37d0d6de"
+  },
+  "baseline": 2076774.233715282,
+  "improvement": 14.815245589693777
+}

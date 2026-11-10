@@ -1,0 +1,8 @@
+{
+  "status": "COMPLETE",
+  "steps": 58962,
+  "seconds": 2702.661194299988,
+  "baseline_lambda_h2": 272.4068476928065,
+  "best_projected_lambda_h2": 272.3643451745173,
+  "native_verification_performed": false
+}

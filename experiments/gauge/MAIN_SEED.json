@@ -1,0 +1,7 @@
+{
+  "source": "pilot-v2-64/best-table.npz",
+  "sha256": "1f92e4c2f8ff88629a29c85135976f259b3c1f58c8c4ffb69571eef8bda077b9",
+  "lambda_h2": 272.4068476928064,
+  "original_s37_lambda_h2": 272.44041078498174,
+  "selection": "Lower projected exact normalization of the two preregistered pilots"
+}

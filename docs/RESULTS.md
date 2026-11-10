@@ -8,8 +8,11 @@ All results below are local runs of the unmodified official verifiers. They are 
 | Public gengsr portfolio | 11.2040924214 | 14,958 | 427 | quimica-gengsr-64-a.json |
 | Project s2 | 11.2298650271 | 14,852 | 427 | quimica-s2-64-a.json |
 | **Project s37** | **11.2328903140** | **14,848** | **427** | quimica-s37-64-a.json and -b.json |
+| **Project H14 GPU** | **11.2343975372** | **14,848** | **427** | chemistry-h14-main-a.json and -b.json |
 
 s37 improves the measured chemistry ratio by **0.2570301%** over the tested gengsr chemistry. This compares these pinned artifacts, not every current leaderboard solution. lambda_eff = 47.1175587131; error_1 = 11.197358 mHa; error_2 = 19.9784971080 mHa, against a 20 mHa ceiling. Margin = 0.0215028920 mHa. Each chemistry salt uses 64 shots per lookup address, 78,080 shots in total.
+
+H14 lowers actual cost a further **0.0134161%** against s37, to **298,689,767.493265**, with lambda_eff **47.111237352442**. Its physical error and resource counts remain equal within floating-point precision. Two independent salts pass, all fifteen angle circuits are unchanged and all sixteen source-rebuilt files match exactly. The retained GPU trace contains 58,962 optimization steps. [Experiment and reproduction](GPU_EXPERIMENT.md).
 
 | Reused public performance task | Measured ratio | Coverage |
 |---|---:|---|

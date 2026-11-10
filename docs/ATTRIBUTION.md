@@ -10,6 +10,9 @@ Research author and project lead: **Francisco Angulo de Lafuente**, ORCID 0009-0
 | Borrowing the top word bit | heliosli | Public compiler idea, not claimed as a new project invention |
 | Public inverse square root | gengsr on maoxin123's circuit | Syed Asad Ali, mrmeows, busyaprime, yoyobar, Hosen42, Atakan Aldemir and Kirill Tymchishin credited upstream |
 | Public DQI | Atakan Aldemir | Syed Asad Ali, Ahmed Berat Özer, SomeJoint/Agniv Banerjee, Ali Haydar Özdağ, James Day and other upstream credits preserved |
+| Source-generated invsqrt c3f3ac25 | Dmitrii Gluzdov's published integration | Sixteen loaded modules; Marsyas arithmetic, Phuc Thai normalization and public QROM/measurement lineage preserved |
+| Source-generated DQI888 | SomeJoint architecture and Atakan Aldemir source-bank integration | Ninety-two authenticated source pins, original decoder sources and upstream notices preserved |
+| H14 channel-gauge scale experiment | Francisco Angulo de Lafuente's project | Batched GPU experiment based on the credited public orthogonal-gauge refinement idea; no claim of inventing the transformation |
 | Task definitions, verifiers, reference generators, Kickmix | Google Quantum AI / competition organizers | Apache-2.0; obtained separately from the competition |
 | Review method | Google Elephant–Goldfish Model | Fresh-context documentary review, supplementary to executed tests |
 

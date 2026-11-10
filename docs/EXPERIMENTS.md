@@ -14,6 +14,8 @@ The first Linux NPZ reconstruction had identical array payloads but a different 
 
 ## Further scientific questions
 
+The recovered invsqrt arithmetic was also explored with ten fixed architecture variants in two explicitly versioned phases: retirement 5/6 with prefix changes, then retirement 0/1/2/4 around the pinned retirement-3 control. Two distinct nominees received full 200,540,928-shot checks and passed. Their measured costs, 140,185.687895 and 140,201.009223, exceed the pinned ancestor's 140,178.184772, so neither was promoted. Lower qubit count alone was not used as a success criterion. The complete variant tables are retained under `evidence/experiments`.
+
 Normalization improvements must include both the signed-weight term and the cross term; a conditional cost calculation is not a feasible fitted table. Decoder sampling variation must be reported with the salt and shot count, without selecting only the best salt. Any new source-based invsqrt/DQI result must first pass the exact-source and full native checks.
 
 ---

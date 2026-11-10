@@ -1,0 +1,306 @@
+{
+  "status": "DIAGNOSTIC_WEIGHT_GRID_COMPLETE",
+  "created_utc": "2026-10-29T13:00:37.972587+00:00",
+  "scope": "Same generated valid inputs at each Hamming weight, across candidates.\n\nThis is a diagnostic stress grid, not the official weighted error estimate.\nThe unchanged official sampler generates256shots for each k=0..35. The\ngenerated seed schedule is fixed before candidates are evaluated.\n",
+  "rows": [
+    {
+      "label": "repair888",
+      "circuit_sha256": "736f3055850794c6beaedf8de5f7dafa1c270e2b57edd403ffa96abf6d207741",
+      "rows": [
+        {
+          "weight": 0,
+          "shots": 256,
+          "value_errors": 0,
+          "phase_errors": 0,
+          "rng_seed": 202610291900,
+          "sim_seed": 202610292000
+        },
+        {
+          "weight": 1,
+          "shots": 256,
+          "value_errors": 0,
+          "phase_errors": 0,
+          "rng_seed": 202610291901,
+          "sim_seed": 202610292001
+        },
+        {
+          "weight": 2,
+          "shots": 256,
+          "value_errors": 0,
+          "phase_errors": 0,
+          "rng_seed": 202610291902,
+          "sim_seed": 202610292002
+        },
+        {
+          "weight": 3,
+          "shots": 256,
+          "value_errors": 0,
+          "phase_errors": 0,
+          "rng_seed": 202610291903,
+          "sim_seed": 202610292003
+        },
+        {
+          "weight": 4,
+          "shots": 256,
+          "value_errors": 0,
+          "phase_errors": 0,
+          "rng_seed": 202610291904,
+          "sim_seed": 202610292004
+        },
+        {
+          "weight": 5,
+          "shots": 256,
+          "value_errors": 0,
+          "phase_errors": 0,
+          "rng_seed": 202610291905,
+          "sim_seed": 202610292005
+        },
+        {
+          "weight": 6,
+          "shots": 256,
+          "value_errors": 0,
+          "phase_errors": 0,
+          "rng_seed": 202610291906,
+          "sim_seed": 202610292006
+        },
+        {
+          "weight": 7,
+          "shots": 256,
+          "value_errors": 0,
+          "phase_errors": 0,
+          "rng_seed": 202610291907,
+          "sim_seed": 202610292007
+        },
+        {
+          "weight": 8,
+          "shots": 256,
+          "value_errors": 0,
+          "phase_errors": 0,
+          "rng_seed": 202610291908,
+          "sim_seed": 202610292008
+        },
+        {
+          "weight": 9,
+          "shots": 256,
+          "value_errors": 0,
+          "phase_errors": 0,
+          "rng_seed": 202610291909,
+          "sim_seed": 202610292009
+        },
+        {
+          "weight": 10,
+          "shots": 256,
+          "value_errors": 0,
+          "phase_errors": 0,
+          "rng_seed": 202610291910,
+          "sim_seed": 202610292010
+        },
+        {
+          "weight": 11,
+          "shots": 256,
+          "value_errors": 0,
+          "phase_errors": 0,
+          "rng_seed": 202610291911,
+          "sim_seed": 202610292011
+        },
+        {
+          "weight": 12,
+          "shots": 256,
+          "value_errors": 0,
+          "phase_errors": 0,
+          "rng_seed": 202610291912,
+          "sim_seed": 202610292012
+        },
+        {
+          "weight": 13,
+          "shots": 256,
+          "value_errors": 0,
+          "phase_errors": 0,
+          "rng_seed": 202610291913,
+          "sim_seed": 202610292013
+        },
+        {
+          "weight": 14,
+          "shots": 256,
+          "value_errors": 0,
+          "phase_errors": 0,
+          "rng_seed": 202610291914,
+          "sim_seed": 202610292014
+        },
+        {
+          "weight": 15,
+          "shots": 256,
+          "value_errors": 0,
+          "phase_errors": 0,
+          "rng_seed": 202610291915,
+          "sim_seed": 202610292015
+        },
+        {
+          "weight": 16,
+          "shots": 256,
+          "value_errors": 0,
+          "phase_errors": 0,
+          "rng_seed": 202610291916,
+          "sim_seed": 202610292016
+        },
+        {
+          "weight": 17,
+          "shots": 256,
+          "value_errors": 0,
+          "phase_errors": 0,
+          "rng_seed": 202610291917,
+          "sim_seed": 202610292017
+        },
+        {
+          "weight": 18,
+          "shots": 256,
+          "value_errors": 0,
+          "phase_errors": 0,
+          "rng_seed": 202610291918,
+          "sim_seed": 202610292018
+        },
+        {
+          "weight": 19,
+          "shots": 256,
+          "value_errors": 0,
+          "phase_errors": 0,
+          "rng_seed": 202610291919,
+          "sim_seed": 202610292019
+        },
+        {
+          "weight": 20,
+          "shots": 256,
+          "value_errors": 0,
+          "phase_errors": 0,
+          "rng_seed": 202610291920,
+          "sim_seed": 202610292020
+        },
+        {
+          "weight": 21,
+          "shots": 256,
+          "value_errors": 0,
+          "phase_errors": 0,
+          "rng_seed": 202610291921,
+          "sim_seed": 202610292021
+        },
+        {
+          "weight": 22,
+          "shots": 256,
+          "value_errors": 0,
+          "phase_errors": 0,
+          "rng_seed": 202610291922,
+          "sim_seed": 202610292022
+        },
+        {
+          "weight": 23,
+          "shots": 256,
+          "value_errors": 0,
+          "phase_errors": 0,
+          "rng_seed": 202610291923,
+          "sim_seed": 202610292023
+        },
+        {
+          "weight": 24,
+          "shots": 256,
+          "value_errors": 0,
+          "phase_errors": 0,
+          "rng_seed": 202610291924,
+          "sim_seed": 202610292024
+        },
+        {
+          "weight": 25,
+          "shots": 256,
+          "value_errors": 0,
+          "phase_errors": 0,
+          "rng_seed": 202610291925,
+          "sim_seed": 202610292025
+        },
+        {
+          "weight": 26,
+          "shots": 256,
+          "value_errors": 0,
+          "phase_errors": 0,
+          "rng_seed": 202610291926,
+          "sim_seed": 202610292026
+        },
+        {
+          "weight": 27,
+          "shots": 256,
+          "value_errors": 0,
+          "phase_errors": 0,
+          "rng_seed": 202610291927,
+          "sim_seed": 202610292027
+        },
+        {
+          "weight": 28,
+          "shots": 256,
+          "value_errors": 0,
+          "phase_errors": 0,
+          "rng_seed": 202610291928,
+          "sim_seed": 202610292028
+        },
+        {
+          "weight": 29,
+          "shots": 256,
+          "value_errors": 0,
+          "phase_errors": 0,
+          "rng_seed": 202610291929,
+          "sim_seed": 202610292029
+        },
+        {
+          "weight": 30,
+          "shots": 256,
+          "value_errors": 0,
+          "phase_errors": 0,
+          "rng_seed": 202610291930,
+          "sim_seed": 202610292030
+        },
+        {
+          "weight": 31,
+          "shots": 256,
+          "value_errors": 0,
+          "phase_errors": 0,
+          "rng_seed": 202610291931,
+          "sim_seed": 202610292031
+        },
+        {
+          "weight": 32,
+          "shots": 256,
+          "value_errors": 0,
+          "phase_errors": 0,
+          "rng_seed": 202610291932,
+          "sim_seed": 202610292032
+        },
+        {
+          "weight": 33,
+          "shots": 256,
+          "value_errors": 0,
+          "phase_errors": 0,
+          "rng_seed": 202610291933,
+          "sim_seed": 202610292033
+        },
+        {
+          "weight": 34,
+          "shots": 256,
+          "value_errors": 0,
+          "phase_errors": 0,
+          "rng_seed": 202610291934,
+          "sim_seed": 202610292034
+        },
+        {
+          "weight": 35,
+          "shots": 256,
+          "value_errors": 0,
+          "phase_errors": 0,
+          "rng_seed": 202610291935,
+          "sim_seed": 202610292035
+        }
+      ],
+      "shots": 9216,
+      "value_errors": 0,
+      "phase_errors": 0
+    }
+  ],
+  "seconds": 12.356410200009122,
+  "generator_sha256": "b45b52fd7e6fcecbc9060f16f4a4ef28cacf559d5d392681ac26f51bf316e3df"
+}

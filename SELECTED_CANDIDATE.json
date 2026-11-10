@@ -1,0 +1,29 @@
+{
+  "project": "QVC Chemistry Compiler",
+  "version": "0.2.0",
+  "date": "2026-11-10",
+  "author": "Francisco Angulo de Lafuente",
+  "orcid": "https://orcid.org/0009-0001-1634-7063",
+  "own_license": "MIT OR Apache-2.0",
+  "upstream_license": "Apache-2.0 with preserved notices",
+  "selected_scope": "Source-generated alternative with H14 chemistry; distinct from original binary performance portfolio",
+  "recipe": "recipes/h14-main",
+  "generator": "tools/build_source_portfolio.py",
+  "required_recipe_argument": "--recipe recipes/h14-main",
+  "invsqrt_sha256": "c3f3ac2575906e83de1ebfa91580ca4ad52655ac4ab34bcbde56c23b37d0d6de",
+  "dqi_sha256": "736f3055850794c6beaedf8de5f7dafa1c270e2b57edd403ffa96abf6d207741",
+  "chemistry_npz_sha256": "cfc6a3084b3c65bc3b74f57efda8da07776fa9ea5a1a4a8bc1b594f302233bc9",
+  "archive_sha256": "8a59a667018c7b29581a05bb4bde8362285e982d9fb976f7247561afcbf62cb5",
+  "archive_bytes": 28251303,
+  "package_evidence": "evidence/packages/source-h14.json",
+  "source_build_evidence": "evidence/replication/source-portfolio-h14-linux.json",
+  "release_url": "https://github.com/Agnuxo1/qvc-chemistry-compiler/releases/tag/v0.2.0",
+  "local_composite_indices": {
+    "a": 21.413624574014104,
+    "b": 21.446360835325564
+  },
+  "native_status": "PASS for all three tasks, exact receipt-bound files",
+  "original_performance_I01": "OPEN",
+  "kaggle_submission": "NONE",
+  "eligibility": "Not certified by local tests"
+}

@@ -1,0 +1,67 @@
+{
+  "status": "PROMOTED_AFTER_TWO_FULL_NATIVE_PASSES",
+  "scope": "Local chemistry improvement, not a Kaggle score or eligibility finding",
+  "original_lambda_h2": 272.44041078498174,
+  "continuation_seed_lambda_h2": 272.4068476928065,
+  "best_lambda_h2": 272.3643451745173,
+  "old_cost": 298729845.5264178,
+  "new_cost": 298689767.49326503,
+  "chemistry_baseline": 3355599588.3155365,
+  "old_improvement": 11.23289031399706,
+  "new_improvement": 11.234397537207899,
+  "cost_reduction_percent": 0.013416146311773236,
+  "steps": 58962,
+  "states": 2048,
+  "source_sha256": "a8cd23c65bb4af6a02554903cab71d1dbc30246b20d7dc02d5cd17cfb97c2105",
+  "seed_sha256": "1f92e4c2f8ff88629a29c85135976f259b3c1f58c8c4ffb69571eef8bda077b9",
+  "rotation_sha256": "c0183ea384816183567d3f9ea88bbdcd84163c888d303fcc856ae9f0bc6c14f0",
+  "input_sha256": {
+    "angle_k_0.kmb": "3db3e4038ee004742e957c92bacc90553f2e239f3ed72c1ab57cab40b3dc5b21",
+    "angle_k_1.kmb": "b36929850f7997f20f33f45ace066b31f52940573a0df0d9ae92c68c5e5e8a11",
+    "angle_k_10.kmb": "b9711454e6297b241ee463347b23dfb8292ca1245ea510444198e8dc2c666258",
+    "angle_k_11.kmb": "92aecd4b5e823b855ee0770c39053c2fe8013088c781c99ccc19a306440696d2",
+    "angle_k_12.kmb": "4ae8949cf42438844f6f704f94a098a0f644bc5d28422eb11c014e8e00cc66ea",
+    "angle_k_13.kmb": "a7f2dad65b8bdb220739d58a7f9169d32741d52a2ae016d177fb4f1b7ebf9238",
+    "angle_k_14.kmb": "417e13887e940a9fd3a469adc26f3dac8dea7ddcbff6870d0bc6624d65a4886a",
+    "angle_k_2.kmb": "bf74609c2245bb624228995c59f4ea29e5af517b461371423e48247f5a027993",
+    "angle_k_3.kmb": "f7162495eaeb8d00cf37459fe141ddc3defa2413236496ef8d91c5f84ba48130",
+    "angle_k_4.kmb": "43187d6838907f296ab163fdb4c23c0debb183c12c38d5d8d359d08de700a0b8",
+    "angle_k_5.kmb": "d5d75346ec7b237287c2b0767e7f97d5f684aa79d07f9952b5c3970fea1fee0d",
+    "angle_k_6.kmb": "e482f484fe0d742e2efa5af1dfc58dfbf696295f1712e8ffc14c225aeb445d38",
+    "angle_k_7.kmb": "2aaf4f3a89431e3d7b58a6b2d9bddfa9dd0b843e3665da88002dd9606989add2",
+    "angle_k_8.kmb": "da0e651fe528b806526acad75442721e9787dd00ae7e828cb380862a6e0dbe84",
+    "angle_k_9.kmb": "535886c60394b812c53f2873bcbf051e870196824a4d419412b80f03d74369f1",
+    "submission.npz": "cfc6a3084b3c65bc3b74f57efda8da07776fa9ea5a1a4a8bc1b594f302233bc9"
+  },
+  "stock_canonical_submission_sha256": "8c0c0eec5612742929c897f7252d36739cb537eabdea0c959ad008c9fdab4074",
+  "native_receipts_sha256": {
+    "a": "8791e4846be50eaaffd923f4412864442cfc1175c6199ab700139f55dc4b7826",
+    "b": "6e5c1242ccd7b51a66bebb77bcd772642eed1e711fa6206297627ea3a325c6e5"
+  },
+  "native_metrics": {
+    "error_1": 0.01119735810683086,
+    "error_2": 0.01997849710804845,
+    "Lambda": 285.3859702800341,
+    "E_SOS": -22144.188747488137,
+    "E_gap": 3.915397488137387,
+    "lambda_eff": 47.11123735244151,
+    "gap_in_domain": true
+  },
+  "environment": {
+    "python": "3.13.7",
+    "torch": "2.6.0+cu124",
+    "numpy": "2.5.4",
+    "cuda_runtime": "12.4",
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "driver": "581.29"
+  },
+  "bounded_independent_review": {
+    "tool_sha256": "13a79c7b0bcc76919c2510aa8c3a0f7f0a526ad84f327f447d5352958ac33be3",
+    "executed": "16 pilot hashes, exact A@Q, orthogonality2.22e-15, Gram1.42e-14, offset contraction4.44e-15, preserved physical inputs/encoded angle_words/15circuits, exact in-memory NPZ serialization",
+    "findings": "none",
+    "limits": "CPU identity checks; reviewer did not repeat native simulation"
+  },
+  "author": "Francisco Angulo de Lafuente",
+  "orcid": "https://orcid.org/0009-0001-1634-7063",
+  "date": "2026-11-10"
+}

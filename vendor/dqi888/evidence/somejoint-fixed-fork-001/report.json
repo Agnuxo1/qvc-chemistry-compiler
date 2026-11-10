@@ -1,0 +1,72 @@
+{
+  "status": "FIXED_INPUT_MEASUREMENT_TRANSCRIPT_DIAGNOSTIC",
+  "created_utc": "2026-10-29T12:37:18.341626+00:00",
+  "circuit_sha256": "6349d2bc82eb1ef3a4e8c52c71a312823d756532517463b5e18eb25cc81195a8",
+  "candidate": "artifacts\\public-rising-review-001\\somejoint-v21\\public\\dqi.kmb",
+  "runtime": "fork",
+  "kickmix_path": "D:\\quantum\\runtimes\\kickmix-manwithacat-0.3.0\\kickmix.cp312-win_amd64.pyd",
+  "source_input_circuit_sha256": "4ee7a17b4cbca4053a19bc951e7f2ef91fabdbb036006c9d658adcff4fe76da4",
+  "scope": "Two targeted logical cases,256replicas each x2simulator seeds; not full task or unbiased error rate",
+  "rows": [
+    {
+      "case_salt": "salt-check-3",
+      "source_kind": "value",
+      "error_weight": 27,
+      "runs": [
+        {
+          "seed": 2026102801,
+          "replicas": 256,
+          "value_errors": 0,
+          "phase_errors": 0,
+          "phase_flips": 0,
+          "syndrome_changed_min": 0,
+          "syndrome_changed_max": 0,
+          "dirty_ancilla_min": 0,
+          "dirty_ancilla_max": 0
+        },
+        {
+          "seed": 2026102802,
+          "replicas": 256,
+          "value_errors": 0,
+          "phase_errors": 0,
+          "phase_flips": 0,
+          "syndrome_changed_min": 0,
+          "syndrome_changed_max": 0,
+          "dirty_ancilla_min": 0,
+          "dirty_ancilla_max": 0
+        }
+      ]
+    },
+    {
+      "case_salt": "salt-check-5",
+      "source_kind": "phase",
+      "error_weight": 33,
+      "runs": [
+        {
+          "seed": 2026102801,
+          "replicas": 256,
+          "value_errors": 0,
+          "phase_errors": 256,
+          "phase_flips": 256,
+          "syndrome_changed_min": 0,
+          "syndrome_changed_max": 0,
+          "dirty_ancilla_min": 0,
+          "dirty_ancilla_max": 0
+        },
+        {
+          "seed": 2026102802,
+          "replicas": 256,
+          "value_errors": 0,
+          "phase_errors": 256,
+          "phase_flips": 256,
+          "syndrome_changed_min": 0,
+          "syndrome_changed_max": 0,
+          "dirty_ancilla_min": 0,
+          "dirty_ancilla_max": 0
+        }
+      ]
+    }
+  ],
+  "seconds": 2.646147599996766,
+  "generator_sha256": "2e588c501c34b45ef8e6aad15dfa208fb88e893d88a304a2360dabf94d85529f"
+}

@@ -1,0 +1,27 @@
+{
+  "records": [
+    {
+      "seconds": 0.0004208000027574599,
+      "step": 0,
+      "batch_per_group": 32,
+      "baseline_lambda_h2": 272.4404107849818,
+      "best_projected_lambda_h2": 272.44041078498174,
+      "relative_lambda_h2_gain": 2.220446049250313e-16,
+      "gram_max_drift": 0.0,
+      "cuda_peak_MiB": 77.92236328125
+    },
+    {
+      "seconds": 30.01027950004209,
+      "step": 5374,
+      "batch_per_group": 32,
+      "baseline_lambda_h2": 272.4404107849818,
+      "best_projected_lambda_h2": 272.4098586314409,
+      "relative_lambda_h2_gain": 0.00011214251752467153,
+      "gram_max_drift": 1.4210854715202004e-14,
+      "cuda_peak_MiB": 77.9814453125
+    }
+  ],
+  "source_sha256": "71be4bfa4d84fa5d0eb3775f7ebe250f644536f1d71f0a85056c567d43870f0e",
+  "seed_sha256": "03fdc630075df12e2d40f5c888b33753eb478832a2c76cb594bd17057acc273b",
+  "device": "NVIDIA GeForce RTX 3090"
+}

@@ -1,0 +1,55 @@
+{
+  "status": "COMPLETE",
+  "seconds": 592.9350713739987,
+  "rows": [
+    {
+      "tag": "r0-p0",
+      "retire": 0,
+      "prefix": 0,
+      "returncode": 0,
+      "sha256": "c138d4c0f3050841700ff9bd835c65fba43d9ef04357c94c1fe24312bc7c8861",
+      "qubits": 90,
+      "static_toffoli": 1271,
+      "provisional_cost": 144936.1689416786,
+      "source_seconds": 60.07332848897204
+    },
+    {
+      "tag": "r1-p0",
+      "retire": 1,
+      "prefix": 0,
+      "returncode": 0,
+      "sha256": "829bbe8a8345aa7472915205c050045f6609a0dff4b7d2e0ff825a69af2b27bb",
+      "qubits": 89,
+      "static_toffoli": 1283,
+      "provisional_cost": 144349.61472079883,
+      "source_seconds": 58.62852132198168
+    },
+    {
+      "tag": "r2-p0",
+      "retire": 2,
+      "prefix": 0,
+      "returncode": 0,
+      "sha256": "072332eadb475c95e86310a8307d134a52be45b2935016498c220402cb8b8c14",
+      "qubits": 88,
+      "static_toffoli": 1292,
+      "provisional_cost": 143519.02143741908,
+      "source_seconds": 59.84900170599576
+    },
+    {
+      "tag": "r4-p0",
+      "retire": 4,
+      "prefix": 0,
+      "returncode": 0,
+      "sha256": "d3be24e4f0f603bf41aceae39e229a6dcbd86ef9e3382edb359a8d1e6a90dad7",
+      "qubits": 86,
+      "static_toffoli": 1322,
+      "provisional_cost": 142828.65908940954,
+      "source_seconds": 58.84914870301145,
+      "native_returncode": 0,
+      "native_status": "PASS",
+      "native_cost": 140201.00922292445,
+      "improvement": 14.812833696604418
+    }
+  ],
+  "promoted": false
+}

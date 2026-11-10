@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "scope": "Main seed numerical gate; central-difference step-size convergence, no tolerance relaxation",
+  "lambda_h2": 272.4068476928064,
+  "augmented_gram_max_drift": 3.552713678800501e-15,
+  "offset_contraction_max_drift": 1.7763568394002505e-15,
+  "finite_difference_grid": [
+    {
+      "step": 0.0001,
+      "finite": 19.428789644777567,
+      "analytic": 19.80908239477099,
+      "relative_error": 0.019197898338481786
+    },
+    {
+      "step": 1e-05,
+      "finite": 19.771295878001638,
+      "analytic": 19.80908239477099,
+      "relative_error": 0.0019075349385858443
+    },
+    {
+      "step": 1e-06,
+      "finite": 19.80866938211534,
+      "analytic": 19.80908239477099,
+      "relative_error": 2.0849661151290535e-05
+    },
+    {
+      "step": 1e-07,
+      "finite": 19.80907828880163,
+      "analytic": 19.80908239477099,
+      "relative_error": 2.0727711048102552e-07
+    },
+    {
+      "step": 3e-08,
+      "finite": 19.809082019150992,
+      "analytic": 19.80908239477099,
+      "relative_error": 1.89620089332008e-08
+    },
+    {
+      "step": 1e-08,
+      "finite": 19.80908237442236,
+      "analytic": 19.80908239477099,
+      "relative_error": 1.0272373572174927e-09
+    }
+  ],
+  "seed_sha256": "1f92e4c2f8ff88629a29c85135976f259b3c1f58c8c4ffb69571eef8bda077b9",
+  "search_source_sha256": "a8cd23c65bb4af6a02554903cab71d1dbc30246b20d7dc02d5cd17cfb97c2105",
+  "gate_source_sha256": "5d0d42ec41f09c554e0cef4d19cdbf6a0d36d94c035afd3a2beab5cd79570dca"
+}

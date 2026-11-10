@@ -1,0 +1,77 @@
+{
+  "status": "COMPLETE",
+  "seconds": 835.704334701004,
+  "rows": [
+    {
+      "tag": "r5-p0",
+      "retire": 5,
+      "prefix": 0,
+      "returncode": 0,
+      "sha256": "313f1534dce96cd1adf439c65b69dd20ca2c698a61fc05d2c59ef78e91479b39",
+      "qubits": 85,
+      "static_toffoli": 1341,
+      "provisional_cost": 142813.24158727977,
+      "source_seconds": 92.22795290901558,
+      "native_returncode": 0,
+      "native_status": "PASS",
+      "native_cost": 140185.68789508534,
+      "improvement": 14.814452637059036
+    },
+    {
+      "tag": "r6-p0",
+      "retire": 6,
+      "prefix": 0,
+      "returncode": 0,
+      "sha256": "464c7f19303f960555e66dfef73fe1bda8888f9db00e89b066db25022d0a24d2",
+      "qubits": 84,
+      "static_toffoli": 1381,
+      "provisional_cost": 144461.25767890003,
+      "source_seconds": 92.08242616200005
+    },
+    {
+      "tag": "r3-p16",
+      "retire": 3,
+      "prefix": 16,
+      "returncode": 0,
+      "sha256": "71d0235a6f9cef18f7eacc19ef284fa1f780eaf265197448288f36284e8e7883",
+      "qubits": 87,
+      "static_toffoli": 1365,
+      "provisional_cost": 148437.4222946643,
+      "source_seconds": 61.29116274000262
+    },
+    {
+      "tag": "r5-p16",
+      "retire": 5,
+      "prefix": 16,
+      "returncode": 0,
+      "sha256": "dc7f15c9d40c31be975c58010dac87e576c8d2283e562c6924ff68aacfaa0469",
+      "qubits": 85,
+      "static_toffoli": 1403,
+      "provisional_cost": 148274.98963415477,
+      "source_seconds": 61.34166125199408
+    },
+    {
+      "tag": "r6-p16",
+      "retire": 6,
+      "prefix": 16,
+      "returncode": 0,
+      "sha256": "a759430b45e55260691cafcb361d88bea9b8c083fff69c00ca72a5c98a2b875c",
+      "qubits": 84,
+      "static_toffoli": 1443,
+      "provisional_cost": 149886.47642890003,
+      "source_seconds": 77.24980616901303
+    },
+    {
+      "tag": "r6-p-64",
+      "retire": 6,
+      "prefix": -64,
+      "returncode": 0,
+      "sha256": "464c7f19303f960555e66dfef73fe1bda8888f9db00e89b066db25022d0a24d2",
+      "qubits": 84,
+      "static_toffoli": 1381,
+      "provisional_cost": 144461.25767890003,
+      "source_seconds": 93.5253078440146
+    }
+  ],
+  "promoted": false
+}

@@ -1,0 +1,43 @@
+{
+  "records": [
+    {
+      "seconds": 0.0005438000080175698,
+      "step": 0,
+      "batch_per_group": 64,
+      "global_starts_per_group": 10,
+      "baseline_lambda_h2": 272.4404107849818,
+      "best_projected_lambda_h2": 272.44041078498174,
+      "relative_lambda_h2_gain": 2.220446049250313e-16,
+      "gram_max_drift": 0.0,
+      "cuda_peak_MiB": 145.9072265625,
+      "final_flush": false
+    },
+    {
+      "seconds": 30.0062784999609,
+      "step": 2899,
+      "batch_per_group": 64,
+      "global_starts_per_group": 10,
+      "baseline_lambda_h2": 272.4404107849818,
+      "best_projected_lambda_h2": 272.420883949032,
+      "relative_lambda_h2_gain": 7.167378691563808e-05,
+      "gram_max_drift": 7.105427357601002e-15,
+      "cuda_peak_MiB": 145.9072265625,
+      "final_flush": false
+    },
+    {
+      "seconds": 60.008110199996736,
+      "step": 5709,
+      "batch_per_group": 64,
+      "global_starts_per_group": 10,
+      "baseline_lambda_h2": 272.4404107849818,
+      "best_projected_lambda_h2": 272.4068476928064,
+      "relative_lambda_h2_gain": 0.00012319425036344533,
+      "gram_max_drift": 1.4210854715202004e-14,
+      "cuda_peak_MiB": 145.9072265625,
+      "final_flush": true
+    }
+  ],
+  "source_sha256": "a8cd23c65bb4af6a02554903cab71d1dbc30246b20d7dc02d5cd17cfb97c2105",
+  "seed_sha256": "03fdc630075df12e2d40f5c888b33753eb478832a2c76cb594bd17057acc273b",
+  "device": "NVIDIA GeForce RTX 3090"
+}

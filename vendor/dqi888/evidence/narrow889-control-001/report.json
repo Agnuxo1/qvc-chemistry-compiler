@@ -1,0 +1,40 @@
+{
+  "status": "SOURCE_BUILT_NOT_VERIFIED",
+  "policy": "control",
+  "homogeneous_groups": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "original_policy": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "sha256": "6349d2bc82eb1ef3a4e8c52c71a312823d756532517463b5e18eb25cc81195a8",
+  "Q": 889,
+  "T_static": 456456,
+  "num_ops": 60010899,
+  "source_packet_manifest_sha256": "a6819e88d3dada84f158023c9ba22e7d2c06ee53ad9d0c691bdd2e701d88d8b8",
+  "decoder_entry_sha256": "d63bc0866115b738c19951ffe8a2717131501bd4a19112ee95de03d064c2fa3c",
+  "runtime": "D:\\quantum\\runtimes\\kickmix-manwithacat-0.3.0\\kickmix.cp312-win_amd64.pyd",
+  "source_notebook_run": 363462588,
+  "source_attribution": "SomeJointV21 team889Q architecture; our existing node7 homogeneous /ordinary8,9 policy transfer only",
+  "exact_public_control_match": true,
+  "native_full_check_performed": false,
+  "source_sha256": "e1e103703b049c62df6c5828694f052605e1e59450305150e1c28c0cfc4bfa23",
+  "seconds": 206.90983899999992,
+  "created_utc": "2026-10-29T12:50:10.887291+00:00"
+}

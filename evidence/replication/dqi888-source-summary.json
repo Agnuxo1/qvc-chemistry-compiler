@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "circuit_sha256": "736f3055850794c6beaedf8de5f7dafa1c270e2b57edd403ffa96abf6d207741",
+  "seconds": 311.62472321101814,
+  "checks": [
+    {
+      "salt": "source888-independent-20261110-a",
+      "status": "PASS",
+      "improvement": 58.994552368533284,
+      "value_errors": 0,
+      "phase_errors": 1
+    },
+    {
+      "salt": "source888-independent-20261110-b",
+      "status": "PASS",
+      "improvement": 59.265531484467076,
+      "value_errors": 0,
+      "phase_errors": 0
+    }
+  ]
+}

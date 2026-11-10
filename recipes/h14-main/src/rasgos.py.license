@@ -1,0 +1,4 @@
+SPDX-FileCopyrightText: 2026 Francisco Angulo de Lafuente (modifications)
+SPDX-FileCopyrightText: marculera/Lera (upstream tensorqrom implementation)
+SPDX-License-Identifier: Apache-2.0
+Derived from tensorqrom.build_circuit. Original frozen bytes preserved for hash verification.

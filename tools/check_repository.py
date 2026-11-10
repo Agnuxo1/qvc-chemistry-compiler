@@ -33,11 +33,48 @@ def main():
                 if dest and not (p.parent/dest).exists():errors.append(f'Broken link: {rel} -> {dest}')
                 links+=1
         if p.stat().st_size>95_000_000:errors.append(f'Oversize Git file: {rel}')
-    recipe=ROOT/'recipes/s37';m=json.loads((recipe/'manifest.json').read_text())
-    for key,name in (('table_sha256','table.npz'),('plan_sha256','plan.json')):
-        if sha(recipe/name)!=m[key]:errors.append(f'Recipe drift: {name}')
-    for name,value in m['source_sha256'].items():
-        if sha(recipe/'src'/name)!=value:errors.append(f'Recipe source drift: {name}')
+    recipes=sorted((ROOT/'recipes').glob('*/manifest.json'))
+    for manifest_path in recipes:
+        recipe=manifest_path.parent;m=json.loads(manifest_path.read_text())
+        for key,name in (('table_sha256','table.npz'),('plan_sha256','plan.json')):
+            if sha(recipe/name)!=m[key]:errors.append(f'Recipe drift: {recipe.name}/{name}')
+        for name,value in m['source_sha256'].items():
+            if sha(recipe/'src'/name)!=value:errors.append(f'Recipe source drift: {recipe.name}/{name}')
+        assert len(m['expected_files'])==16
+        if 'gauge_transform' in m:
+            gauge=m['gauge_transform']
+            assert sha(recipe/'gauge-initial.npz')==gauge['initial_table_sha256']
+            assert sha(recipe/'rotation.npy')==gauge['rotation_sha256']
+            assert gauge['augmented_gram_max_drift']<1e-10
+    inv_build=json.loads((ROOT/'evidence/replication/invsqrt-runtime-bound-build.json').read_text())
+    assert inv_build['status']=='EXACT_SOURCE_ANCESTOR_REBUILT'
+    assert inv_build['constructor_sha256']==sha(ROOT/'tools/build_inv_source.py')
+    for name,value in inv_build['source_sha256'].items():
+        assert sha(ROOT/'vendor/invsqrt_source'/name)==value,name
+    inv_check=json.loads((ROOT/'evidence/official/invsqrt-source-c3.json').read_text())
+    assert inv_check['circuit_sha256']==inv_build['sha256']
+    assert inv_check['official_result']['status']=='PASS'
+    assert inv_check['official_result']['verified_shots']==200540928
+    dqi_root=ROOT/'vendor/dqi888/source-packet'
+    dqi_pins=json.loads((dqi_root/'AUTHENTICATED_SOURCE_MANIFEST.json').read_text())
+    for name,value in dqi_pins.items():assert sha(dqi_root/name)==value,name
+    for name in ('dqi888-source-a.json','dqi888-source-b.json'):
+        result=json.loads((ROOT/'evidence/official'/name).read_text())['official_result']
+        assert result['status']=='PASS' and result['verified_shots']==102400
+    selection=json.loads((ROOT/'SELECTED_CANDIDATE.json').read_text())
+    package=json.loads((ROOT/selection['package_evidence']).read_text())
+    build=json.loads((ROOT/selection['source_build_evidence']).read_text())
+    assert package['status']=='PASS' and len(package['members'])==18
+    assert selection['archive_sha256']==package['archive_sha256']
+    assert selection['local_composite_indices']==package['local_composite_indices']
+    assert build['outputs']=={n:v['sha256'] for n,v in package['members'].items()}
+    assert build['constructor_sha256']==sha(ROOT/'tools/build_source_portfolio.py')
+    assert len(package['official_readers'])==17 and all(x['status']=='PASS' for x in package['official_readers'])
+    receipt_names={'invsqrt':'invsqrt-source-c3.json','dqi_a':'dqi888-source-a.json','dqi_b':'dqi888-source-b.json','chem_a':'chemistry-h14-main-a.json','chem_b':'chemistry-h14-main-b.json'}
+    for key,name in receipt_names.items():
+        receipt=ROOT/'evidence/official'/name
+        assert sha(receipt)==package['receipt_sha256'][key]
+        assert json.loads(receipt.read_text())['official_result']['status']=='PASS'
     feature_source=(ROOT/'compiler/rasgos.py').read_text(encoding='utf-8')
     if 'SPDX-License-Identifier: Apache-2.0' not in feature_source or ':: MIT ::' in feature_source:
         errors.append('Derived feature compiler license scope drift')
@@ -52,7 +89,7 @@ def main():
     if manifest.exists():
         for name,digest in json.loads(manifest.read_text())['files'].items():
             if not (ROOT/name).is_file() or sha(ROOT/name)!=digest:errors.append(f'Publication manifest drift: {name}')
-    report={'status':'PASS' if not errors else 'FAIL','python_sources':checked_py,'local_links':links,'files':len(files),'errors':errors,'performance_source_gate':'OPEN_I01'}
+    report={'status':'PASS' if not errors else 'FAIL','python_sources':checked_py,'local_links':links,'files':len(files),'recipes':len(recipes),'invsqrt_source_modules':len(inv_build['source_sha256']),'dqi_source_pins':len(dqi_pins),'errors':errors,'performance_source_gate':'OPEN_I01','alternative_source_chain':'EXACT_OUTPUTS_AND_FULL_NATIVE_RECEIPTS'}
     print(json.dumps(report,indent=2))
     if errors:raise SystemExit(1)
 

@@ -6,7 +6,7 @@
 
 Research by **Francisco Angulo de Lafuente** · [ORCID 0009-0001-1634-7063](https://orcid.org/0009-0001-1634-7063) · [Citation](CITATION.cff) · [License policy](docs/LICENSE_POLICY.md)
 
-The selected chemistry achieves a **11.2328903× local cost reduction**, with **14,848 Toffolis and 427 qubits**, checked by the unmodified official verifier. The repository provides the frozen numeric table, a declarative GF(2) plan, source reconstruction and the receipts needed to examine that result. These are classical simulation results for the [Google Quantum AI competition](https://www.kaggle.com/competitions/google-verifiable-quantum-circuit-compilation).
+The selected chemistry achieves a **11.2343975× local cost reduction**, with **14,848 Toffolis and 427 qubits**, checked by the unmodified official verifier. The repository provides the frozen numeric table, a declarative GF(2) plan, source reconstruction and the receipts needed to examine that result. It also provides a fully source-generated three-task alternative. These are classical simulation results for the [Google Quantum AI competition](https://www.kaggle.com/competitions/google-verifiable-quantum-circuit-compilation).
 
 ## Measured chemistry
 
@@ -18,8 +18,15 @@ The selected chemistry achieves a **11.2328903× local cost reduction**, with **
 | Public gengsr chemistry | 11.2040924× | 14,958 | 427 |
 | Project s2 | 11.2298650× | 14,852 | 427 |
 | **Project s37** | **11.2328903×** | **14,848** | **427** |
+| **Project H14 GPU** | **11.2343975×** | **14,848** | **427** |
 
-The selected result improves the tested gengsr chemistry ratio by **0.2570%**. Two full salts pass at 64 shots per lookup address. error_2 is **19.9784971 mHa**, leaving **0.0215029 mHa** below the 20 mHa ceiling. Comparisons apply to these pinned circuits. [Results and evidence](docs/RESULTS.md).
+The selected result improves the tested gengsr chemistry ratio by approximately **0.2705%**. Two full salts pass at 64 shots per lookup address. error_2 is **19.9784971 mHa**, leaving **0.0215029 mHa** below the 20 mHa ceiling. Comparisons apply to these pinned circuits. [Results and evidence](docs/RESULTS.md).
+
+## GPU experiment
+
+![Actual 45-minute channel-gauge search with retained scientific evidence](assets/gauge-search.gif)
+
+A 45-minute GPU search used **2,048 states** and **58,962 steps**. Its final candidate lowers actual native cost by **0.0134161%** against s37 while preserving all fifteen angle circuits. Both final salts pass and all sixteen reconstructed output hashes match. [Protocol, invariants and measured result](docs/GPU_EXPERIMENT.md).
 
 ## How the compiler works
 
@@ -33,7 +40,7 @@ The pipeline fits a credited DF-THC factorization, chooses a Givens tree and 8-b
 
 ```bash
 python -m pip install -r requirements.txt
-python tools/build_chemistry.py build/chemistry --data /path/to/official/data --runtime /path/to/native/runtime
+python tools/build_chemistry.py build/chemistry --recipe recipes/h14-main --data /path/to/official/data --runtime /path/to/native/runtime
 python tools/verify_local.py chem build/chemistry build/receipt.json --data /path/to/official/data --runtime /path/to/native/runtime
 python tools/check_repository.py
 ```
@@ -44,7 +51,13 @@ Use Python 3.13 and the competition's native Kickmix runtime and data. The expec
 
 ![Actual shot coverage and explicitly separate local composite results](assets/verification.gif)
 
-The performance portfolio combines this chemistry with credited public invsqrt and DQI files. The full invsqrt check covers **200,540,928 shots**. Two DQI checks use **102,400 shots each**. Their local composite indices are **25.2098283** and **25.2483618**, using archived baselines. They are not Kaggle scores or confidence bounds. Original receipts and code fingerprints are in [evidence/official](evidence/official).
+The archived binary performance portfolio combines s37 chemistry with credited public invsqrt and DQI files. The full invsqrt check covers **200,540,928 shots**. Two DQI checks use **102,400 shots each**. Its local composite indices are **25.2098283** and **25.2483618**, using archived baselines. They are not Kaggle scores or confidence bounds. Original receipts and code fingerprints are in [evidence/official](evidence/official).
+
+## Complete source-generated portfolio
+
+![Three source constructions, output identities and full native checks](assets/source-portfolio.gif)
+
+The repository now also reconstructs all three tasks from source: a credited **87-qubit invsqrt construction** at **14.8152456×**, **DQI888** at **58.9945524× / 59.2655315×**, and the project's chemistry. Both recovered algorithms passed full stock verification. An executed eighteen-file build and package bind the exact outputs to their source manifests and native receipts. With selected H14 chemistry, its local composite indices are **21.4136246 / 21.4463608**. The validated eighteen-file ZIP is included in the [scientific release](https://github.com/Agnuxo1/qvc-chemistry-compiler/releases/tag/v0.2.0). [Build and package](docs/SOURCE_PORTFOLIO.md) · [Invsqrt](docs/SOURCE_INV.md) · [DQI](docs/SOURCE_DQI.md).
 
 ## A checked primitive experiment
 
@@ -56,7 +69,7 @@ A synthetic measurement-based carry experiment reduces its 32-bit example from *
 
 | Directory | Purpose |
 |---|---|
-| recipes/s37 | Frozen numeric table, GF(2) masks, pinned source and expected hashes |
+| recipes | Original s37, pilot and selected H14 tables, rotations, GF(2) masks and expected hashes |
 | tools | Portable reconstruction, native verification, checks and figure renderer |
 | compiler, tables, trees | Project compiler, fitting, rounding and tree-search research |
 | experiments, studies | Supporting experiments and diagnostic research scripts |
@@ -74,7 +87,7 @@ Original, separable project work is **MIT OR Apache-2.0**. The competition hando
 
 ## Observations
 
-**I01 remains open for the optimized performance portfolio:** the exact original invsqrt/DQI generators have not yet been recovered. Binary verification and an exact-source build are separate acceptance tests. The repository also contains an executable **source-complete control** with organizer-reference invsqrt/DQI, whose local composite is approximately **2.239566**. That control does not close optimized I01. [Source-recovery evidence](docs/SOURCE_RECOVERY.md).
+**I01 remains open for the original optimized performance portfolio:** its exact invsqrt/DQI generators have not yet been recovered. The new source-generated candidate has its own complete construction and lower measured index; it does not silently replace those performance artifacts. An executable organizer-reference source control is also retained, with local composite approximately **2.239566**. [Source-recovery evidence](docs/SOURCE_RECOVERY.md).
 
 Chemistry reconstructs exactly from saved inputs; deterministic retraining from the Hamiltonian is not established. The animations are rendered scientific illustrations of saved results or labelled schematics. No final Kaggle submission, prize eligibility or hardware performance is claimed. [Competition and publication record](docs/COMPETITION.md).
 

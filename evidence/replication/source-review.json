@@ -1,0 +1,10 @@
+{
+  "scope": "Bounded clean-context source review, not independent full native simulation",
+  "source_review": "92 DQI pins, 16 invsqrt module pins, 18 package/output hashes and receipt bindings, 17 retained stock-reader results, 97 ASTs checked. No circuit payload in source slices.",
+  "major_finding": "Explicit --runtime could be shadowed by upstream setup path insertion",
+  "resolution": "Wrapper restores explicit runtime precedence, asserts native path and records native SHA. Reviewer executed CPU import-sequence check: kickmix absent before and after gen.setup. No findings on recheck.",
+  "execution_followup": "Current corrected wrapper actually generated exact c3f3ac25 on Linux; see invsqrt-runtime-bound-build.json",
+  "author": "Francisco Angulo de Lafuente",
+  "orcid": "https://orcid.org/0009-0001-1634-7063",
+  "date": "2026-11-10"
+}

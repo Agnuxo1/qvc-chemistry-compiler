@@ -1,0 +1,806 @@
+[
+  {
+    "path": "build.py",
+    "bytes": 1853,
+    "same_prior_path": false,
+    "interesting_calls": [
+      [
+        23,
+        "spec.loader.exec_module"
+      ],
+      [
+        41,
+        "target.with_suffix('.build.json').write_text"
+      ],
+      [
+        37,
+        "open"
+      ]
+    ]
+  },
+  {
+    "path": "exp\\r-main\\narrow240\\chart_retimed.py",
+    "bytes": 1317,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "exp\\r-main\\narrow240\\converter.py",
+    "bytes": 7463,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "exp\\r-main\\narrow240\\core90.py",
+    "bytes": 2754,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "exp\\r-main\\narrow240\\decode_retimed.py",
+    "bytes": 1719,
+    "same_prior_path": false,
+    "interesting_calls": [
+      [
+        24,
+        "exec"
+      ]
+    ]
+  },
+  {
+    "path": "exp\\r-main\\narrow240\\direct_converter.py",
+    "bytes": 6423,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "exp\\r-main\\narrow240\\direct_kernels.py",
+    "bytes": 3402,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "exp\\r-main\\narrow240\\frozen_chart.py",
+    "bytes": 7854,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "exp\\r-main\\narrow240\\high_stream.py",
+    "bytes": 4505,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "exp\\r-main\\narrow240\\measured_heads.py",
+    "bytes": 5012,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "exp\\r-main\\narrow240\\phase_core.py",
+    "bytes": 1132,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "exp\\r-main\\narrow240\\phase_quantum.py",
+    "bytes": 1119,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "exp\\r-main\\narrow240\\rational.py",
+    "bytes": 4408,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "exp\\r-main\\narrow240\\replay_erase.py",
+    "bytes": 4989,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "exp\\r-main\\narrow240\\retimed.py",
+    "bytes": 4988,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "exp\\r-main\\narrow240\\root_fusion.py",
+    "bytes": 2548,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "exp\\r-main\\narrow240\\streamed.py",
+    "bytes": 11575,
+    "same_prior_path": false,
+    "interesting_calls": [
+      [
+        14,
+        "(Path(__file__).resolve().parent / 'permutations3.json').read_text"
+      ]
+    ]
+  },
+  {
+    "path": "exp\\r-main\\narrow240\\synth_stream.py",
+    "bytes": 1935,
+    "same_prior_path": false,
+    "interesting_calls": [
+      [
+        41,
+        "exec"
+      ]
+    ]
+  },
+  {
+    "path": "exp\\r-main\\narrow240\\truncated_converter.py",
+    "bytes": 1151,
+    "same_prior_path": false,
+    "interesting_calls": [
+      [
+        9,
+        "spec.loader.exec_module"
+      ]
+    ]
+  },
+  {
+    "path": "exp\\r-main\\narrow240\\truncated_small.py",
+    "bytes": 4258,
+    "same_prior_path": false,
+    "interesting_calls": [
+      [
+        45,
+        "binary_eval"
+      ]
+    ]
+  },
+  {
+    "path": "playbook\\kit\\decoder\\decode.py",
+    "bytes": 3696,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "playbook\\kit\\decoder\\final_decoder\\conversion.py",
+    "bytes": 8792,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "playbook\\kit\\decoder\\final_decoder\\decode.py",
+    "bytes": 18905,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "playbook\\kit\\decoder\\final_decoder\\synthesis.py",
+    "bytes": 5669,
+    "same_prior_path": false,
+    "interesting_calls": [
+      [
+        113,
+        "old.eval_implicit"
+      ],
+      [
+        128,
+        "old.eval_implicit"
+      ],
+      [
+        140,
+        "old.eval_implicit"
+      ],
+      [
+        142,
+        "old.eval_implicit"
+      ],
+      [
+        145,
+        "old.eval_implicit"
+      ],
+      [
+        156,
+        "old.eval_implicit"
+      ],
+      [
+        119,
+        "old.eval_implicit"
+      ],
+      [
+        124,
+        "old.eval_implicit"
+      ],
+      [
+        150,
+        "old.eval_implicit"
+      ],
+      [
+        152,
+        "old.eval_implicit"
+      ]
+    ]
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\alternating_gauge\\even_fold.py",
+    "bytes": 1689,
+    "same_prior_path": false,
+    "interesting_calls": [
+      [
+        31,
+        "old.eval_implicit"
+      ],
+      [
+        33,
+        "old.eval_implicit"
+      ],
+      [
+        23,
+        "old.eval_implicit"
+      ],
+      [
+        23,
+        "old.eval_implicit"
+      ]
+    ]
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\alternating_gauge\\kernel.py",
+    "bytes": 3000,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\alternating_gauge\\scalar.py",
+    "bytes": 2506,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\arithmetic\\division.py",
+    "bytes": 7663,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\arithmetic\\field.py",
+    "bytes": 19472,
+    "same_prior_path": false,
+    "interesting_calls": [
+      [
+        78,
+        "evalpoly"
+      ]
+    ]
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\arithmetic\\lowwidth.py",
+    "bytes": 6763,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\confluent_extract\\kernel.py",
+    "bytes": 2560,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\confluent_extract\\model.py",
+    "bytes": 9798,
+    "same_prior_path": false,
+    "interesting_calls": [
+      [
+        199,
+        "Path(__file__).with_name('results.json').write_text"
+      ],
+      [
+        188,
+        "(ROOT / 'exp/confluent_synthesis/fixtures.json').read_text"
+      ]
+    ]
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\confluent_synthesis\\kernel.py",
+    "bytes": 957,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\convert\\convert.py",
+    "bytes": 5916,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\convert\\hankel_check.py",
+    "bytes": 3093,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\convert\\kernels.py",
+    "bytes": 3034,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\convert\\repair.py",
+    "bytes": 5403,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\convert_short_hankel\\kernel.py",
+    "bytes": 3919,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\convert_short_hankel\\phase34.py",
+    "bytes": 1797,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\decoder\\common.py",
+    "bytes": 4446,
+    "same_prior_path": false,
+    "interesting_calls": [
+      [
+        122,
+        "s.write_across_shots"
+      ]
+    ]
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\decoder\\extract.py",
+    "bytes": 1716,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\decoder\\safe_bridge.py",
+    "bytes": 1584,
+    "same_prior_path": false,
+    "interesting_calls": [
+      [
+        17,
+        "write"
+      ],
+      [
+        17,
+        "write"
+      ],
+      [
+        17,
+        "write"
+      ],
+      [
+        24,
+        "(ROOT / 'exp/decoder/safe_bridge.json').write_text"
+      ]
+    ]
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\decoder\\synthesis.py",
+    "bytes": 6872,
+    "same_prior_path": false,
+    "interesting_calls": [
+      [
+        72,
+        "evaluation_coefficients"
+      ],
+      [
+        99,
+        "expose_eval"
+      ],
+      [
+        105,
+        "expose_eval"
+      ],
+      [
+        86,
+        "expose_eval"
+      ],
+      [
+        86,
+        "expose_eval"
+      ]
+    ]
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\fold_cached_norm\\kernel.py",
+    "bytes": 3995,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\fold_cached_norm\\phase34.py",
+    "bytes": 238,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\fold_joint\\divide.py",
+    "bytes": 2901,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\fold_joint\\kernel.py",
+    "bytes": 5183,
+    "same_prior_path": false,
+    "interesting_calls": [
+      [
+        39,
+        "base.evaluation_coefficients"
+      ],
+      [
+        69,
+        "old.eval_implicit"
+      ],
+      [
+        78,
+        "old.eval_implicit"
+      ],
+      [
+        56,
+        "old.eval_implicit"
+      ],
+      [
+        59,
+        "old.eval_implicit"
+      ],
+      [
+        71,
+        "old.eval_implicit"
+      ],
+      [
+        73,
+        "old.eval_implicit"
+      ]
+    ]
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\inverse12_escape\\joint.py",
+    "bytes": 5243,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\inverse12_escape\\zero1.py",
+    "bytes": 2603,
+    "same_prior_path": false,
+    "interesting_calls": [
+      [
+        9,
+        "Path(__file__).with_name('zero_layout.json').read_text"
+      ]
+    ]
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\inverse19_joint\\kernel.py",
+    "bytes": 4332,
+    "same_prior_path": false,
+    "interesting_calls": [
+      [
+        10,
+        "Path(__file__).with_name('layout.json').read_text"
+      ]
+    ]
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\inverse_search\\baseline.py",
+    "bytes": 794,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\inverse_search\\inverse20.py",
+    "bytes": 6837,
+    "same_prior_path": false,
+    "interesting_calls": [
+      [
+        14,
+        "Path(__file__).with_name('optimized.json').read_text"
+      ]
+    ]
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\inverse_search\\inverse20_iso.py",
+    "bytes": 3500,
+    "same_prior_path": false,
+    "interesting_calls": [
+      [
+        12,
+        "Path(__file__).with_name('optimized_isotopy2.json').read_text"
+      ]
+    ]
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\inverse_width\\kernel.py",
+    "bytes": 5055,
+    "same_prior_path": false,
+    "interesting_calls": [
+      [
+        14,
+        "Path(__file__).with_name('partial5.json').read_text"
+      ],
+      [
+        15,
+        "(ROOT / 'exp/inverse_search/optimized.json').read_text"
+      ]
+    ]
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\inverse_width_subspaces\\kernel19.py",
+    "bytes": 3474,
+    "same_prior_path": false,
+    "interesting_calls": [
+      [
+        14,
+        "Path(__file__).with_name('inverse19.json').read_text"
+      ]
+    ]
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\jet24\\kernel.py",
+    "bytes": 5518,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\jet24\\pro_jet.py",
+    "bytes": 17134,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\mask_projection\\kernel.py",
+    "bytes": 3709,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\mul99\\kernels.py",
+    "bytes": 3145,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\mul99\\phase36.py",
+    "bytes": 2607,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\mul99\\schedules.py",
+    "bytes": 3049,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\noscratch\\kernels.py",
+    "bytes": 2023,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\noscratch\\phase39.py",
+    "bytes": 2620,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\noscratch\\schedules.py",
+    "bytes": 2240,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\partial_gauge\\prefix.py",
+    "bytes": 2846,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\partial_gauge\\scalar.py",
+    "bytes": 1188,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\partial_gauge\\synthesis_noflag.py",
+    "bytes": 6887,
+    "same_prior_path": false,
+    "interesting_calls": [
+      [
+        39,
+        "base.expose_eval"
+      ],
+      [
+        115,
+        "eval_implicit"
+      ],
+      [
+        118,
+        "eval_implicit"
+      ],
+      [
+        34,
+        "base.expose_eval"
+      ],
+      [
+        35,
+        "base.evaluation_coefficients"
+      ],
+      [
+        38,
+        "base.expose_eval"
+      ],
+      [
+        103,
+        "eval_implicit"
+      ],
+      [
+        103,
+        "eval_implicit"
+      ]
+    ]
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\partial_gauge\\tail.py",
+    "bytes": 1830,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\phase24_tradeoff\\kernel.py",
+    "bytes": 5835,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\phase24_tradeoff\\phase6small.py",
+    "bytes": 3254,
+    "same_prior_path": false,
+    "interesting_calls": [
+      [
+        6,
+        "Path(__file__).with_name('phase6_six_search.json').read_text"
+      ]
+    ]
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\safe_scalar\\converter.py",
+    "bytes": 8008,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\safe_scalar\\kernel.py",
+    "bytes": 1660,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\safe_scalar\\phase.py",
+    "bytes": 2756,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\scan\\scan.py",
+    "bytes": 2044,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\tail_alias\\divide.py",
+    "bytes": 912,
+    "same_prior_path": false,
+    "interesting_calls": []
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\tail_alias\\kernel.py",
+    "bytes": 4037,
+    "same_prior_path": false,
+    "interesting_calls": [
+      [
+        42,
+        "old.eval_implicit"
+      ],
+      [
+        50,
+        "old.eval_implicit"
+      ],
+      [
+        30,
+        "old.eval_implicit"
+      ],
+      [
+        34,
+        "old.eval_implicit"
+      ],
+      [
+        44,
+        "old.eval_implicit"
+      ],
+      [
+        46,
+        "old.eval_implicit"
+      ]
+    ]
+  },
+  {
+    "path": "playbook\\kit\\decoder\\exp\\zero_padding_synthesis\\kernel.py",
+    "bytes": 3568,
+    "same_prior_path": false,
+    "interesting_calls": [
+      [
+        32,
+        "old.eval_implicit"
+      ],
+      [
+        34,
+        "old.eval_implicit"
+      ],
+      [
+        36,
+        "old.eval_implicit"
+      ],
+      [
+        36,
+        "old.eval_implicit"
+      ],
+      [
+        52,
+        "old.eval_implicit"
+      ],
+      [
+        52,
+        "old.eval_implicit"
+      ],
+      [
+        54,
+        "old.eval_implicit"
+      ],
+      [
+        56,
+        "old.eval_implicit"
+      ],
+      [
+        58,
+        "old.eval_implicit"
+      ],
+      [
+        58,
+        "old.eval_implicit"
+      ],
+      [
+        21,
+        "old.eval_implicit"
+      ],
+      [
+        24,
+        "old.eval_implicit"
+      ],
+      [
+        44,
+        "old.eval_implicit"
+      ],
+      [
+        44,
+        "old.eval_implicit"
+      ]
+    ]
+  },
+  {
+    "path": "playbook\\kit\\decoder\\playbook\\exp\\cf_check\\audit.py",
+    "bytes": 7065,
+    "same_prior_path": false,
+    "interesting_calls": []
+  }
+]
