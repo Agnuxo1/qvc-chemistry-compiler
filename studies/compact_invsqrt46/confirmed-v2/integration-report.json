@@ -1,0 +1,56 @@
+{
+  "status": "PASS_SOURCE_BUILT_EXACT_PROOF_TWO_FULL_OFFICIAL_SALTS",
+  "upstream_author": "Syed Asad Ali",
+  "upstream_license": "Apache-2.0",
+  "integration_author": "Francisco Angulo de Lafuente",
+  "orcid": "https://orcid.org/0009-0001-1634-7063",
+  "source_archive_sha256": "7d9801ae20e942dba2211a656bba6014a0a16d57da534c0b60328d1c5d9d8254",
+  "source_pins_checked": 560,
+  "engine_sha256": "c66b3216c4029e0cdfd09054306aa0feadf53ab2f50c1164e37f752874e5005e",
+  "verifier_sha256": "ddef520dec6b68d1cf0a6f328ddd36d79eb84570b9192cf3f7acaf073f06733a",
+  "work": "/mnt/datos/proyectos/qvc-i01-46-20261113/confirmed-work-v2/compact46-ws1p5rvn",
+  "official_runs": [
+    {
+      "name": "default",
+      "salt": "",
+      "command": [
+        "/home/ai/venvs/training/bin/python",
+        "-B",
+        "/home/ai/pc/d/PROJECTS/.cognition/qvc-proyecto/auditoria-codex-20261110/servidor-src/data/verifiers/invsqrt/verify_submission_invsqrt.py",
+        "/mnt/datos/proyectos/qvc-i01-46-20261113/confirmed-v2/invsqrt.kmb",
+        "--max-workers",
+        "4"
+      ],
+      "seconds": 178.82158339099988,
+      "returncode": 0,
+      "receipt_sha256": "f8674bfcffed700ba4d89fcf616efea390fd78642a8c0856016e376fe0c07eb4"
+    },
+    {
+      "name": "independent",
+      "salt": "qvc-i01-source46-20261113-independent",
+      "command": [
+        "/home/ai/venvs/training/bin/python",
+        "-B",
+        "/home/ai/pc/d/PROJECTS/.cognition/qvc-proyecto/auditoria-codex-20261110/servidor-src/data/verifiers/invsqrt/verify_submission_invsqrt.py",
+        "/mnt/datos/proyectos/qvc-i01-46-20261113/confirmed-v2/invsqrt.kmb",
+        "--max-workers",
+        "4",
+        "--salt",
+        "qvc-i01-source46-20261113-independent"
+      ],
+      "seconds": 176.0802657339991,
+      "returncode": 0,
+      "receipt_sha256": "f0a086f369b77ca6d7187b139114dc2e1fd5afc5634b7e6688c53779819b1090"
+    }
+  ],
+  "historical_exact_I01": "OPEN",
+  "audit": {
+    "generator_pid": 163783,
+    "nonce": "549e3b1402714e0581d38cd30e36bfd2",
+    "starts": 1,
+    "ends": 1,
+    "log_sha256": "10546fd4823012af4a08c536965cf9a0296cceec2b6e5274d54508757162b5fb"
+  },
+  "output_sha256": "321aff83636214196daa9cbc9dcc9c5e12a155bcff8d9989e98b8cee40935177",
+  "seconds": 465.6713945210013
+}

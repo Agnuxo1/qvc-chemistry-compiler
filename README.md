@@ -4,6 +4,10 @@
 
 **Reproducible GF(2) angle loaders for the FeMoCo quantum-circuit benchmark.**
 
+## Complete compact inverse study · 13 November
+
+The new [46-qubit inverse study](studies/compact_invsqrt46/README.md) integrates Syed Asad Ali's Apache-2.0 source generator with this project's existing source-backed DQI and chemistry. Two full inverse salts pass **401,081,856 shots**; the complete 18-file portfolio passes the stock input readers and package checks. Its **25.90064 local composite** improves on the selected source v0.3 portfolio by **20.48%**. Sources, exact hashes, receipts and a scientific resource animation are included. This separately identified study preserves the selected v0.3 release and the historical exact-source I01 status.
+
 <!-- OPENCLAW-EVIDENCE-AT-A-GLANCE:START -->
 <p><sub><strong>Why this project stands out — evidence at a glance</strong></sub></p>
 <p><sub><strong>Distinctive value.</strong> The README reports a chemistry reference-to-cost ratio of 11.2346609× for the selected project artifact versus 11.2040924× for the public gengsr artifact, approximately 0.2728% higher for those pinned circuits. The preregistration also reports a full stock-verifier pass for an 87-qubit inverse-square-root source control. The underlying receipts were not independently examined. Sources: <a href="https://github.com/Agnuxo1/qvc-chemistry-compiler/blob/284c1533cdc7dc7daf017eb96f60dedc6afad520/README.md">README.md</a>, <a href="https://github.com/Agnuxo1/qvc-chemistry-compiler/blob/284c1533cdc7dc7daf017eb96f60dedc6afad520/evidence/experiments/invsqrt-PREREGISTRATION.md">evidence/experiments/invsqrt-PREREGISTRATION.md</a>.</sub></p>

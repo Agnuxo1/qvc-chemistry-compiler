@@ -1,0 +1,65 @@
+[
+  {
+    "path": "work/c10/narrow/arithmetic_round2/native/candidate10/arithmetic_variant.py",
+    "line": 26,
+    "function": "check_manifest",
+    "reads": 341,
+    "excerpt": "    for pin in manifest['files']:\n        source = root / pin['path']\n        raw = source.read_bytes()\n        assert len(raw) == pin['bytes'], pin['path']\n        assert hashlib.sha256(raw).hexdigest() == pin['sha256'], pin['path']\n    return manifest"
+  },
+  {
+    "path": "work/c10/narrow/arithmetic_round2/research/divider/native_ar004/adapter.py",
+    "line": 18,
+    "function": "sha",
+    "reads": 16,
+    "excerpt": "\ndef sha(path):\n    return hashlib.sha256(Path(path).read_bytes()).hexdigest()\n\n\ndef verify():"
+  },
+  {
+    "path": "work/c10/narrow/arithmetic_round2/research/root_normalization/native_rn2df/normalization9475.py",
+    "line": 19,
+    "function": "<module>",
+    "reads": 7,
+    "excerpt": "\nfor pin in json.loads((HERE/'INPUTS.json').read_text())['files']:\n    raw=(NARROW/pin['path']).read_bytes()\n    assert len(raw)==pin['bytes']and hashlib.sha256(raw).hexdigest()==pin['sha256'],pin['path']\nassert checked(ACCEPTANCE,ACCEPTANCE_SHA)['native_build_authorized']\npath=NARROW/'research/quantized_producer/pair_normalization.py'"
+  },
+  {
+    "path": "work/c10/narrow/arithmetic_round2/research/root_normalization/native_rn3/root192.py",
+    "line": 12,
+    "function": "<module>",
+    "reads": 7,
+    "excerpt": "HERE=Path(__file__).resolve().parent;NARROW=HERE.parents[3]\nfor pin in json.loads((HERE/'INPUTS.json').read_text())['files']:\n    path=NARROW/pin['path'];raw=path.read_bytes()\n    assert len(raw)==pin['bytes'] and hashlib.sha256(raw).hexdigest()==pin['sha256'],pin['path']\nENGINE=NARROW/'checkpoint002/cleanroom/baseline_stage97/engine'\nsys.path[:0]=[str(NARROW/'base/official/kickmix'),str(ENGINE)]"
+  },
+  {
+    "path": "work/c10/narrow/native/candidate04/variant.py",
+    "line": 16,
+    "function": "verify_inputs",
+    "reads": 7,
+    "excerpt": "def verify_inputs():\n    for pin in INPUTS['files']:\n        raw=(NARROW/pin['path']).read_bytes()\n        assert len(raw)==pin['bytes'] and hashlib.sha256(raw).hexdigest()==pin['sha256'],pin['path']\n\n"
+  },
+  {
+    "path": "work/c10/narrow/native/candidate04/variant.py",
+    "line": 55,
+    "function": "checked_quantized",
+    "reads": 5,
+    "excerpt": "    assert result['script_sha256']==hashlib.sha256((RESEARCH/'quantize50.py').read_bytes()).hexdigest()\n    for relative,digest in result['source_pins'].items():\n        assert hashlib.sha256((NARROW/relative).read_bytes()).hexdigest()==digest,relative\n    assert result['inputs']==3133452 and result['original_tolerance_unchanged']\n    assert result['accuracy_decision_uses_only_integer_arithmetic']\n    assert result['new_generic_turn_units50']==list(NEW_TURN_UNITS50)"
+  },
+  {
+    "path": "work/c10/narrow/native/candidate05/variant.py",
+    "line": 14,
+    "function": "verify_inputs",
+    "reads": 14,
+    "excerpt": "def verify_inputs():\n    for pin in INPUTS['files']:\n        raw=(NARROW/pin['path']).read_bytes()\n        assert len(raw)==pin['bytes'] and hashlib.sha256(raw).hexdigest()==pin['sha256'],pin['path']\n\n"
+  },
+  {
+    "path": "work/c10/narrow/native/candidate06/variant.py",
+    "line": 26,
+    "function": "verify_inputs",
+    "reads": 42,
+    "excerpt": "    manifest = json.loads((HERE / 'INPUTS.json').read_text())\n    for pin in manifest['files']:\n        raw = (NARROW / pin['path']).read_bytes()\n        assert len(raw) == pin['bytes']\n        assert hashlib.sha256(raw).hexdigest() == pin['sha256'], pin['path']\n"
+  },
+  {
+    "path": "work/c10/narrow/native/candidate07/variant.py",
+    "line": 26,
+    "function": "verify_inputs",
+    "reads": 42,
+    "excerpt": "def verify_inputs():\n    for pin in json.loads((HERE / 'INPUTS.json').read_text())['files']:\n        raw = (NARROW / pin['path']).read_bytes()\n        assert len(raw) == pin['bytes'], pin['path']\n        assert hashlib.sha256(raw).hexdigest() == pin['sha256'], pin['path']\n"
+  }
+]

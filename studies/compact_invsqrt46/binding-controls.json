@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "checks": [
+    "real_execution_binding_pass",
+    "isolated_valid_copy_pass",
+    "duplicate_receipt_rejected",
+    "swapped_receipts_rejected",
+    "command_salt_mismatch_rejected",
+    "run_order_mismatch_rejected",
+    "execution_report_root_mismatch_rejected"
+  ]
+}

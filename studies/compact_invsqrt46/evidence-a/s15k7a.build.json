@@ -1,0 +1,53 @@
+{
+  "status": "COMPILED_FROM_TEXT_NOT_YET_PROVED_OR_QUALIFIED",
+  "source_kmx": "/home/ai/pc/d/PROJECTS/.cognition/qvc-proyecto/implementation-20261113-i01/integration46/work-a/invsqrt_build.zOGuIQ/tree/final/final_text.kmx",
+  "source_kmx_sha256": "e5c8626cf408dc292ba62dfea8cd164fa6626d488222edcdfaec898557670aa8",
+  "provenance": {},
+  "Q": 46,
+  "exact_native_expectation": {
+    "status": "EXACT_EXPECTATION_FROM_CLASSICAL_GUARDS",
+    "assumptions": [
+      "Every active HMR measures a computational-basis wire and has a fair independent outcome.",
+      "Conditional costs count instruction execution, independently of quantum control values."
+    ],
+    "accounting": "exact Boolean guards; GF2-rank enumeration of affine leaves",
+    "rank_cap": 12,
+    "maximum_rank_used": 7,
+    "syntactic_measurements": 1297,
+    "static": {
+      "toffoli_like": 1599,
+      "T": 1,
+      "generic_rotations": 33
+    },
+    "mean": {
+      "toffoli_like": "193481/128",
+      "T": "1",
+      "generic_rotations": "33"
+    },
+    "mean_numeric": {
+      "toffoli_like": 1511.5703125,
+      "T": 1.0,
+      "generic_rotations": 33.0
+    },
+    "mean_Toffoli_plus_T_quarter": "193513/128",
+    "independent_condition_depth_not_assumed": true,
+    "official_verified": false
+  },
+  "cost_model": {
+    "Q": 46,
+    "toffoli_like": 1511.5703125,
+    "T": 1.0,
+    "generic_rotations": 33.0,
+    "rotation_charge": 230.84805946161188,
+    "per_shot": 1742.668371961612,
+    "modelled_cost": 80162.74511023414,
+    "label": "modelled from exact gate expectation; margin assumed unchanged; not measured"
+  },
+  "actual_HMR_variables": 1297,
+  "native_operations": 34789,
+  "kmb_sha256": "321aff83636214196daa9cbc9dcc9c5e12a155bcff8d9989e98b8cee40935177",
+  "native_text_sha256": "e5c8626cf408dc292ba62dfea8cd164fa6626d488222edcdfaec898557670aa8",
+  "seconds": 0.8245158869995066,
+  "official_verifier": false,
+  "no_submission": true
+}

@@ -1,0 +1,26 @@
+{
+  "status": "PASS_FULL_SOURCE_CANDIDATE_LOCALLY_VALIDATED",
+  "archive_sha256": "5b5164307220b5b74266e4cbc942eeb4d28c270cc175d11e432710a76d5bb2f5",
+  "archive_bytes": 29996340,
+  "official_input_readers": 17,
+  "source_outputs": 18,
+  "inverse_full_shots_per_salt": 200540928,
+  "inverse_salts": 2,
+  "total_inverse_shots": 401081856,
+  "local_composite_indices": {
+    "default-a": 25.900639352901063,
+    "default-b": 25.900639959847748,
+    "independent-a": 25.90064318220791,
+    "independent-b": 25.900643789154685
+  },
+  "comparison_source_v03": 21.498484409138246,
+  "historical_exact_I01": "OPEN",
+  "submission": "NONE",
+  "publication": "NONE",
+  "scope": "Archived baselines and measured salts; not official score or confidence limits",
+  "native_execution_report_sha256": "1408e206c0ddeea0fb1973523ec3efbdff80f19a710cf329883846707bdb2d7f",
+  "native_receipt_hashes": {
+    "default": "f8674bfcffed700ba4d89fcf616efea390fd78642a8c0856016e376fe0c07eb4",
+    "independent": "f0a086f369b77ca6d7187b139114dc2e1fd5afc5634b7e6688c53779819b1090"
+  }
+}

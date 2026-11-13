@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "real_receipts_accepted": 2,
+  "real_snapshot_accepted": 123,
+  "negative_controls_rejected": [
+    "circuit_sha256",
+    "verified_shots",
+    "num_qubits",
+    "status",
+    "manifest_root"
+  ]
+}

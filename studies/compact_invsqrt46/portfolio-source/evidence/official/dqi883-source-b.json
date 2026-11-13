@@ -1,0 +1,37 @@
+{
+  "task": "dqi",
+  "scope": "Full local native check; not a Kaggle submission",
+  "status": "PASS",
+  "salt": "source-policy-14-16-independent-b",
+  "input_sha256": {
+    "dqi.kmb": "0b634cca809c90493b67ac8104c9a307c99556d9edae74e26b460f4283aececd"
+  },
+  "verifier_sha256": "f14274bc0943fb9769ddb01131be6063191a15009fe1caf1d4bdd9fd25194e65",
+  "wrapper_sha256": "0238644f5469512c6d4af5069462649bb2e44b351cc94d2fd0aaf0a725d3a272",
+  "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+  "platform": "Linux-6.12.115+deb13.1-amd64-x86_64-with-glibc2.41",
+  "seconds": 107.33504106401233,
+  "official_result": {
+    "status": "PASS",
+    "score": 409389715470.68536,
+    "m": 4095,
+    "n": 70,
+    "degree": 12,
+    "r": 2016,
+    "verified_shots": 102400,
+    "value_errors": 0,
+    "phase_errors": 0,
+    "empirical_error_rate": 0.0,
+    "effective_error_rate": 0.0008660587301657926,
+    "log2_delta": -128.0,
+    "repetition_factor": 1.1912604648115832,
+    "mean_error_weight": 31.046737331746634,
+    "toffoli_count": 440766.7165234375,
+    "max_toffoli_count": 455502,
+    "reaction_depth": 8263,
+    "num_ops": 61975433,
+    "num_qubits": 883,
+    "num_bits": 109577,
+    "circuit_sha256": "0b634cca809c90493b67ac8104c9a307c99556d9edae74e26b460f4283aececd"
+  }
+}

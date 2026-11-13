@@ -1,0 +1,80 @@
+{
+  "format": 1,
+  "author": "Francisco Angulo de Lafuente",
+  "orcid": "https://orcid.org/0009-0001-1634-7063",
+  "provenance": {
+    "D:\\PROJECTS\\.cognition\\qvc-proyecto\\generador\\rasgos.py": "1114bd87b2fbe5127931a6ad73cd73fd5063b9a07cdc3221980368a07cdb6f63",
+    "D:\\PROJECTS\\.cognition\\qvc-proyecto\\pipeline_publico\\paquete\\dfthc_refit\\tensorqrom.py": "e6bbcaf1ad7ad025f2105f0233aa9e232a211d1d76bac867da9282b21d4ed017",
+    "D:\\PROJECTS\\.cognition\\qvc-proyecto\\pipeline_publico\\paquete\\dfthc_refit\\fourqrom.py": "8421c051b6b86e93bfd23722a416e7aa8aee5b4eaf7693a8cd61eb3bce3fc968",
+    "D:\\PROJECTS\\.cognition\\qvc-proyecto\\pipeline_publico\\paquete\\dfthc_refit\\encode.py": "3b3fe0a7de33d283327c6466403a95b823ab65e600f5d08e83a4df45fb9a038a",
+    "D:\\PROJECTS\\.cognition\\qvc-proyecto\\pipeline_publico\\paquete\\dfthc_refit\\paths.py": "c04d3b681597ef2c97348cc6802016a6b04cf88a4226291e83a5c2b2fb1907ae",
+    "D:\\PROJECTS\\.cognition\\qvc-proyecto\\pipeline_publico\\paquete\\dfthc_refit\\experiments\\rmcode.py": "5e00c3562f47e3fd6d56342d9dcbe8a635fc10ee419faaedaca896cb5ac6406b"
+  },
+  "table_sha256": "3afa72e5619c2f2b3325f1f934cf3946ce774ceeb84df672d60e32174269325e",
+  "plan_sha256": "3accd1865200c7d1db6396a215140a218d1102e7f5f2ff7152f072659ce8ce91",
+  "source_sha256": {
+    "encode.py": "3b3fe0a7de33d283327c6466403a95b823ab65e600f5d08e83a4df45fb9a038a",
+    "fourqrom.py": "8421c051b6b86e93bfd23722a416e7aa8aee5b4eaf7693a8cd61eb3bce3fc968",
+    "paths.py": "c04d3b681597ef2c97348cc6802016a6b04cf88a4226291e83a5c2b2fb1907ae",
+    "rasgos.py": "1114bd87b2fbe5127931a6ad73cd73fd5063b9a07cdc3221980368a07cdb6f63",
+    "rmcode.py": "5e00c3562f47e3fd6d56342d9dcbe8a635fc10ee419faaedaca896cb5ac6406b",
+    "tensorqrom.py": "e6bbcaf1ad7ad025f2105f0233aa9e232a211d1d76bac867da9282b21d4ed017"
+  },
+  "expected_files": {
+    "angle_k_0.kmb": "3db3e4038ee004742e957c92bacc90553f2e239f3ed72c1ab57cab40b3dc5b21",
+    "angle_k_1.kmb": "b36929850f7997f20f33f45ace066b31f52940573a0df0d9ae92c68c5e5e8a11",
+    "angle_k_10.kmb": "b9711454e6297b241ee463347b23dfb8292ca1245ea510444198e8dc2c666258",
+    "angle_k_11.kmb": "92aecd4b5e823b855ee0770c39053c2fe8013088c781c99ccc19a306440696d2",
+    "angle_k_12.kmb": "4ae8949cf42438844f6f704f94a098a0f644bc5d28422eb11c014e8e00cc66ea",
+    "angle_k_13.kmb": "a7f2dad65b8bdb220739d58a7f9169d32741d52a2ae016d177fb4f1b7ebf9238",
+    "angle_k_14.kmb": "417e13887e940a9fd3a469adc26f3dac8dea7ddcbff6870d0bc6624d65a4886a",
+    "angle_k_2.kmb": "bf74609c2245bb624228995c59f4ea29e5af517b461371423e48247f5a027993",
+    "angle_k_3.kmb": "f7162495eaeb8d00cf37459fe141ddc3defa2413236496ef8d91c5f84ba48130",
+    "angle_k_4.kmb": "43187d6838907f296ab163fdb4c23c0debb183c12c38d5d8d359d08de700a0b8",
+    "angle_k_5.kmb": "d5d75346ec7b237287c2b0767e7f97d5f684aa79d07f9952b5c3970fea1fee0d",
+    "angle_k_6.kmb": "e482f484fe0d742e2efa5af1dfc58dfbf696295f1712e8ffc14c225aeb445d38",
+    "angle_k_7.kmb": "2aaf4f3a89431e3d7b58a6b2d9bddfa9dd0b843e3665da88002dd9606989add2",
+    "angle_k_8.kmb": "da0e651fe528b806526acad75442721e9787dd00ae7e828cb380862a6e0dbe84",
+    "angle_k_9.kmb": "535886c60394b812c53f2873bcbf051e870196824a4d419412b80f03d74369f1",
+    "submission.npz": "33393e0b34a1357ab3964954316f35560894d64492136d2475f0f279f276ebaa"
+  },
+  "products_per_circuit": [
+    198,
+    198,
+    198,
+    197,
+    197,
+    197,
+    197,
+    197,
+    197,
+    197,
+    197,
+    197,
+    198,
+    197,
+    197
+  ],
+  "scope": "Exact reconstruction from a frozen trained table after a verified orthogonal channel gauge, unchanged declarative GF(2) plan and source. No deterministic retraining claim.",
+  "gauge_transform": {
+    "initial_table_sha256": "a367a5557d05eee97c0b359fbdd643e203f2d359b37c1442fef7993037ecbf33",
+    "rotation_sha256": "1bebb4472e312a8ee341e9cfb3bdc4f13a197360aa8b857689a8e5f05b9ad695",
+    "transform": "A=[W;H2_I], A_new=A@Q independently per group",
+    "augmented_gram_max_drift": 1.0658141036401503e-14,
+    "generator_sha256": "13a79c7b0bcc76919c2510aa8c3a0f7f0a526ad84f327f447d5352958ac33be3",
+    "parent_angle_recipe": "h14-main",
+    "circuit_files_unchanged": 15
+  },
+  "gauge_refinement": {
+    "method": "Reviewed v2 numeric channel rotation; source unchanged",
+    "source_sha256": "a8cd23c65bb4af6a02554903cab71d1dbc30246b20d7dc02d5cd17cfb97c2105",
+    "seed_sha256": "a367a5557d05eee97c0b359fbdd643e203f2d359b37c1442fef7993037ecbf33",
+    "rotation_sha256": "1bebb4472e312a8ee341e9cfb3bdc4f13a197360aa8b857689a8e5f05b9ad695",
+    "baseline_lambda_h2": 272.3643451745173,
+    "candidate_lambda_h2": 272.35105882409533,
+    "gpu_states": 4096,
+    "wall_seconds": 3600,
+    "training_deterministic": false,
+    "exact_numeric_recipe_reconstruction": true
+  }
+}

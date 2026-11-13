@@ -1,0 +1,23 @@
+{
+  "scope": "Fixed local native measurements; animation is highlighting, not a simulated trajectory",
+  "records": [
+    {
+      "label": "Source v0.3 (c3)",
+      "qubits": 87,
+      "cost": 140178.1847720425,
+      "receipt_sha256": "b44d3e0c1c823e0467fba4586c4111b1bf8e0014e483328b7dca9a7237586a3a"
+    },
+    {
+      "label": "Historical 62Q",
+      "qubits": 62,
+      "cost": 94537.58701591205,
+      "receipt_sha256": "d6fc58ada73fa336fb021e03c16b8b8e71fe1940ae03e5967d7d5bbc892df312"
+    },
+    {
+      "label": "Syed source 46Q",
+      "qubits": 46,
+      "cost": 80162.73214111096,
+      "receipt_sha256": "f8674bfcffed700ba4d89fcf616efea390fd78642a8c0856016e376fe0c07eb4"
+    }
+  ]
+}
