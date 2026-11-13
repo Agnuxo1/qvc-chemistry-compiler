@@ -1,0 +1,51 @@
+{
+  "status": "PASS_FULL_SOURCE_46_889_DEEP512_LOCAL_CANDIDATE",
+  "source_outputs": 18,
+  "stock_circuit_readers": 17,
+  "dqi_salts": 4,
+  "dqi_total_shots": 409600,
+  "dqi_value_errors": {
+    "default": 0,
+    "a": 1,
+    "b": 0,
+    "c": 0
+  },
+  "dqi_phase_errors": {
+    "default": 0,
+    "a": 0,
+    "b": 0,
+    "c": 0
+  },
+  "local_composite_indices": {
+    "default-default-a": 27.016395198473727,
+    "default-default-b": 27.016395198473727,
+    "default-a-a": 26.975162261465695,
+    "default-a-b": 26.975162261465695,
+    "default-b-a": 27.016398931241834,
+    "default-b-b": 27.016398931241834,
+    "default-c-a": 27.016398302113153,
+    "default-c-b": 27.016398302113153,
+    "independent-default-a": 27.016399192740657,
+    "independent-default-b": 27.016399192740657,
+    "independent-a-a": 26.975166249636498,
+    "independent-a-b": 26.975166249636498,
+    "independent-b-a": 27.016402925509315,
+    "independent-b-b": 27.016402925509315,
+    "independent-c-a": 27.01640229638054,
+    "independent-c-b": 27.01640229638054
+  },
+  "observed_composite_range": [
+    26.975162261465695,
+    27.016402925509315
+  ],
+  "range_scope": "All16 combinations of fixed measured salts, not confidence bounds or official scores",
+  "archive_sha256": "0059f20ad2b9822318c208d28093714ca0e9440271262387c5b1df0109d3b30e",
+  "archive_bytes": 49338223,
+  "dqi_report_sha256": "5a132e425c9b3a823edcaaa12b66815bc4d61f0c387449cadc9053d08ec66a4c",
+  "inverse_report_sha256": "1408e206c0ddeea0fb1973523ec3efbdff80f19a710cf329883846707bdb2d7f",
+  "constructor_sha256": "dd6dbe2fc80690a0607732f2902ca31b7feed91936988efda4f1a804cc8674e2",
+  "qualifier_sha256": "47426bf7ab9332bbab4711c154d19039f209c8bd1ba7de1441077336fa144cc4",
+  "historical_exact_I01": "OPEN",
+  "promotion": "NONE",
+  "submission": "NONE"
+}

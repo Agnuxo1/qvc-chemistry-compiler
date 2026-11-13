@@ -1,0 +1,121 @@
+{
+  "status": "PASS_TWO_SOURCE_BUILDS_FOUR_FULL_OFFICIAL_SALTS",
+  "archive_sha256": "49e2b331d4008afb724985caf1038765b7a910f08838b590bf6e8fb692772763",
+  "source_pins_checked": 430,
+  "runner_sha256": "73f837a473a1b0bb4b7a50b69c44b14f81acb2b5b8f21e73a037f456e0faacc8",
+  "shim_sha256": "e93b17929601d081608901e04d1d7e68ea21d604d151520535c30b9189da4abb",
+  "engine_sha256": "c66b3216c4029e0cdfd09054306aa0feadf53ab2f50c1164e37f752874e5005e",
+  "verifier_sha256": "f14274bc0943fb9769ddb01131be6063191a15009fe1caf1d4bdd9fd25194e65",
+  "builds": [
+    {
+      "name": "a",
+      "sha256": "7cbe8ecf6f6e9743529b574f019504bb1712ce06fbb570c719ce9d9e2c914cd9",
+      "bytes": 455590024,
+      "source_guard_seconds": 163.35104846954346,
+      "resumed_validation_of_existing_build": true,
+      "nonce": "c08d229fa319478da3f00d7efc5853cd",
+      "generator_pid": 206801,
+      "audit_sha256": "e1192ab4006cc08f3f32a932bb9a718f79a63db0d903dc6b59162bfc63949b46",
+      "guard_report_sha256": "9c3dceec3c5e5bb7807709d7bbd0a22c9b3c1b35de8abbc1ffacfe856c1ac4dd",
+      "build_report_sha256": "fcb1774ec2022f511a6c28628956268846acbe96270e0ac01f331d8cc8d39359",
+      "source_guard_returncode": 0
+    },
+    {
+      "name": "b",
+      "sha256": "7cbe8ecf6f6e9743529b574f019504bb1712ce06fbb570c719ce9d9e2c914cd9",
+      "bytes": 455590024,
+      "source_guard_seconds": 163.98920249938965,
+      "resumed_validation_of_existing_build": false,
+      "nonce": "85d92c54ec9841fabcbf2022e509f1f7",
+      "generator_pid": 208776,
+      "audit_sha256": "c7a273acca56c2c1a85719f8c1627bdfe71386f6c0ded4133d207728ee386a45",
+      "guard_report_sha256": "68e3a61826f55ce996727bab00214eb2579c6db7840bc9e9d1eada6dff258cff",
+      "build_report_sha256": "239f866bf7ce575352da03e046735871c562b929c6705d08db53985ac16cf2fe",
+      "source_guard_returncode": 0
+    }
+  ],
+  "official_runs": [
+    {
+      "name": "default",
+      "salt": "",
+      "command": [
+        "/home/ai/venvs/training/bin/python",
+        "-B",
+        "/home/ai/pc/d/PROJECTS/.cognition/qvc-proyecto/auditoria-codex-20261110/servidor-src/data/verifiers/dqi/verify_submission_dqi.py",
+        "/mnt/datos/proyectos/qvc-i01-dqi889-20261113/out-a/dqi.kmb",
+        "--max-workers",
+        "1"
+      ],
+      "returncode": 0,
+      "seconds": 221.6498827934265,
+      "receipt_sha256": "fdb3d4fdde3c089078faab0ea36e9fc4456783d9897db7e6c9e8ea6dd6f28e2f",
+      "circuit_sha256": "7cbe8ecf6f6e9743529b574f019504bb1712ce06fbb570c719ce9d9e2c914cd9",
+      "verifier_sha256": "f14274bc0943fb9769ddb01131be6063191a15009fe1caf1d4bdd9fd25194e65"
+    },
+    {
+      "name": "a",
+      "salt": "qvc-syed889-20261113-a",
+      "command": [
+        "/home/ai/venvs/training/bin/python",
+        "-B",
+        "/home/ai/pc/d/PROJECTS/.cognition/qvc-proyecto/auditoria-codex-20261110/servidor-src/data/verifiers/dqi/verify_submission_dqi.py",
+        "/mnt/datos/proyectos/qvc-i01-dqi889-20261113/out-a/dqi.kmb",
+        "--max-workers",
+        "1",
+        "--salt",
+        "qvc-syed889-20261113-a"
+      ],
+      "returncode": 0,
+      "seconds": 158.37695956230164,
+      "receipt_sha256": "2e1c1712e3fb4543dd5e7ea9c69f81cabe6545ad18046c9c23eefa40df0bd121",
+      "circuit_sha256": "7cbe8ecf6f6e9743529b574f019504bb1712ce06fbb570c719ce9d9e2c914cd9",
+      "verifier_sha256": "f14274bc0943fb9769ddb01131be6063191a15009fe1caf1d4bdd9fd25194e65"
+    },
+    {
+      "name": "b",
+      "salt": "qvc-syed889-20261113-b",
+      "command": [
+        "/home/ai/venvs/training/bin/python",
+        "-B",
+        "/home/ai/pc/d/PROJECTS/.cognition/qvc-proyecto/auditoria-codex-20261110/servidor-src/data/verifiers/dqi/verify_submission_dqi.py",
+        "/mnt/datos/proyectos/qvc-i01-dqi889-20261113/out-a/dqi.kmb",
+        "--max-workers",
+        "1",
+        "--salt",
+        "qvc-syed889-20261113-b"
+      ],
+      "returncode": 0,
+      "seconds": 155.40356302261353,
+      "receipt_sha256": "0fe3b80e2cbde84735174be9a860ccc782c5e4733761f10afdf2729b71cbf48b",
+      "circuit_sha256": "7cbe8ecf6f6e9743529b574f019504bb1712ce06fbb570c719ce9d9e2c914cd9",
+      "verifier_sha256": "f14274bc0943fb9769ddb01131be6063191a15009fe1caf1d4bdd9fd25194e65"
+    },
+    {
+      "name": "c",
+      "salt": "qvc-syed889-20261113-c",
+      "command": [
+        "/home/ai/venvs/training/bin/python",
+        "-B",
+        "/home/ai/pc/d/PROJECTS/.cognition/qvc-proyecto/auditoria-codex-20261110/servidor-src/data/verifiers/dqi/verify_submission_dqi.py",
+        "/mnt/datos/proyectos/qvc-i01-dqi889-20261113/out-a/dqi.kmb",
+        "--max-workers",
+        "1",
+        "--salt",
+        "qvc-syed889-20261113-c"
+      ],
+      "returncode": 0,
+      "seconds": 161.55469965934753,
+      "receipt_sha256": "7560713c7687d1dbe88caa893e5a5b686245efe2b206c262c3436371f34764a6",
+      "circuit_sha256": "7cbe8ecf6f6e9743529b574f019504bb1712ce06fbb570c719ce9d9e2c914cd9",
+      "verifier_sha256": "f14274bc0943fb9769ddb01131be6063191a15009fe1caf1d4bdd9fd25194e65"
+    }
+  ],
+  "historical_exact_e9": "OPEN",
+  "recovery": {
+    "reason": "Selectactualgeneratorargv0instead ofmatchingchildargumentinguardargv",
+    "previous_runner_sha256": "4844cf5930ae6a3c0a93db994e02660edc0e4731fd0da5a91e26e6b88b2c4802",
+    "initial_failure_sha256": "44518eee3dfe96a2de652987ffb7cb417b3ac2f4ca55feafbe2ebb618769d3aa",
+    "reused_successful_source_build": "a"
+  },
+  "seconds": 863.9279260635376
+}

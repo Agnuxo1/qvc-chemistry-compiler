@@ -1,0 +1,9 @@
+# Independent EGM review
+
+Three fresh-context codebase reviews used the installed Elephant-Goldfish persona and the scientific correctness standard. The loop converged with two consecutive clean rounds,2and3, and no open findings.
+
+Round1 identified an ambiguity about which candidate a pending user choice concerned; the text was clarified before qualification. Round2 read all requested source/evidence and executed468read-only checks of source pins, script/report/audit/guard/receipt hashes, command/salt/PID/nonce links, outputs and all16cost combinations. Round3 independently streamed the actual submission ZIP, verified all18members and archive size/hash, checked430sourcepins, recomputed the four native costs and all16indices, and confirmed the retained value error and penalty. Its476checks passed. A supplement checked all6receipt wrappers, the3wrapperdigests indexed by manifest, the final README, complete figure data and all4GIFframes. No findings remained.
+
+The reviewers did not rerun quantum compilation or native simulation, validate the full exact inverse prover independently, read the actual Linux host binaries anew, or establish official competition results or eligibility. The root execution logs provide those separate measured native observations. The Source883control figure is checked against its authenticated earlier receipt by the root; it was not independently resimulated. Context isolation used fresh conversation histories; host-instruction exclusion was not independently proven. Integrity hashes are not external signatures. Historical exact-sourceI01 remains OPEN.
+
+Francisco Angulo de Lafuente · https://orcid.org/0009-0001-1634-7063 · 2026-11-13. Original integration/text: MIT OR Apache-2.0. Quantum source packages: Syed Asad Ali, Apache-2.0, notices preserved.

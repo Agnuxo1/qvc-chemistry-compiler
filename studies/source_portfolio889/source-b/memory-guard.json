@@ -1,0 +1,24 @@
+{
+  "command": [
+    "/home/ai/venvs/training/bin/python",
+    "-B",
+    "/mnt/datos/proyectos/qvc-i01-dqi889-20261113/work-b/dqi_build.2Cpt1X/root/controller_work/after_v3/integration_v7/build_v7.py",
+    "--output",
+    "/mnt/datos/proyectos/qvc-i01-dqi889-20261113/work-b/dqi_build.2Cpt1X/out/dqi.kmb",
+    "--log-directory",
+    "/mnt/datos/proyectos/qvc-i01-dqi889-20261113/work-b/dqi_build.2Cpt1X/build-v6"
+  ],
+  "cwd": "/mnt/datos/proyectos/qvc-i01-dqi889-20261113/work-b/dqi_build.2Cpt1X/root",
+  "start_unix": 1794605951.5195959,
+  "rss_soft": 4000000000,
+  "available_reserve": 4000000000,
+  "peak_rss": 1039454208,
+  "status": "complete",
+  "stopped": false,
+  "save_policy": "Completed-stage logs remain on disk; split the interrupted stage before retry.",
+  "process_group": 208776,
+  "elapsed_seconds": 163.98920249938965,
+  "current_rss": 154923008,
+  "available_bytes": 12478451712,
+  "exit_code": 0
+}

@@ -4,6 +4,10 @@
 
 **Reproducible GF(2) angle loaders for the FeMoCo quantum-circuit benchmark.**
 
+## Complete source portfolio study · 13 November
+
+The new [46Q / 889Q / deep512 study](studies/source_portfolio889/README.md) builds all 18 submission files from authenticated sources and achieves **26.975–27.016 local composite**, **25.47–25.67% above source v0.3**, across all measured component-cost combinations. Four new DQI checks pass 409,600 shots; all error penalties are retained. The complete ZIP passes stock readers and receipt bindings. This separately identified evaluated alternative preserves the selected release and historical I01 status.
+
 ## Complete compact inverse study · 13 November
 
 The new [46-qubit inverse study](studies/compact_invsqrt46/README.md) integrates Syed Asad Ali's Apache-2.0 source generator with this project's existing source-backed DQI and chemistry. Two full inverse salts pass **401,081,856 shots**; the complete 18-file portfolio passes the stock input readers and package checks. Its **25.90064 local composite** improves on the selected source v0.3 portfolio by **20.48%**. Sources, exact hashes, receipts and a scientific resource animation are included. This separately identified study preserves the selected v0.3 release and the historical exact-source I01 status.

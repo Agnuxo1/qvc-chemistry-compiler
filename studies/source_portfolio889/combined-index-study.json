@@ -1,0 +1,35 @@
+{
+  "scope": "Conditionalcompleteportfolioindexforunchangedhashboundinv/chem;wholepackagechecksnotyetdone;notofficialscoresorCI",
+  "indices": {
+    "default-default-a": 27.016395198473727,
+    "default-default-b": 27.016395198473727,
+    "default-a-a": 26.975162261465695,
+    "default-a-b": 26.975162261465695,
+    "default-b-a": 27.016398931241834,
+    "default-b-b": 27.016398931241834,
+    "default-c-a": 27.016398302113153,
+    "default-c-b": 27.016398302113153,
+    "independent-default-a": 27.016399192740657,
+    "independent-default-b": 27.016399192740657,
+    "independent-a-a": 26.975166249636498,
+    "independent-a-b": 26.975166249636498,
+    "independent-b-a": 27.016402925509315,
+    "independent-b-b": 27.016402925509315,
+    "independent-c-a": 27.01640229638054,
+    "independent-c-b": 27.01640229638054
+  },
+  "range": [
+    26.975162261465695,
+    27.016402925509315
+  ],
+  "dqi_ratios": {
+    "default": 67.74940076060966,
+    "a": 67.43967267670033,
+    "b": 67.74942884276149,
+    "c": 67.74942410973532
+  },
+  "source_v03_gain_pct_range": [
+    25.474716022304843,
+    25.666546587003115
+  ]
+}

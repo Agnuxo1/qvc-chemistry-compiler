@@ -1,0 +1,10 @@
+{
+  "status": "DOWNLOADED_PINNED_NOT_EXECUTED",
+  "archive": "dqi_source_zip",
+  "sha256": "49e2b331d4008afb724985caf1038765b7a910f08838b590bf6e8fb692772763",
+  "bytes": 8486126,
+  "files": 558,
+  "uncompressed_bytes": 52320184,
+  "historical_hash_hits": [],
+  "public_origin": "syed3000/vqcc-own-circuit-portfolio, v12manifest"
+}

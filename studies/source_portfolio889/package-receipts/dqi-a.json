@@ -1,0 +1,49 @@
+{
+  "task": "dqi",
+  "scope": "Full unmodified local stock check, not Kaggle",
+  "run_name": "a",
+  "salt": "qvc-syed889-20261113-a",
+  "input_sha256": {
+    "dqi.kmb": "7cbe8ecf6f6e9743529b574f019504bb1712ce06fbb570c719ce9d9e2c914cd9"
+  },
+  "official_result": {
+    "status": "PASS",
+    "score": 362390008931.8864,
+    "m": 4095,
+    "n": 70,
+    "degree": 12,
+    "r": 2016,
+    "verified_shots": 102400,
+    "value_errors": 1,
+    "phase_errors": 0,
+    "empirical_error_rate": 9.765625e-06,
+    "effective_error_rate": 0.0009104197583220583,
+    "log2_delta": -128.0,
+    "repetition_factor": 1.1967314991687559,
+    "mean_error_weight": 31.046737331746634,
+    "toffoli_count": 383156.30064453126,
+    "max_toffoli_count": 384003,
+    "reaction_depth": 41048,
+    "num_ops": 52930855,
+    "shot_operation_counts": {
+      "BIT_INVERT": 601195514068,
+      "BIT_STORE0": 154643770523,
+      "BIT_STORE1": 2991181681,
+      "X": 10964104384,
+      "Z": 2329078040,
+      "R": 4892882848,
+      "HMR": 7266177612,
+      "CX": 3183118302842,
+      "CZ": 27595404997,
+      "SWAP": 27250014516,
+      "CSWAP": 1268121600,
+      "CCX": 37252534011,
+      "CCZ": 714549575,
+      "POP_CONDITION": 155624857600,
+      "PUSH_CONDITION": 155624857600
+    },
+    "num_qubits": 889,
+    "num_bits": 53911,
+    "circuit_sha256": "7cbe8ecf6f6e9743529b574f019504bb1712ce06fbb570c719ce9d9e2c914cd9"
+  }
+}

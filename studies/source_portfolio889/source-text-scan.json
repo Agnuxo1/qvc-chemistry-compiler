@@ -1,0 +1,6 @@
+{
+  "status": "PASS_NO_KNOWN_CREDENTIAL_PATTERNS",
+  "text_files_scanned": 428,
+  "matching_files": [],
+  "scope": "Heuristic scan of public-source text, not proof of absence of secrets"
+}
