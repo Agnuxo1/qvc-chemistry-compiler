@@ -2,9 +2,9 @@
   "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
   "@type": "SoftwareSourceCode",
   "name": "QVC Chemistry Compiler",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "dateCreated": "2026-10-29",
-  "dateModified": "2026-11-10",
+  "dateModified": "2026-11-14",
   "codeRepository": "https://github.com/Agnuxo1/qvc-chemistry-compiler",
   "license": [
     "https://spdx.org/licenses/MIT.html",

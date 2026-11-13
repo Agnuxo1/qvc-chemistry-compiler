@@ -1,0 +1,37 @@
+{
+  "project": "QVC Chemistry Compiler",
+  "version": "0.3.0",
+  "date": "2026-11-10",
+  "author": "Francisco Angulo de Lafuente",
+  "orcid": "https://orcid.org/0009-0001-1634-7063",
+  "own_license": "MIT OR Apache-2.0",
+  "upstream_license": "Apache-2.0 with preserved notices",
+  "selected_scope": "Source-generated c3 invsqrt, profiled883 DQI and deep512 chemistry; original binary performance I01 remains open",
+  "recipe": "recipes/h14-deep512",
+  "generator": "tools/build_source_portfolio.py",
+  "required_recipe_argument": "--recipe recipes/h14-deep512 --dqi-variant 883",
+  "invsqrt_sha256": "c3f3ac2575906e83de1ebfa91580ca4ad52655ac4ab34bcbde56c23b37d0d6de",
+  "dqi_sha256": "0b634cca809c90493b67ac8104c9a307c99556d9edae74e26b460f4283aececd",
+  "chemistry_npz_sha256": "33393e0b34a1357ab3964954316f35560894d64492136d2475f0f279f276ebaa",
+  "archive_sha256": "d4367b0962dc686f9dbb3588130ecc975faf092f80848134ab590c948e806b06",
+  "archive_bytes": 29978848,
+  "package_evidence": "evidence/packages/source-deep883.json",
+  "source_build_evidence": "evidence/replication/source-portfolio-deep883-linux.json",
+  "release_url": "https://github.com/Agnuxo1/qvc-chemistry-compiler/releases/tag/v0.3.0",
+  "local_composite_indices": {
+    "a": 21.498484409138246,
+    "b": 21.49848491292634
+  },
+  "native_status": "PASS for all three tasks, exact receipt-bound files",
+  "original_performance_I01": "OPEN",
+  "kaggle_submission": "NONE",
+  "eligibility": "Not certified by local tests",
+  "dqi_variant": "883",
+  "receipt_files": {
+    "invsqrt": "invsqrt-source-c3.json",
+    "dqi_a": "dqi883-source-a.json",
+    "dqi_b": "dqi883-source-b.json",
+    "chem_a": "chemistry-h14-deep512-a.json",
+    "chem_b": "chemistry-h14-deep512-b.json"
+  }
+}

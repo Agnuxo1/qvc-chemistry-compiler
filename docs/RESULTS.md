@@ -15,7 +15,7 @@ s37 improves the measured chemistry ratio by **0.2570301%** over the tested geng
 
 H14 lowers actual cost a further **0.0134161%** against s37, to **298,689,767.493265**, with lambda_eff **47.111237352442**. Its physical error and resource counts remain equal within floating-point precision. Two independent salts pass, all fifteen angle circuits are unchanged and all sixteen source-rebuilt files match exactly. The retained GPU trace contains 58,962 optimization steps. [Experiment and reproduction](GPU_EXPERIMENT.md).
 
-The deep GPU continuation lowers chemistry cost to **298,682,766.527190**, a further **0.0023439%** reduction, with lambda_eff **47.110133115838**. Both full salts pass; all sixteen outputs reconstruct identically on Windows and Linux. The selected source portfolio uses DQI883 with **59.6973029x / 59.6973071x** and local composites **21.4984844 / 21.4984849**. The earlier rows and receipts remain historical controls.
+The deep GPU continuation lowers chemistry cost to **298,682,766.527190**, a further **0.0023439%** reduction, with lambda_eff **47.110133115838**. Both full salts pass; all sixteen outputs reconstruct identically on Windows and Linux. The earlier v0.3 source portfolio used DQI883 with **59.6973029x / 59.6973071x** and local composites **21.4984844 / 21.4984849**. The selected v0.4.0 portfolio combines 46Q inverse, 889Q DQI and this unchanged chemistry, with local composite **26.9751622615–27.0164029255** over all 16 measured component-cost combinations. [Selected evidence](../studies/source_portfolio889/README.md). The earlier rows and receipts remain historical controls.
 
 | Reused public performance task | Measured ratio | Coverage |
 |---|---:|---|

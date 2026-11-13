@@ -62,7 +62,7 @@ The source reconstructs retired `a6` from the *current* derivative with one CCX 
 
 ## Scope and status
 
-The complete compact alternative is locally validated. Repository release v0.3 remains separately selected until a subsequent release promotion. No Kaggle submission or competition eligibility certification is asserted. Historical exact-source I01 remains **OPEN** for the different `26ebf39d…` inverse and `e9f54be3…` DQI hashes; this study does not relabel those artifacts or claim their original generators were recovered.
+This earlier complete compact alternative is locally validated. On 2026-11-14 the later 46Q/889Q portfolio was selected as v0.4.0; this 46Q/883Q study remains a historical control. No Kaggle submission or competition eligibility certification is asserted. Historical exact-source I01 remains **OPEN** for the different `26ebf39d…` inverse and `e9f54be3…` DQI hashes; this study does not relabel those artifacts or claim their original generators were recovered.
 
 <!-- author-background:start -->
 ## Author background

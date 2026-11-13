@@ -4,13 +4,13 @@
 
 **Reproducible GF(2) angle loaders for the FeMoCo quantum-circuit benchmark.**
 
-## Complete source portfolio study · 13 November
+## Selected v0.4.0 · complete source portfolio
 
-The new [46Q / 889Q / deep512 study](studies/source_portfolio889/README.md) builds all 18 submission files from authenticated sources and achieves **26.975–27.016 local composite**, **25.47–25.67% above source v0.3**, across all measured component-cost combinations. Four new DQI checks pass 409,600 shots; all error penalties are retained. The complete ZIP passes stock readers and receipt bindings. This separately identified evaluated alternative preserves the selected release and historical I01 status.
+The new [46Q / 889Q / deep512 study](studies/source_portfolio889/README.md) builds all 18 submission files from authenticated sources and achieves **26.975–27.016 local composite**, **25.47–25.67% above source v0.3**, across all measured component-cost combinations. Four new DQI checks pass 409,600 shots; all error penalties are retained. The complete ZIP passes stock readers and receipt bindings. Promoted on 14 November 2026, this is the selected **v0.4.0** candidature. **I01 is closed for its complete source chain**; the two older exact hashes remain a separately documented **I01-HIST** research item. [Download the selected release](https://github.com/Agnuxo1/qvc-chemistry-compiler/releases/tag/v0.4.0) · [Selection and evidence](SELECTED_CANDIDATE.json).
 
 ## Complete compact inverse study · 13 November
 
-The new [46-qubit inverse study](studies/compact_invsqrt46/README.md) integrates Syed Asad Ali's Apache-2.0 source generator with this project's existing source-backed DQI and chemistry. Two full inverse salts pass **401,081,856 shots**; the complete 18-file portfolio passes the stock input readers and package checks. Its **25.90064 local composite** improves on the selected source v0.3 portfolio by **20.48%**. Sources, exact hashes, receipts and a scientific resource animation are included. This separately identified study preserves the selected v0.3 release and the historical exact-source I01 status.
+The new [46-qubit inverse study](studies/compact_invsqrt46/README.md) integrates Syed Asad Ali's Apache-2.0 source generator with this project's existing source-backed DQI and chemistry. Two full inverse salts pass **401,081,856 shots**; the complete 18-file portfolio passes the stock input readers and package checks. Its **25.90064 local composite** improves on the earlier source v0.3 portfolio by **20.48%**. Sources, exact hashes, receipts and a scientific resource animation are included. This earlier 46Q/883Q study remains a versioned control; v0.4.0 selects the higher-performing 46Q/889Q portfolio above.
 
 <!-- OPENCLAW-EVIDENCE-AT-A-GLANCE:START -->
 <p><sub><strong>Why this project stands out — evidence at a glance</strong></sub></p>
@@ -27,7 +27,7 @@ The new [46-qubit inverse study](studies/compact_invsqrt46/README.md) integrates
 
 Research by **Francisco Angulo de Lafuente** · [ORCID 0009-0001-1634-7063](https://orcid.org/0009-0001-1634-7063) · [Citation](CITATION.cff) · [License policy](docs/LICENSE_POLICY.md)
 
-The selected chemistry achieves a **11.2346609× local cost reduction**, with **14,848 Toffolis and 427 qubits**, checked by the unmodified official verifier. The repository provides the frozen numeric table, a declarative GF(2) plan, source reconstruction and the receipts needed to examine that result. It also provides a fully source-generated three-task alternative. These are classical simulation results for the [Google Quantum AI competition](https://www.kaggle.com/competitions/google-verifiable-quantum-circuit-compilation).
+The selected chemistry achieves a **11.2346609× local cost reduction**, with **14,848 Toffolis and 427 qubits**, checked by the unmodified official verifier. The repository provides the frozen numeric table, a declarative GF(2) plan, source reconstruction and the receipts needed to examine that result. It also provides the selected, fully source-generated three-task portfolio. These are classical simulation results for the [Google Quantum AI competition](https://www.kaggle.com/competitions/google-verifiable-quantum-circuit-compilation).
 
 ## Measured chemistry
 
@@ -71,15 +71,15 @@ Use Python 3.13 and the competition's native Kickmix runtime and data. The expec
 
 ## Verification coverage
 
-![Actual shot coverage and explicitly separate local composite results](assets/verification.gif)
+![Selected source portfolio: measured resources, complete verification and source-gate status](assets/selected-portfolio.gif)
 
-The archived binary performance portfolio combines s37 chemistry with credited public invsqrt and DQI files. The full invsqrt check covers **200,540,928 shots**. Two DQI checks use **102,400 shots each**. Its local composite indices are **25.2098283** and **25.2483618**, using archived baselines. They are not Kaggle scores or confidence bounds. Original receipts and code fingerprints are in [evidence/official](evidence/official).
+The selected portfolio binds **401,081,856 inverse shots across two salts**, **409,600 DQI shots across four salts**, and two **78,080-shot chemistry checks** to the exact generated files. The inverse also has a complete-domain HMR proof. Inverse and chemistry receipts are reused only after exact byte matches; the four DQI checks are new. One DQI value error is retained in the cost; all four checks pass. The **26.975–27.016** local range covers all 16 component-cost combinations, not independent joint trials, confidence bounds or Kaggle scores. [Measured evidence](studies/source_portfolio889/README.md).
 
 ## Complete source-generated portfolio
 
-![Three source constructions, output identities and full native checks](assets/source-portfolio.gif)
+![Four DQI measurements with retained error penalties](studies/source_portfolio889/resources.gif)
 
-The selected source portfolio combines a credited **87-qubit invsqrt construction** at **14.8152456×**, the new **883-qubit DQI policy** at **59.6973029× / 59.6973071×**, and the project's deep GPU chemistry. All three tasks passed full stock verification. An executed eighteen-file build and package bind the exact outputs to their source manifests and native receipts. Its local composite indices are **21.4984844 / 21.4984849**. The validated eighteen-file ZIP is included in the [scientific release](https://github.com/Agnuxo1/qvc-chemistry-compiler/releases/tag/v0.3.0). [Build and package](docs/SOURCE_PORTFOLIO.md) · [Invsqrt](docs/SOURCE_INV.md) · [DQI](docs/SOURCE_DQI.md).
+The selected source portfolio combines Syed Asad Ali's credited **46-qubit inverse** and **889-qubit DQI** generators with this project's **deep512 chemistry**. The complete constructor emits all eighteen exact files. Full native receipts, seventeen stock circuit readers, the NPZ reader, CRC/extraction and input-hash bindings pass. The checked ZIP and complete source bundle are in the [v0.4.0 release](https://github.com/Agnuxo1/qvc-chemistry-compiler/releases/tag/v0.4.0). [Build and package](docs/SOURCE_PORTFOLIO.md) · [Promotion record](docs/RELEASE_0_4_0.md).
 
 ## Recovered invsqrt mathematics
 
@@ -113,7 +113,7 @@ Original, separable project work is **MIT OR Apache-2.0**. The competition hando
 
 ## Observations
 
-**I01 remains open for the original optimized performance portfolio:** its exact invsqrt/DQI generators have not yet been recovered. The new source-generated candidate has its own complete construction and lower measured index; it does not silently replace those performance artifacts. An executable organizer-reference source control is also retained, with local composite approximately **2.239566**. [Source-recovery evidence](docs/SOURCE_RECOVERY.md).
+**I01 is closed for selected v0.4.0**, following the explicit decision to promote the superior complete source candidate on 14 November 2026. **I01-HIST remains open** for reproducing the different original `26ebf39d…` inverse and `e9f54be3…` DQI hashes. Their generators have not been recovered; the historical files and evidence remain separately identified. An executable organizer-reference source control is also retained, with local composite approximately **2.239566**. [Source-recovery evidence](docs/SOURCE_RECOVERY.md).
 
 Chemistry reconstructs exactly from saved inputs; deterministic retraining from the Hamiltonian is not established. The animations are rendered scientific illustrations of saved results or labelled schematics. No final Kaggle submission, prize eligibility or hardware performance is claimed. [Competition and publication record](docs/COMPETITION.md).
 

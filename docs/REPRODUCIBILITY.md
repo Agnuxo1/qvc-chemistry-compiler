@@ -23,9 +23,13 @@ python tools/build_reference_portfolio.py build/reference --data /path/to/offici
 
 This builds the two organizer reference algorithms plus frozen s37 chemistry from source. It must match all 18 expected hashes. It is the source-complete control, with local composite approximately 2.239566; it is not the optimized 25.21–25.25 performance portfolio.
 
-## Performance components
+## Selected v0.4.0 components
 
-For the complete source-generated alternative, use:
+Use the complete Linux construction command in [source portfolio instructions](SOURCE_PORTFOLIO.md). It generates the selected 46Q inverse, 889Q DQI and frozen deep512 chemistry, requiring all 18 exact outputs. The source archives are included under studies/source_portfolio889/upstream; only the original competition data and pinned native runtime are external prerequisites. Qualification is separate from construction; see [the selected study](../studies/source_portfolio889/README.md) for execution and receipt bindings.
+
+## Historical performance components
+
+For the historical v0.3 source-generated candidate, use:
 
 ```bash
 python tools/build_source_portfolio.py build/source-candidate --recipe recipes/h14-deep512 --dqi-variant 883 --data /path/to/official/data --runtime /path/to/native/runtime
@@ -33,7 +37,7 @@ python tools/build_source_portfolio.py build/source-candidate --recipe recipes/h
 
 This builds source-generated invsqrt c3f3ac25, the checked DQI883 policy and the selected chemistry recipe. Omitting --dqi-variant retains the historical DQI888 default. The constructor was executed on Linux and its eighteen output hashes were bound to full native checks. The curated source modules, numeric coefficients, authenticated DQI manifest and upstream licenses are included. See [source portfolio and packaging](SOURCE_PORTFOLIO.md).
 
-The higher-index binary performance components can separately be fetched with:
+The historical binary performance components can separately be fetched with:
 
 ```bash
 python -m pip install kaggle
@@ -58,7 +62,8 @@ This repeats the 3,344 cases per variant using the original attributed primitive
 
 ```bash
 python -m pip install -r requirements-figures.txt
-python tools/render_figures.py
+python tools/render_figures.py  # Historical v0.3 figures
+python tools/render_selected_figure.py  # Current selected portfolio
 ```
 
 Figures use evidence/official as numeric input. Animations illustrate reported results or a labelled schematic; they are not experiment videos. The renderer writes assets/figure-data.json and a contact sheet for inspection. Authorship appears in the figures and GIF metadata.

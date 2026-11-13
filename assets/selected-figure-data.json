@@ -1,0 +1,33 @@
+{
+  "scope": "Fixed measured v0.4.0 results; emphasis animation, not a simulation or official score",
+  "version": "0.4.0",
+  "selection_sha256": "5875900e5324f0dfbf671a787f1eb6d956d75bcf0602ef61243cbdb6c099f123",
+  "receipt_sha256": {
+    "studies/source_portfolio889/package-receipts/invsqrt-default.json": "5d4ce23db24d7d30f0a3b859d5c65606dd17848d8b0bf2378543f2614d1ff9a2",
+    "studies/source_portfolio889/package-receipts/invsqrt-independent.json": "7f553a24cf3759c98da217cb2e3857fea9516c84e97ea41daa158c59e57e948c",
+    "studies/source_portfolio889/package-receipts/dqi-default.json": "dd3f7103c98362e258e5cf6f043a0b9e9af6d02cbe73b3ce14be2588da24402d",
+    "studies/source_portfolio889/package-receipts/dqi-a.json": "cbe43d3edb159a9e6d3e6b28ef5feb1a22f0fa9d50a7ea1a8c12a444583d7529",
+    "studies/source_portfolio889/package-receipts/dqi-b.json": "aca8a3a20c462e132c8d2de85fc73a2773f516b0dee7274221143586022c2a58",
+    "studies/source_portfolio889/package-receipts/dqi-c.json": "9a898ce157fab1b3240ea8afd3444047a324409353d99ef62fd316727debc738",
+    "evidence/official/chemistry-h14-deep512-a.json": "f3b4c3cfbc781598394355b180da41918ad4399c5de38282da3f80d8128fe8a0",
+    "evidence/official/chemistry-h14-deep512-b.json": "74962ab54263fd2978e414327fdceb3ef091560128a797937f5cb8baad94b467"
+  },
+  "local_range": [
+    26.975162261465695,
+    27.016402925509315
+  ],
+  "qubits": {
+    "invsqrt_default": 46,
+    "dqi_default": 889,
+    "chem_a": 427
+  },
+  "shots": {
+    "invsqrt": 401081856,
+    "dqi": 409600,
+    "chem": 156160
+  },
+  "dqi_value_errors": 1,
+  "dqi_phase_errors": 0,
+  "gif_sha256": "fe14255094b3368f9d71302037c7032298da17272d27cd5281a118ab781dd0df",
+  "frames": 4
+}

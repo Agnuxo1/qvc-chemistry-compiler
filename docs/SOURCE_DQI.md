@@ -1,6 +1,12 @@
 # Source-built DQI alternatives
 
-The selected **883-qubit** policy achieves **59.6973029x /59.6973071x** on two full native checks, each with 102,400 shots and zero value or phase errors. It is emitted directly by `tools/build_dqi_policy.py` from the same 92-file authenticated SomeJoint/Atakan source bank. No compiled circuit input is required.
+The selected **v0.4.0 DQI has 889 qubits**, from Syed Asad Ali's Apache-2.0 source. Four full 102,400-shot checks pass, with one observed value error retained in salt A's cost and zero observed phase errors. Exact output: `7cbe8ecf6f6e9743529b574f019504bb1712ce06fbb570c719ce9d9e2c914cd9`. [Current construction and evidence](../studies/source_portfolio889/README.md) · [Selected complete portfolio](SOURCE_PORTFOLIO.md).
+
+The remaining sections preserve historical source studies and their measured artifacts. Current I01 is closed for the selected source chain; original exact hashes remain separately open as I01-HIST.
+
+## Historical source construction
+
+The historical v0.3 **883-qubit** policy achieves **59.6973029x /59.6973071x** on two full native checks, each with 102,400 shots and zero value or phase errors. It is emitted directly by `tools/build_dqi_policy.py` from the same 92-file authenticated SomeJoint/Atakan source bank. No compiled circuit input is required.
 
 | Selected policy result | Value |
 |---|---:|
@@ -24,7 +30,7 @@ The policy was selected after profiling ordinary and homogeneous node constructi
 
 ## Earlier 888-qubit source control
 
-The recovered public source bank contains a complete 888-qubit decoder construction. This is a tested alternative to the selected, source-incomplete e9f54be3 public circuit. It is not a reconstruction of that selected file.
+The recovered public source bank contains a complete 888-qubit decoder construction. This is a tested alternative to the historical, source-incomplete e9f54be3 public circuit. It is not a reconstruction of that historical file.
 
 ## Demonstrated construction
 
@@ -59,6 +65,6 @@ SomeJoint / Agniv Banerjee and the credited team authored the decoder architectu
 
 ## Observations
 
-Exact source generation and two full native sampled checks are demonstrated. They do not prove every possible decoder input or establish prize eligibility. The original performance portfolio still needs its exact invsqrt and e9f54be3 DQI sources; its I01 gate is not closed by this alternative alone.
+Exact source generation and two full native sampled checks are demonstrated. They do not prove every possible decoder input or establish prize eligibility. The original performance portfolio still needs its exact invsqrt and e9f54be3 DQI sources; its exact-source recovery remains separately OPEN as I01-HIST.
 
 Research author: Francisco Angulo de Lafuente · ORCID https://orcid.org/0009-0001-1634-7063. Own document/wrapper: MIT OR Apache-2.0; decoder source and upstream wrapper: Apache-2.0.

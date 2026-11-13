@@ -1,5 +1,11 @@
 # Source-built inverse-square-root construction
 
+The selected **v0.4.0 inverse has 46 qubits**, from Syed Asad Ali's Apache-2.0 source. Exact reconstruction, a complete-domain HMR proof and two full 200,540,928-shot receipts cover its output `321aff83636214196daa9cbc9dcc9c5e12a155bcff8d9989e98b8cee40935177`. [Current construction and evidence](../studies/compact_invsqrt46/README.md) · [Selected complete portfolio](SOURCE_PORTFOLIO.md).
+
+The remaining sections preserve historical source studies and their measured artifacts. Current I01 is closed for the selected source chain; original exact hashes remain separately open as I01-HIST.
+
+## Historical source construction
+
 The recovered sixteen-module source slice builds the published c3f3ac25 ancestor directly from numeric polynomial coefficients and phase angles. No compiled circuit input or encoded circuit payload is included in this slice.
 
 The source build installs the published Davio lookup specialization, reconstructs the arithmetic, performs the domain/HMR compiler passes and matches SHA256 `c3f3ac2575906e83de1ebfa91580ca4ad52655ac4ab34bcbde56c23b37d0d6de`. The executed audit forbids external KMB/KMX inputs and records opened sources and imported-module hashes.
@@ -15,7 +21,7 @@ The source build installs the published Davio lookup specialization, reconstruct
 | Rotations | 44 |
 | Worst error/tolerance | 0.9999341616745385 |
 
-This is a source-complete alternative. The original selected 26ebf39d public circuit has 62 qubits and higher measured performance; this reconstruction does not produce that file. The default three-task source-backed portfolio combines this ancestor, source-built DQI888 and frozen chemistry s37. Its local composite indices are 21.4126669035 and 21.4454017007, compared with 2.239566 for the organizer-reference control. These are local indices using archived baselines, not leaderboard scores or confidence limits.
+This is a source-complete alternative. The historical 26ebf39d public circuit has 62 qubits and higher measured performance; this reconstruction does not produce that file. The default three-task source-backed portfolio combines this ancestor, source-built DQI888 and frozen chemistry s37. Its local composite indices are 21.4126669035 and 21.4454017007, compared with 2.239566 for the organizer-reference control. These are local indices using archived baselines, not leaderboard scores or confidence limits.
 
 ## Reproduce
 
@@ -31,7 +37,7 @@ The final command builds all 18 circuit/data outputs; it keeps build reports and
 
 ## Recovered-coefficient study
 
-The later [reconstruction study](../studies/recovered_invsqrt/README.md) recovers all 256 numerical coefficient triplets and the original 62Q phase function. It includes an exact all-input native phase comparison and a separately constructed 88Q circuit with a full 200,540,928-shot PASS. That circuit is retained as research; the c3 construction above remains the selected, cheaper source alternative. Exact reconstruction of the original 62Q circuit bytes remains open.
+The later [reconstruction study](../studies/recovered_invsqrt/README.md) recovers all 256 numerical coefficient triplets and the original 62Q phase function. It includes an exact all-input native phase comparison and a separately constructed 88Q circuit with a full 200,540,928-shot PASS. That circuit is retained as research; the c3 construction above was the then-selected, cheaper v0.3 source alternative. Exact reconstruction of the original 62Q circuit bytes remains open.
 
 ## Attribution and observations
 

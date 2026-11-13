@@ -68,11 +68,11 @@ def main():
     assert selection['archive_sha256']==package['archive_sha256']
     assert selection['local_composite_indices']==package['local_composite_indices']
     assert build['outputs']=={n:v['sha256'] for n,v in package['members'].items()}
-    assert build['constructor_sha256']==sha(ROOT/'tools/build_source_portfolio.py')
+    assert build['constructor_sha256']==sha(ROOT/selection['generator'])
     assert len(package['official_readers'])==17 and all(x['status']=='PASS' for x in package['official_readers'])
     receipt_names=selection.get('receipt_files',{'invsqrt':'invsqrt-source-c3.json','dqi_a':'dqi888-source-a.json','dqi_b':'dqi888-source-b.json','chem_a':'chemistry-h14-main-a.json','chem_b':'chemistry-h14-main-b.json'})
     for key,name in receipt_names.items():
-        receipt=ROOT/'evidence/official'/name
+        receipt=ROOT/name if selection.get('receipt_paths_are_repository_relative') else ROOT/'evidence/official'/name
         assert sha(receipt)==package['receipt_sha256'][key]
         assert json.loads(receipt.read_text())['official_result']['status']=='PASS'
     if selection.get('dqi_variant')=='883':
@@ -87,6 +87,8 @@ def main():
             receipt=json.loads((ROOT/'evidence/official'/name).read_text())
             assert receipt['input_sha256']['submission.npz']==selection['chemistry_npz_sha256']
             assert receipt['official_result']['num_qubits']==427 and receipt['official_result']['toffoli_count']==14848
+    from check_selected_candidate import verify
+    selected_checks=verify(ROOT)
     recovered_build=json.loads((ROOT/'evidence/replication/invsqrt-recovered256-portable-build.json').read_text())
     assert recovered_build['constructor_sha256']==sha(ROOT/'tools/build_inv_recovered.py')
     assert recovered_build['numeric_recipe_sha256']==sha(ROOT/'studies/recovered_invsqrt/numeric-recipe.json')
@@ -113,7 +115,7 @@ def main():
     if manifest.exists():
         for name,digest in json.loads(manifest.read_text())['files'].items():
             if not (ROOT/name).is_file() or sha(ROOT/name)!=digest:errors.append(f'Publication manifest drift: {name}')
-    report={'status':'PASS' if not errors else 'FAIL','python_sources':checked_py,'local_links':links,'files':len(files),'recipes':len(recipes),'invsqrt_source_modules':len(inv_build['source_sha256']),'dqi_source_pins':len(dqi_pins),'errors':errors,'performance_source_gate':'OPEN_I01','alternative_source_chain':'EXACT_OUTPUTS_AND_FULL_NATIVE_RECEIPTS'}
+    report={'status':'PASS' if not errors else 'FAIL','python_sources':checked_py,'local_links':links,'files':len(files),'recipes':len(recipes),'invsqrt_source_modules':len(inv_build['source_sha256']),'dqi_source_pins':len(dqi_pins),'errors':errors,'selected_candidate_checks':selected_checks,'performance_source_gate':'CLOSED_SELECTED_I01','historical_exact_recovery':'OPEN_I01_HIST','alternative_source_chain':'EXACT_OUTPUTS_AND_FULL_NATIVE_RECEIPTS'}
     print(json.dumps(report,indent=2))
     if errors:raise SystemExit(1)
 

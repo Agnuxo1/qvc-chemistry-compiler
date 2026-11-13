@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
 # Project: QVC Chemistry Compiler | 2026-11-10
 # Author-ORCID: https://orcid.org/0009-0001-1634-7063
-"""Deterministically render evidence-driven scientific GIFs, never experiment videos."""
+"""Render archived v0.3 scientific GIFs; use render_selected_figure for current selection."""
 from pathlib import Path
 import hashlib
 import json
@@ -55,7 +55,7 @@ def main():
     ratios=[baseline/x['official_result']['score'] for x in chemistry]
     best_ratio=ratios[-1];gain=100*(best_ratio/ratios[1]-1)
     inv=json.loads((EVIDENCE/'invsqrt-source-c3.json').read_text())['official_result']
-    selection=json.loads((ROOT/'SELECTED_CANDIDATE.json').read_text())
+    selection=json.loads((ROOT/'evidence/selection/v0.3.0.json').read_text())
     dqi_variant=selection.get('dqi_variant','888')
     dqi=[json.loads((EVIDENCE/f'dqi{dqi_variant}-source-{s}.json').read_text()) for s in ('a','b')]
     package_name=Path(selection['package_evidence']).name

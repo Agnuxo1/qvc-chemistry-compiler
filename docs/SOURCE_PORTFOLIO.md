@@ -1,4 +1,22 @@
-# Three-task source-generated candidate
+# Selected v0.4.0: complete three-task source portfolio
+
+The selected candidate combines 46Q inverse, 889Q DQI and deep512 chemistry. It generates all 18 files from authenticated source archives, with full native receipts bound by exact hashes. **I01 is CLOSED for this selection**; historical exact-source recovery is a separate **OPEN I01-HIST** item. The user authorized this promotion on 2026-11-14.
+
+```bash
+python studies/source_portfolio889/construct_complete.py \
+  --inverse-bundle studies/source_portfolio889/upstream/inverse46-source.zip \
+  --dqi-archive studies/source_portfolio889/upstream/dqi_source.zip \
+  --data /path/to/official/data --runtime /path/to/native/runtime \
+  --output /mnt/datos/qvc040-output --work /mnt/datos/qvc040-work
+```
+
+Run from the repository root on Linux x86_64 with CPython 3.13, NumPy, bash/core utilities and the pinned original competition runtime/verifiers. Official data and runtime must be obtained separately; both output and work paths must be fresh and contain no whitespace or `@`. Reconstruction needs no GPU or network download. The constructor authenticates archives and source pins, rejects compiled-circuit loading during generation, and requires all 18 output hashes. A build alone is not qualification.
+
+The selected ZIP has **49,338,223 bytes**, SHA256 `0059f20ad2b9822318c208d28093714ca0e9440271262387c5b1df0109d3b30e`. All 17 circuit readers, NPZ, CRC/extraction and receipt/input bindings pass. Observed local index: **26.9751622615–27.0164029255**, enumerating 16 component-cost combinations, with one DQI value-error penalty retained. This is not an official score or confidence interval. [Download v0.4.0](https://github.com/Agnuxo1/qvc-chemistry-compiler/releases/tag/v0.4.0) · [Full construction, qualification and evidence](../studies/source_portfolio889/README.md) · [Selected metadata](../SELECTED_CANDIDATE.json).
+
+The following sections preserve the historical v0.3 and earlier construction procedures. Their commands produce those older artifacts.
+
+## Historical construction entry point
 
 The public entry point builds inverse square root, DQI and chemistry from credited algorithm sources and frozen numeric recipes. It emits eighteen circuit/data files, keeping intermediates and reports outside the submission directory. The complete source-to-artifact chain is independently inspectable; compiled public performance inputs are not used by this constructor.
 
@@ -8,11 +26,11 @@ python tools/build_source_portfolio.py build/source-candidate --recipe recipes/h
 
 The command above selects deep GPU chemistry and the checked883Q policy. Use `--dqi-variant 883` as two separate arguments. Omitting `--recipe` retains historical s37; omitting `--dqi-variant` retains historical DQI888. Use a fresh output name: existing builds are preserved. See [environment and runtime requirements](REPRODUCIBILITY.md), [invsqrt sources](SOURCE_INV.md) and [DQI sources](SOURCE_DQI.md).
 
-## Selected v0.3 construction and package
+## Historical v0.3 construction and package
 
 All eighteen outputs were rebuilt from the current public source entry point and numeric recipes on Linux. The unchanged invsqrt file remains c3f3ac25; DQI is the new883Q policy and chemistry is the deep512 continuation. Exact hashes bind all five complete native receipts to the package. The package passes CRC/extraction, all seventeen stock KMB readers and the stock NPZ reader.
 
-Selected ZIP: **29,978,848 bytes**, SHA256 `d4367b0962dc686f9dbb3588130ecc975faf092f80848134ab590c948e806b06`. The local composite indices are **21.4984844091 /21.4984849129**. [v0.3.0 scientific release](https://github.com/Agnuxo1/qvc-chemistry-compiler/releases/tag/v0.3.0). Source and package evidence: `source-portfolio-deep883-linux.json` and `source-deep883.json` in the corresponding evidence directories. The binary performance portfolio's missing original generators remain a separate I01 gate.
+Historical v0.3 ZIP: **29,978,848 bytes**, SHA256 `d4367b0962dc686f9dbb3588130ecc975faf092f80848134ab590c948e806b06`. The local composite indices are **21.4984844091 /21.4984849129**. [v0.3.0 scientific release](https://github.com/Agnuxo1/qvc-chemistry-compiler/releases/tag/v0.3.0). Source and package evidence: `source-portfolio-deep883-linux.json` and `source-deep883.json` in the corresponding evidence directories. The binary performance portfolio's missing original generators remain a separate I01 gate.
 
 ## Earlier v0.2 integration and package
 
@@ -26,13 +44,13 @@ The first integrated package is recorded in `evidence/packages/source-v1.json`: 
 
 | Versioned portfolio | Local composite, salt a | Local composite, salt b |
 |---|---:|---:|
-| **Source-generated deep GPU / DQI883, selected** | **21.4984844091** | **21.4984849129** |
+| Source-generated deep GPU / DQI883, v0.3 control | **21.4984844091** | **21.4984849129** |
 | Source-generated H14 / DQI888, prior |21.4136245740 |21.4463608353 |
 | Source-generated s37, prior control | 21.4126669035 | 21.4454017007 |
 | Public binary performance portfolio with s37 | 25.2098282614 | 25.2483617580 |
 | Organizer-reference source control | approximately 2.239566 | approximately 2.239566 |
 
-Indices use archived baselines and are not leaderboard scores or confidence intervals. The alternative's complete source chain and the performance portfolio's higher measured index are separate properties. Original performance I01 remains open; changing the candidate label does not recover its missing generators.
+These historical indices use archived baselines and are not leaderboard scores or confidence intervals. The later selected v0.4.0 source portfolio exceeds these recorded controls. Original exact-source recovery remains separately open as I01-HIST.
 
 ## Packaging a newly verified build
 
