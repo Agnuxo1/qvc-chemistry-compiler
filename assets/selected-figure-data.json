@@ -1,7 +1,7 @@
 {
   "scope": "Fixed measured v0.4.0 results; emphasis animation, not a simulation or official score",
   "version": "0.4.0",
-  "selection_sha256": "5875900e5324f0dfbf671a787f1eb6d956d75bcf0602ef61243cbdb6c099f123",
+  "selection_sha256": "a83df002fdf06b92d65aec7a6fc4c91bca744204e13fdb75367a41ffba636f79",
   "receipt_sha256": {
     "studies/source_portfolio889/package-receipts/invsqrt-default.json": "5d4ce23db24d7d30f0a3b859d5c65606dd17848d8b0bf2378543f2614d1ff9a2",
     "studies/source_portfolio889/package-receipts/invsqrt-independent.json": "7f553a24cf3759c98da217cb2e3857fea9516c84e97ea41daa158c59e57e948c",

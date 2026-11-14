@@ -1,0 +1,17 @@
+{
+  "scope": "Two actual dated public leaderboard scores, not simulation, confidence interval or hardware benchmark",
+  "receipt_sha256": "7cd76d0f41126b6f0487fb300f814a4358bc8c2f2892e5f01af8b013e033c50b",
+  "submission_refs": [
+    57789064,
+    58344264
+  ],
+  "scores": [
+    22.86842,
+    26.94027
+  ],
+  "gain_percent": 17.805558932361755,
+  "axis_min": 0,
+  "axis_max": 35,
+  "frames": 4,
+  "gif_sha256": "c0b375e42810ee4edbb33ee8540c70b19f157ae39c2998a05dba2787e0ce99c2"
+}

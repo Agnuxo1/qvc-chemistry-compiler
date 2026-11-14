@@ -15,7 +15,27 @@ def verify(root,selection=None):
     assert s['version']=='0.4.0'
     assert s['source_gate']['id']=='I01' and s['source_gate']['status']=='CLOSED'
     assert s['historical_recovery']['id']=='I01-HIST' and s['historical_recovery']['status']=='OPEN'
-    assert s['original_performance_I01']=='OPEN' and s['kaggle_submission']=='NONE'
+    assert s['original_performance_I01']=='OPEN'
+    if s['kaggle_submission']!='NONE':
+        assert s['kaggle_submission'] in ['SUBMITTED','COMPLETE','ERROR']
+        record=read(s['submission_evidence'])
+        assert sha(root/s['submission_evidence'])==s['submission_evidence_sha256']
+        assert record['archive_sha256']==s['archive_sha256'] and record['archive_bytes']==s['archive_bytes']
+        assert type(record['submission']['ref']) is int and record['submission']['ref']==58344264 and record['submission']['account']=='franciscoangulo'
+        assert record['submission']['file_name']=='submission.zip' and record['submission']['platform_bytes']==s['archive_bytes']
+        assert record['repository_submission_state']==s['kaggle_submission']
+        if s['kaggle_submission']=='COMPLETE':
+            assert record['submission']['api_status']=='COMPLETE'
+            assert type(record['submission']['public_score']) in [int,float] and math.isfinite(record['submission']['public_score']) and record['submission']['public_score']>=0
+            assert float(record['submission']['public_score_text'])==record['submission']['public_score']
+        elif s['kaggle_submission']=='SUBMITTED':
+            assert record['submission']['api_status'] in [None,'PENDING','RUNNING','SUBMITTED','QUEUED']
+            assert record['submission']['public_score'] is None
+            assert record['submission']['public_score_text'] is None
+        else:
+            assert record['submission']['api_status'] in ['ERROR','FAILED','INVALID','CANCELLED']
+            assert record['submission']['public_score'] is None
+            assert record['submission']['public_score_text'] is None
     assert s['historical_recovery']['invsqrt_sha256']=='26ebf39df3b13e5fd2d923d1b9988043b107b64f6e21efc5cc9bc76f5d56adec'
     assert s['historical_recovery']['dqi_sha256']=='e9f54be304cbdcda7306729c335b1a2314a45d0ca818e05cf60e45ddee969bc4'
     for name,digest in s['evidence_sha256'].items():assert sha(root/name)==digest,name
@@ -60,6 +80,6 @@ def verify(root,selection=None):
     for name,value in indices.items():assert math.isclose(value,ready['local_composite_indices'][name],rel_tol=1e-14) and math.isclose(value,s['all_component_cost_combinations'][name],rel_tol=1e-14)
     assert s['local_composite_indices']==pkg['local_composite_indices']
     assert s['observed_composite_range']==ready['observed_composite_range']==[min(indices.values()),max(indices.values())]
-    return {'status':'PASS','version':s['version'],'source_outputs':18,'cost_combinations':16,'source_gate':'CLOSED_SELECTED_I01','historical_gate':'OPEN_I01_HIST'}
+    return {'status':'PASS','version':s['version'],'source_outputs':18,'cost_combinations':16,'source_gate':'CLOSED_SELECTED_I01','historical_gate':'OPEN_I01_HIST','kaggle_submission_state':s['kaggle_submission']}
 
 if __name__=='__main__':print(json.dumps(verify(Path(__file__).resolve().parents[1]),indent=2))

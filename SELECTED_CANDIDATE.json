@@ -76,7 +76,7 @@
     "dqi_sha256": "e9f54be304cbdcda7306729c335b1a2314a45d0ca818e05cf60e45ddee969bc4",
     "source": "docs/SOURCE_RECOVERY.md"
   },
-  "kaggle_submission": "NONE",
+  "kaggle_submission": "COMPLETE",
   "eligibility": "Not certified by local tests",
   "dqi_variant": "889",
   "receipt_paths_are_repository_relative": true,
@@ -116,5 +116,7 @@
     "studies/source_portfolio889/upstream/dqi_source.zip": "49e2b331d4008afb724985caf1038765b7a910f08838b590bf6e8fb692772763",
     "studies/source_portfolio889/upstream/inverse46-source.zip": "0ddbc852ddf36233248da558d1a99b308f1b630ddce5fe210926cde405b2e852"
   },
-  "previous_selection": "evidence/selection/v0.3.0.json"
+  "previous_selection": "evidence/selection/v0.3.0.json",
+  "submission_evidence": "evidence/kaggle/v0.4.0.json",
+  "submission_evidence_sha256": "7cd76d0f41126b6f0487fb300f814a4358bc8c2f2892e5f01af8b013e033c50b"
 }

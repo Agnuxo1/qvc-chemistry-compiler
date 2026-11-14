@@ -4,6 +4,15 @@
 
 **Reproducible GF(2) angle loaders for the FeMoCo quantum-circuit benchmark.**
 
+<!-- KAGGLE_V040_RESULT:START -->
+## Kaggle submission · 14 November 2026
+
+Kaggle completed submission **58344264** with public score **26.94027**, **+17.81%** versus this account's preceding **22.86842** result. [Receipt and verification](docs/KAGGLE_SUBMISSION_0_4_0.md). Sources are shared with all participants in the [official competition forum](https://www.kaggle.com/competitions/google-verifiable-quantum-circuit-compilation/discussion/759244).
+
+![Official public-score observations: 22.86842 and 26.94027](assets/official-submission.gif)
+
+<!-- KAGGLE_V040_RESULT:END -->
+
 ## Selected v0.4.0 · complete source portfolio
 
 The new [46Q / 889Q / deep512 study](studies/source_portfolio889/README.md) builds all 18 submission files from authenticated sources and achieves **26.975–27.016 local composite**, **25.47–25.67% above source v0.3**, across all measured component-cost combinations. Four new DQI checks pass 409,600 shots; all error penalties are retained. The complete ZIP passes stock readers and receipt bindings. Promoted on 14 November 2026, this is the selected **v0.4.0** candidature. **I01 is closed for its complete source chain**; the two older exact hashes remain a separately documented **I01-HIST** research item. [Download the selected release](https://github.com/Agnuxo1/qvc-chemistry-compiler/releases/tag/v0.4.0) · [Selection and evidence](SELECTED_CANDIDATE.json).
@@ -115,7 +124,7 @@ Original, separable project work is **MIT OR Apache-2.0**. The competition hando
 
 **I01 is closed for selected v0.4.0**, following the explicit decision to promote the superior complete source candidate on 14 November 2026. **I01-HIST remains open** for reproducing the different original `26ebf39d…` inverse and `e9f54be3…` DQI hashes. Their generators have not been recovered; the historical files and evidence remain separately identified. An executable organizer-reference source control is also retained, with local composite approximately **2.239566**. [Source-recovery evidence](docs/SOURCE_RECOVERY.md).
 
-Chemistry reconstructs exactly from saved inputs; deterministic retraining from the Hamiltonian is not established. The animations are rendered scientific illustrations of saved results or labelled schematics. No final Kaggle submission, prize eligibility or hardware performance is claimed. [Competition and publication record](docs/COMPETITION.md).
+Chemistry reconstructs exactly from saved inputs; deterministic retraining from the Hamiltonian is not established. The animations are rendered scientific illustrations of saved results or labelled schematics. The dated submission record reports the actual Kaggle receipt and any completed score; prize eligibility and quantum-hardware performance are not certified. [Competition and publication record](docs/COMPETITION.md).
 
 
 ---

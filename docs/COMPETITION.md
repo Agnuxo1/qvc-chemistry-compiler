@@ -1,4 +1,12 @@
-# Competition and publication record
+# Current competition submission — v0.4.0
+
+Kaggle completed submission **58344264** with public score **26.94027**, **+17.81%** versus this account's preceding **22.86842** result. See [the dated submission record](KAGGLE_SUBMISSION_0_4_0.md) and [public source announcement](https://www.kaggle.com/competitions/google-verifiable-quantum-circuit-compilation/discussion/759244). Current rules/contracts were refreshed 14 November 2026; original data and private diagnostics remain outside this repository. Optional additional-prize notebooks and sponsor eligibility certification are distinct requirements, not established by a ZIP receipt.
+
+## Historical publication snapshot — 10 November 2026
+
+The following record predates the actual v0.4.0 upload and is preserved as history.
+
+### Earlier competition and publication record
 
 Competition: [Google Quantum AI — Verifiable Quantum Circuit Compilation](https://www.kaggle.com/competitions/google-verifiable-quantum-circuit-compilation).
 

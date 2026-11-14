@@ -1,0 +1,66 @@
+{
+  "project": "QVC Chemistry Compiler",
+  "version": "0.4.0",
+  "author": "Francisco Angulo de Lafuente",
+  "orcid": "https://orcid.org/0009-0001-1634-7063",
+  "license": "MIT OR Apache-2.0; upstream Apache notices retained",
+  "repository_submission_state": "COMPLETE",
+  "source_release": "https://github.com/Agnuxo1/qvc-chemistry-compiler/releases/tag/v0.4.0",
+  "source_commit": "eea36a54e77c151b903ecd5e081458e24147aa1a",
+  "frozen_selection_sha256": "5875900e5324f0dfbf671a787f1eb6d956d75bcf0602ef61243cbdb6c099f123",
+  "archive_sha256": "0059f20ad2b9822318c208d28093714ca0e9440271262387c5b1df0109d3b30e",
+  "archive_bytes": 49338223,
+  "archive_hash_scope": "Local exact ZIP verified immediately before one official SDK upload; platform ID/name/size/account/date matched. API does not supply a cryptographic payload hash.",
+  "submission": {
+    "ref": 58344264,
+    "account": "franciscoangulo",
+    "team_name": "Francisco Angulo de Lafuente",
+    "submitted_utc": "2026-11-14T13:23:34.720Z",
+    "file_name": "submission.zip",
+    "platform_bytes": 49338223,
+    "api_status": "COMPLETE",
+    "public_score": 26.94027,
+    "public_score_text": "26.94027",
+    "page": "https://www.kaggle.com/competitions/google-verifiable-quantum-circuit-compilation/submissions"
+  },
+  "observed_utc": "2026-11-14T13:52:16.673193+00:00",
+  "primary_source": "Authenticated Kaggle competition_submissions API; only whitelisted own-submission fields are published",
+  "private_snapshot_sha256": "cd078fc50cc04d394b66183b8e60327899e3035ab3339d48ede88d3ed60be1b0",
+  "previous_submission": {
+    "ref": 57789064,
+    "public_score": 22.86842,
+    "submitted_utc": "2026-10-30T01:58:46.743Z"
+  },
+  "official_score_gain_percent": 17.805558932361755,
+  "local_composite_range": [
+    26.975162261465695,
+    27.016402925509315
+  ],
+  "local_range_scope": "16 measured component-cost combinations, not confidence bounds or official scores",
+  "forum": {
+    "topic_id": 759244,
+    "url": "https://www.kaggle.com/competitions/google-verifiable-quantum-circuit-compilation/discussion/759244",
+    "author": "franciscoangulo",
+    "body_matches_reviewed": true,
+    "body_sha256": "8c7215859dc0339c8c1f721c67c9b8490a60c74857ac96b9bb38b2caa9ab2d00"
+  },
+  "preflight": {
+    "current_metric_sha256": "62005ff476af2b22a57747882e9e53895ee2166bda417ede0d24fbfc29646cbf",
+    "metric_byte_identical": true,
+    "current_official_sha256": {
+      "kickmix/kickmix.so": "c66b3216c4029e0cdfd09054306aa0feadf53ab2f50c1164e37f752874e5005e",
+      "verifiers/invsqrt/verify_submission_invsqrt.py": "ddef520dec6b68d1cf0a6f328ddd36d79eb84570b9192cf3f7acaf073f06733a",
+      "verifiers/dqi/verify_submission_dqi.py": "f14274bc0943fb9769ddb01131be6063191a15009fe1caf1d4bdd9fd25194e65",
+      "verifiers/dfthcsos/verify.py": "0775be7a528922367caebe9e4d051d6199811f1aefeaa4b793eaaa4621b8ec9d"
+    },
+    "zip_members": 18,
+    "review_rounds": 8,
+    "consecutive_clean_rounds": [
+      7,
+      8
+    ]
+  },
+  "historical_exact_source_recovery": "OPEN_I01_HIST",
+  "eligibility": "Sponsor prize/eligibility certification is separate; not asserted by upload or score",
+  "optional_milestone_notebook": "Not certified by this ZIP record"
+}

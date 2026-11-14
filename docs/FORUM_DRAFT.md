@@ -1,17 +1,19 @@
-# Draft: source-reproducible FeMoCo chemistry compiler and local verification
+# Published source-sharing announcement
 
-I am sharing QVC Chemistry Compiler: https://github.com/Agnuxo1/qvc-chemistry-compiler
+Published 14 November 2026 by franciscoangulo: https://www.kaggle.com/competitions/google-verifiable-quantum-circuit-compilation/discussion/759244 . The independently reviewed post body matches SHA256 `8c7215859dc0339c8c1f721c67c9b8490a60c74857ac96b9bb38b2caa9ab2d00` after whitespace split/join normalization. This digest excludes the publication preamble and topic title.
 
-The repository contains a frozen chemistry recipe, the attributed source compiler, exact output hashes, full local verifier receipts, reproducibility instructions and scientific figures. The selected chemistry uses 14,848 Toffolis and 427 qubits, giving a local reference/cost ratio of 11.2343975372 with the archived reference. It has not been submitted as a project result on Kaggle.
+# QVC v0.4.0: complete source generators, 46Q inverse / 889Q DQI / FeMoCo
 
-The project builds on marculera's public pipeline and the other authors credited in the repository. Original contributions are offered under MIT OR Apache-2.0; Apache-derived material preserves its upstream terms and notices.
+I am sharing the complete source and reproducibility record for QVC Chemistry Compiler v0.4.0 with all competition participants.
 
-The optimized public invsqrt/DQI files have passed local circuit checks, but their exact generating sources remain an open recovery item. The repository now also contains a fully source-generated alternative using credited invsqrt c3 and DQI888, with local composite indices 21.4136246 / 21.4463608 after the H14 chemistry experiment. Its eighteen-file ZIP, full receipts and scientific GIFs are published together. The organizer-reference construction is retained as a separate control. The repository makes that distinction explicit.
+Repository and selected release: https://github.com/Agnuxo1/qvc-chemistry-compiler/releases/tag/v0.4.0
 
-Francisco Angulo de Lafuente · ORCID https://orcid.org/0009-0001-1634-7063
+The release provides generators and mathematical inputs for all 18 submitted files: a 46-qubit inverse-square-root circuit, an 889-qubit DQI decoder, and the deep512 FeMoCo chemistry recipe. The exact submission ZIP, source bundle, SHA-256 checksums, build instructions, licenses, full local verifier receipts and scientific figures are included. The original competition data and native runtime are obtained from this competition, rather than redistributed in the repository.
 
-Draft status: not posted by this preparation script.
+Local checks give a composite of 26.97516–27.01640 across all 16 measured component-cost combinations. That range is not a confidence interval or a leaderboard score. The inverse has two full 200,540,928-shot checks and an exact full-domain/HMR proof; DQI has four 102,400-shot checks, all PASS, with one value error retained in its cost; chemistry has two full 78,080-shot checks. Inverse and chemistry receipts are reused only because the newly generated files match their exact hashes.
 
----
-Research author: **Francisco Angulo de Lafuente** · [ORCID](https://orcid.org/0009-0001-1634-7063) · 2026-11-10.
-Own text: MIT OR Apache-2.0; third-party materials retain their notices.
+The inverse and DQI generators are Syed Asad Ali's Apache-2.0 work, credited with upstream notices preserved. This project's contributions are chemistry optimization, integration, measurements and documentation by Francisco Angulo de Lafuente. Apache-2.0 is the selected competition handover option; separable original work is also offered under MIT. This does not claim invention of the upstream generators.
+
+The older, different 26ebf39d inverse and e9f54be3 DQI generators remain a separate historical recovery item. They are not the v0.4.0 submission inputs. Local verification and public source availability do not certify prize eligibility or an official result.
+
+Francisco Angulo de Lafuente · https://orcid.org/0009-0001-1634-7063
